@@ -239,6 +239,106 @@ GloriaAltoLyrics = \lyricmode {
 	_ tris. %51 finis
 }
 
+QuiTollisAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/4 \autoBeamOff \tempoQuiTollis
+			\set Score.currentBarNumber = #54
+		R2.
+		r4 r \mvTr g'\pE^\solo %55
+		g8.([ f16)] es4 r8 es
+		d8.([ es32 f)] es4 r
+		r r es
+		d8.([ es16] f4) es
+		es d r %60
+		r \mvTr f\fE^\tutti f
+		f es r
+		r g g
+		f f r
+		r as as %65
+		as2 g4~
+		g f2
+		g4 r r
+		r r \mvTr g\pE^\solo
+		g8.([ f16)] es4 r8 es %70
+		d8.([ es32 f)] es4 r
+		r r g
+		f8.([ g16] as4) g
+		g f r
+		r \mvTr f2\fE^\tutti %75
+		es4 es r
+		r ges2
+		g f4~
+		f f( e)
+		f r r %80
+		R2.*2
+		r4 r g~
+		g f8([ es!)] des([ c)]
+		h4.( d8) es8[( f)] %85
+		g2 g4
+		g2 as4~
+		as as( g)
+		as r r
+		R2.*6 %95
+		r4 \mvTr g\fE^\tutti g
+		f f r
+		r a a
+		g g r
+		r fis fis %100
+		f2 es4~
+		es \appoggiatura es d2\trill
+		c4 r r
+		R2.*4 %107
+		R2.\fermataMarkup \bar "||" %108 finis
+	}
+}
+
+QuiTollisAltoLyrics = \lyricmode {
+	Qui %55
+	tol -- lis pec --
+	ca -- ta,
+	pec --
+	ca -- ta
+	mun -- di: %60
+	Mi -- se --
+	re -- re,
+	mi -- se --
+	re -- re,
+	mi -- se -- %65
+	re -- re __
+	no --
+	bis.
+	Qui
+	tol -- lis pec -- %70
+	ca -- ta,
+	pec --
+	ca -- ta
+	mun -- di,
+	qui %75
+	tol -- lis
+	pec --
+	ca -- ta __
+	mun --
+	di: %80
+
+	Su -- %83
+	sci -- pe __
+	de -- pre -- %85
+	ca -- ti --
+	o -- nem __
+	no --
+	stram.
+
+	Mi -- se -- %96
+	re -- re,
+	mi -- se --
+	re -- re,
+	mi -- se -- %100
+	re -- re __
+	no --
+	bis. %103 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

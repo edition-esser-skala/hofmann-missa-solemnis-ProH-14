@@ -259,21 +259,21 @@ QuiTollisOrgano = {
 		\clef bass
 		\key c \minor \time 3/4 \tempoQuiTollis
 			\set Score.currentBarNumber = #54
-		\mvTr c8[-!\fE-\solo r16. c32]-! es8-![ r16. es32]-! g8[-! r16. g32]-!
+		\mvTr c8[-!\fE-\solo-\critnote r16. c32]-! es8-![ r16. es32]-! g8[-! r16. g32]-!
 		c4 c, r %55
 		c2\pE c4
 		g c r
 		g c r
 		R2.
-		r4 g'-! g-! %60
+		r4 \mvTr g'-!\fE-\tuttiE g-! %60
 		h,-! h h
 		c2 c'4-!
 		e,-! e2
 		f r4
 		r f f %65
-		d2 es4
+		d!2 \once \tieDashed es4~
 		es b' b,
-		es8[-!\fE r16. es32]-! g8-![ r16. g32]-! b8[-! r16. b32]-!
+		es8[-! r16. es32]-! g8-![ r16. g32]-! b8[-! r16. b32]-!
 		es4 es, r
 		\mvTr es2\p-\solo es4 %70
 		b es r
@@ -283,10 +283,10 @@ QuiTollisOrgano = {
 		d,4 d2 %75
 		es r4
 		r es2
-		e f4
+		e \once \tieDashed f4~
 		f c2
-		f8[-!\f r16. f32]-! as8-![ r16. as32]-! c8[-! r16. c32]-! %80
-		f4 f, \clef treble << { c''~\pE c4 b8[ as] } \\
+		f8[-! r16. f32]-! as8-![ r16. as32]-! c8[-! r16. c32]-! %80
+		f4 f, \clef treble << { c''~ c4 b8[ as] } \\
 		{ r4 des,2 } >> \clef bass b4~
 		b as8 g f e
 		f2 f4
@@ -294,21 +294,21 @@ QuiTollisOrgano = {
 		e2.
 		es2 as4~
 		as es2
-		as,8[-!\f r16. as32]-! c8[-! r16. c32]-! es8[-! r16. es32]-!
+		as,8[-! r16. as32]-! c8[-! r16. c32]-! es8[-! r16. es32]-!
 		as4 as, r %90
 		\mvTr as2\p-\solo as4
 		es' as, r
 		es' as, r
 		es'2 as,4
-		es' es es %95
-		e e2
-		f f4
-		fis fis2
+		es' \mvTr es\fE-\tuttiE es-\parenthesize-! %95
+		e-\parenthesize-! e2
+		f f4-\parenthesize-!
+		fis-\parenthesize-! fis2
 		g g4-!
 		as-! as2 %100
 		g as4
 		fis g g,
-		c r c\pp
+		c r c\p
 		d2 d4\f
 		es f g %105
 		as r r
@@ -325,8 +325,8 @@ QuiTollisBassFigures = \figuremode {
 	q
 	r
 	r %60
-	r4 <7- 5 3> <\t \t \t>
-	<5 3>2.
+	r4 <7- 5 3>2
+	<\t \t \t>4 <5 3>2
 	r4 <7- 5>2
 	<6- 4>4 <5 _->2
 	r2. %65
@@ -347,9 +347,9 @@ QuiTollisBassFigures = \figuremode {
 	r2. %80
 	r
 	r2 <6 _->8 <5 \t>
-	<4!>4 <3>8 q q q
-	<9>4 <8> <6>8 <5>
-	<4! _->2. %85
+	<4! \t>4 <3>8 q q q
+	<9>4 <8> <6->8 <5>
+	<[6!] 4! _->2. %85
 	<7- 5- 3>2.
 	<\t \t \t>
 	r4 <4> <3>
@@ -362,8 +362,8 @@ QuiTollisBassFigures = \figuremode {
 	<6 4>4 <5 3>2 %95
 	r4 <7- 5>2
 	<6- 4>4 <5 3>2
-	r4 <7 5>2
-	r2.
+	r4 <7 5 [_!]>2
+	\bo <[6 4]>4 \bc <[5 _!]>2
 	r4 <6\\>2 %100
 	<7 _!> <5>4
 	<7 5 _!> <4> <_!>
@@ -371,7 +371,7 @@ QuiTollisBassFigures = \figuremode {
 	<6! 5->
 	<6>2 <_!>4 %105
 	r2.
-	r4 <4> <_!>
+	r4 \bo <[6] 4> \bc <[5] _!>
 	r2. %108 finis
 }
 

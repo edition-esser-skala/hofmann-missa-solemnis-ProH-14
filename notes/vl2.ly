@@ -127,3 +127,65 @@ GloriaViolinoII = {
 		<e c'> \tuplet 3/2 8 { e16 d c } d8 h' c,4 r\fermata \bar "||" %53 finis
 	}
 }
+
+QuiTollisViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \minor \time 3/4 \tempoQuiTollis
+			\set Score.currentBarNumber = #54
+		\mvTr c8[\fE-\critnote r16. c32] es8[ r16. es32] g8[ r16. g32]
+		c4 c, r %55
+		R2.
+		r4 r8 es'\p c es,
+		d8.( es32 f) es4 c
+		g r c
+		g r r %60
+		r f''16(\f^\critnote d) d( h) h( as) as( f)
+		f4 es r
+		r b''16( g) g( e) e( des) des( b)
+		b4 as8 f as c
+		f16( as,) g( as) as8 f16( as) as( c) c( f) %65
+		f( d!) d( b) b( f) f( d) es( g) g( b)
+		b( es) es( g,) f8 es' b, d'
+		es,8[ r16. es32] g8[ r16. g32] b8[ r16. b32]
+		es4 es, r
+		R2. %70
+		r4 r8 g'\p es g,
+		f8.( g32 as) g4 es
+		b r es
+		b r r
+		r as'8\f as as as %75
+		as4 ges8 b16( es) es( ges) ges( es)
+		es( b) b( ges) ges( es) es( ges) ges( b) b( es)
+		g( e) e( des?) des( b) b( g) f( as) as( c)
+		c( as) as( f) g8 f' c, e'
+		f,8[ r16. f32] as8[ r16. as32] c8[ r16. c32] %80
+		f4 f, r
+		R2.
+		r4 r \once \tieDashed g~
+		g f8 es! des c
+		h16( d') d( f) f( d) d( h) h( as) as( f) %85
+		g8 g16( b) b( des) des( e) e( des) des( b)
+		b( des) des( g) g( des) des( b) as( c) c( es)
+		es( c) c( as) b8 as' es, g'
+		as,,8[ r16. as32] c8[ r16. c32] es8[ r16. es32]
+		as4 as, r %90
+		R2.
+		r4 r8 es''\pE c as
+		g8.( as32 b) as4 r
+		R2.*2 %95
+		r4 g'16(\fE e) e( des) des( b) b( g)
+		f4 f r
+		r a'16( fis) fis( es) es( c) c( a)
+		g4 g r
+		r fis16( c') c( es) es( c) c( fis,) %100
+		f( h) h( d) d( h) h( f) es( c') c( es,)
+		es( c') c( es,) d8 c' g, h'
+		c,8. g'16\p g8. f16 es8. es16
+		f2 r8. h16\fE
+		c8. g16 as8. f16 es d c h %105
+		c4 r h'16(\pE c8.)
+		r16 as\fE g f es8 c g h
+		c4 r r\fermata \bar "||"
+	}
+}
