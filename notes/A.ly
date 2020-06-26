@@ -155,6 +155,90 @@ KyrieAltoLyrics = \lyricmode {
 	son. %65 finis
 }
 
+GloriaAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoGloria
+		\mvTr g'8.\fE^\tutti g16 g4 r2
+		g8. g16 g4 r2
+		R1
+		r4 g8 g f g g4
+		g r r2 %5
+		r g4 r
+		g\p r8 g g8. g16 g4
+		R1
+		g4\f r g\p r8 g
+		g8. f16 f4 a r8 a %10
+		a8. g16 g4 h r8 h
+		h8. a16 a4 a4.\f a8
+		g g g g g2
+		g4 r r2
+		r r8 g g g %15
+		g4 r r2
+		R1*8 %24
+		r2 \mvTr h4.\pE^\solo g16 a %25
+		h4. c16 a h8 a16 g a4
+		g r r g16([ fis)] g([ a)]
+		h2~ h8 a16([ h)] c([ h)] a gis?
+		a([ gis)] a8 r4 r2
+		r8 a( h16[ c)] h([ a)] gis4. gis8 %30
+		a16[ h c8]~ c16[ h a gis] a[ h c8]~ c16[ h a gis]
+		a8 h16 a a8([ gis)] a4 r
+		R1*9 %41
+		r4 f8 f16 f f4 e
+		g8 g a g g8. f16 f4
+		b8[ a g f] e4 g~
+		g f f( e) %45
+		f r r2
+		r r4 \mvTr a8\fE^\tutti a16 a
+		g8 g g g g g g g16 g
+		g8 g r4 c,8 f16 e f[ e d8]~
+		d[ g16 f] g[ f \once \tieDashed e8]~ e[ a16 g] a[ g f8] %50
+		g2 g4 r
+		R1
+		R\fermataMarkup \bar "||" %53 finis
+	}
+}
+
+GloriaAltoLyrics = \lyricmode {
+	Glo -- ri -- a,
+	glo -- ri -- a
+
+	in ex -- cel -- sis De --
+	o. %5
+	Pax,
+	pax ho -- mi -- ni -- bus,
+
+	pax, pax ho --
+	mi -- ni -- bus, pax ho -- %10
+	mi -- ni -- bus, pax ho --
+	mi -- ni -- bus bo -- nae,
+	bo -- nae vo -- lun -- ta --
+	tis,
+	in ter -- ra %15
+	pax.
+
+	Gra -- ti -- as %25
+	a -- gi -- mus, a -- gi -- mus ti --
+	bi pro -- pter
+	ma -- gnam glo -- ri -- am
+	tu -- am,
+	pro -- pter ma -- gnam %30
+	glo -- _
+	_ ri -- am tu -- am.
+
+	Do -- mi -- ne Fi -- li, %42
+	Fi -- li u -- ni -- ge -- ni -- te,
+	Je -- _ _
+	su Chri -- %45
+	ste.
+	Do -- mi -- ne
+	De -- us, A -- gnus De -- i, Fi -- li -- us
+	Pa -- tris, Fi -- li -- us Pa --
+	_ _ %50
+	_ tris. %51 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

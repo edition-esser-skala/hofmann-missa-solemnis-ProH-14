@@ -76,6 +76,58 @@ KyrieViolinoI = {
 	}
 }
 
+GloriaViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoGloria
+		<e c'>4\f q r2
+		<c' e>4 q r2
+		r8 e\p d c h4 c8 d
+		c4 \sbOn \tuplet 3/2 8 { e16\f d e } c' e, \tuplet 3/2 8 { f e f } d' f, \tuplet 3/2 8 { e d e } c' e, \sbOff
+		d g, h d g d h g <g, h' h'>4 r %5
+		r2 <d' h' g'>8 \sbOn \tuplet 3/2 8 { g16 fis g h a h d c d } \sbOff
+		f!8\pE d'16 h h g8 f16 f d8 e16 e c g e
+		<c e c'>4\fE r r2
+		\sbOn c8 \tuplet 3/2 8 { c'16 h c e d e g f g } \sbOff b\p-! a-! g-! f-! e-! d-! c-! b-!
+		b8.\trill a16 a c f a c-! h-! a-! g-! fis-! e-! d-! c-! %10
+		c8.\trill h16 h d g h d-! c-! h-! a-! gis-! f-! e-! d-!
+		d8.\trill c16 c a c e f\f f8 f f f16
+		\sbOn f d' \tuplet 3/2 8 { d c d } e, c' \tuplet 3/2 8 { c h c } d, c' \tuplet 3/2 8 { c h c } g,8 h'
+		c, c'16 e, \tuplet 3/2 8 { f e f } d' f, e4 r \sbOff
+		r2 r8 \tuplet 3/2 8 { c'16 h c } d,8 h' %15
+		<c e,>4 r q r
+		<c d,> r8 <h d,> <c e,>4 r
+		R1*6 %23
+		r8 h16\fE a g g, g' fis e e, e' d c c, c' h
+		\sbOn \tuplet 3/2 8 { a g fis } g16. g'32 \sbOff a,8 fis' g,4 r %25
+		R1
+		r16 d'\pE d, d' \appoggiatura d8 c4\trill h r
+		r8 d16 c h h, h' a gis4 r
+		r16 e' e, e' \appoggiatura e8 d4\trill c r
+		R1*2 %31
+		r2 <c a'>4\f r
+		<c a'> r <h a'> r8 <h gis'>
+		<a a'>4 r r2
+		r8 e'16 d c c, a' g f d f' e d h, h' a %35
+		gis h e,8 r4 r2
+		r4 r8 d'16\p c b b, b'8 c16 c, c' b
+		a a, a'8 b16 b, b' a g g, g'8 a16 a, a' g
+		f8 r r4 r2
+		r d''4\fE r %40
+		d r d r8 cis
+		d4 r r2
+		R1*3 %45
+		r8 a16\fE g f f, f' e d d, d' c b b, b' a
+		\sbOn \tuplet 3/2 8 { g f e } f f' \sbOff g,8 e' f,16 a c f \sbOn \tuplet 3/2 8 { a g f } f, a'
+		\tuplet 3/2 8 { g f e } c g' \tuplet 3/2 8 { f e d } g, f' \tuplet 3/2 8 { e d c } c, c' \tuplet 3/2 8 { e d c } c, c' \sbOff
+		e8\trill d c4. d16( c) \once \tieDashed d4~
+		d8 \once \slurDashed e16( d) e4. f16( e) f4~ %50
+		f16 d' e, c' d,8^\critnote h' <e, c'>4 r
+		q r <d c'> r8 <d h'>
+		<e c'> \tuplet 3/2 8 { e16 d c } d8 h' c,4 r\fermata \bar "||" %53 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

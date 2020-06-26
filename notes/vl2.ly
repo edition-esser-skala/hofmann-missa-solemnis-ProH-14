@@ -75,3 +75,55 @@ KyrieViolinoII = {
 		c,4 r r2\fermata \bar "|." %65 finis
 	}
 }
+
+GloriaViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoGloria
+		<e c'>4\f q r2
+		<c' e>4 q r2
+		r8 c,\p h a g4 a8 h
+		c4 \sbOn \tuplet 3/2 8 { e'16\f d e } c' e, \tuplet 3/2 8 { f e f } d' f, \tuplet 3/2 8 { e d e } c' e, \sbOff
+		d g, h d g d h g <g, h' h'>4 r %5
+		r2 <d' h' g'>8 \sbOn \tuplet 3/2 8 { g16 fis g h a h d c d } \sbOff
+		f!8\pE d'16 h h g8 f16 f d8 e16 e c g e
+		<c e c'>4\fE r r2
+		\sbOn c4 \tuplet 3/2 8 { c'16 h c e d e } \sbOff g\p-! f-! e-! d-! c-! b-! a-! g-!
+		g8.\trill f16 f a c f a-\parenthesize-! g-\parenthesize-! fis-\parenthesize-! e-\parenthesize-! d-\parenthesize-! c-\parenthesize-! h-\parenthesize-! a-\parenthesize-! %10
+		a8.\trillE g16 g h d g h-\parenthesize-! a-\parenthesize-! gis-\parenthesize-! f-\parenthesize-! e-\parenthesize-! d-\parenthesize-! c-\parenthesize-! h-\parenthesize-!
+		h8.\trillE a16 a8 a a16\f a8 a a a16
+		\sbOn g f' \tuplet 3/2 8 { f e f } e c' \tuplet 3/2 8 { c h c } d, c' \tuplet 3/2 8 { c h c } g,8 h'
+		c, c'16 e, \tuplet 3/2 8 { f e f } d' f, e4 r \sbOff
+		r2 r8 \tuplet 3/2 8 { c'16 h c } d,8 h' %15
+		<c e,>4 r q r
+		<c d,> r8 <h d,> <c e,>4 r
+		R1*6 %23
+		r8 h16\fE a g g, g' fis e e, e' d c c, c' h
+		\sbOn \tuplet 3/2 8 { a g fis } g16. g'32 \sbOff a,8 fis' g,4 r %25
+		R1
+		r16 h16\pE h, h' \appoggiatura h8 a4\trill g r
+		r8 d'16 c h h, h' a gis4 r
+		r16 c c, c' \appoggiatura c8 h4\trill a r
+		R1*2 %31
+		r2 <c a'>4\f r
+		<c a'> r <h a'> r8 <h gis'>
+		<a a'>4 r r2
+		r8 e'16 d c c, a' g f d f' e d h, h' a %35
+		gis h e,8 r4 r2
+		r4 r8 a\p a-\critnote g r g
+		g f r f f-\critnote e r a,
+		a8 r r4 r2
+		r f''4\fE r %40
+		f r e r8 e
+		d4 r r2
+		R1*3 %45
+		r8 a'16\fE g f f, f' e d d, d' c b b, b' a
+		\sbOn \tuplet 3/2 8 { g f e } f f' \sbOff g,8 e' f,16 a c f \sbOn \tuplet 3/2 8 { a g f } f, a'
+		\tuplet 3/2 8 { g f e } c g' \tuplet 3/2 8 { f e d } g, f' \tuplet 3/2 8 { e d c } c, c' \tuplet 3/2 8 { e d c } c, c' \sbOff
+		c8\trill h r4 c,8 f16 e f e d8~
+		d g16 f g f e8~ e a16 g a g f8 %50
+		g16 f' e c' d,8 h' <e, c'>4 r
+		q r <d c'> r8 <d h'>
+		<e c'> \tuplet 3/2 8 { e16 d c } d8 h' c,4 r\fermata \bar "||" %53 finis
+	}
+}

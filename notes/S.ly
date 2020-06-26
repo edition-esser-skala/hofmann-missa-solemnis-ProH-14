@@ -155,6 +155,90 @@ KyrieSopranoLyrics = \lyricmode {
 	son. %65 finis
 }
 
+GloriaSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoGloria
+		\mvTr c'8.\fE^\tutti c16 c4 \mvTr c16([\pE^\solo g a h] c[ h c d]
+		\mvTr e8.)]\fE^\tutti e16 e4 \mvTr e16[\pE^\solo d c d] e[ d e f]
+		g2~ g8 f16 e f8 e16([ d)]
+		e([ d)] c8 \mvTr e\fE^\tuttiE e f f e4
+		d r r2 %5
+		r d4 r
+		f\p r8 f f8. e16 e4
+		c\f e d g,
+		c r b\p r8 b
+		b8. a16 a4 c r8 c %10
+		c8. h16 h4 d r8 d
+		d8. c16 c4 f2~\f
+		f8 f e e \appoggiatura e4 d2\trill
+		c4 r r2
+		r r8 e d d %15
+		c4 r r2
+		R1*8 %24
+		r2 \mvTr d4.\pE^\solo h16 c %25
+		d4. e16 c d8 c16 h \appoggiatura h8 c4\trill
+		h r r8 g16([ a] h[ a)] h([ c)]
+		d2~ d8 c16([ d)] e([ d)] c h
+		c([ h)] a8 r4 r8 a( h16[ c)] d([ e)]
+		f2~ f8[ e16 d] e[ d] c([ h)] %30
+		c[ d e8]~ e16[ d c h] c[ d e8]~ e16[ d c h]
+		c8 d16 c \appoggiatura c8 h4\trill a r
+		R1*9 %41
+		r4 d8 d16 d d4 cis
+		e8 e f e e8. d16 d4
+		r2 c!8([ b a g]
+		a4.) a8 g2 %45
+		a4 r r2
+		r r4 \mvTr f'8\fE^\tutti f16 f
+		f8 e d d d c c d16 e
+		e8 d c4. d16 c d4~
+		d8[ e16 d] e4. f16[ e] f4~ %50
+		f8[ e] d4\trill c r
+		R1
+		R\fermataMarkup \bar "||" %%3 finis
+	}
+}
+
+GloriaSopranoLyrics = \lyricmode {
+	Glo -- ri -- a, glo --
+	ri -- a, glo -- _
+	_ ri -- a in ex --
+	cel -- sis, in ex -- cel -- sis De --
+	o. %5
+	Pax,
+	pax ho -- mi -- ni -- bus,
+	et in ter -- ra
+	pax, pax ho --
+	mi -- ni -- bus, pax ho -- %10
+	mi -- ni -- bus, pax ho --
+	mi -- ni -- bus bo --
+	nae vo -- lun -- ta --
+	tis,
+	in ter -- ra %15
+	pax.
+
+	Gra -- ti -- as %25
+	a -- gi -- mus, a -- gi -- mus ti --
+	bi pro -- pter
+	ma -- gnam glo -- ri -- am
+	tu -- am, pro -- pter
+	ma -- _ gnam %30
+	glo -- _
+	_ ri -- am tu -- am.
+
+	Do -- mi -- ne Fi -- li, %42
+	Fi -- li u -- ni -- ge -- ni -- te,
+	Je --
+	su Chri -- %45
+	ste.
+	Do -- mi -- ne
+	De -- us, A -- gnus De -- i, Fi -- li -- us
+	Pa -- tris, Fi -- li -- us Pa --
+	_ _ _ %50
+	_ tris. %51 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble
