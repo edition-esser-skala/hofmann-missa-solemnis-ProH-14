@@ -252,6 +252,104 @@ QuiTollisBassoLyrics = \lyricmode {
 	bis. %103 finis
 }
 
+QuoniamBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoQuoniam
+			\set Score.currentBarNumber = #109
+		R1*8 %116
+		r2 \mvTr c8\pE^\solo e16([ f)] g8 c
+		d16([ h)] c8 r g f([ d g,)] f'
+		\appoggiatura f e8.([ d16)] c4 r2
+		r8 c e16[ d e fis] g4. a16[ h] %120
+		c8[ a d,] c' h16 a g8 r h
+		h a4 g8 fis16 e d8 r d
+		d1~
+		d8 g4 d8 e16 d c8 c'4~
+		c h2 \once \tieDashed a4~ %125
+		a g fis8[ d16 e] fis[ e fis g]
+		a8[ fis16 g] a[ g a h] c[ h a g] fis[ e d c]
+		h8[ d' h] g d2\trill
+		g,4 r r2
+		R1*7 %136
+		g8 h16([ c)] d8 g a16([ fis)] g8 r h
+		c([ a d,)] c' h16([ a)] g8 r g
+		d4. e16([ f!)] e8 fis16([ gis)] a8 c
+		h([ gis)] e d c8. h16 a4 %140
+		r2 r4 r8 e'
+		f[ e16 f] d'8[ f,] e[ d16 e] c'8[ e,]
+		d[ c16 d] h'8[ d,] c[ e] a4~
+		a8[ h16 c] h8 a gis16 fis e8 r e
+		e1~\trill %145
+		e8[ f!16 g!] a8 g f16 e d8 r4
+		r d'8 f, e[ c' d, h']
+		c,[ e] a8.([ g32 f)] e8 d e4
+		a, r r2
+		R1*4 %153
+		r2 a8 c16([ d)] e8 a
+		h16([ gis)] a8 r e f([ g16 a] g8) f %155
+		e16([ d)] c8 r4 c8 e16([ f)] g8 c
+		d16([ h)] c8 r c b([ g c,)] b'
+		a8. g16 f8 a g([ e)] a, g'
+		f8. e16 d4 r2
+		r4 d'4. c16[ h] c4~ %160
+		c8[ h16 a] h4. a16[ g] a4~
+		a8[ g16 fis] g8[ f] e[ g] c8.([ h32 a)]
+		g8 c g,4 c r
+		R1*8 %171
+		r8 \mvTr c\fE^\tutti c c g'8. g16 g8 g
+		e[ f16 g] a2 g4
+		f f8 f e4. f8
+		g2 g,4 r\fermata \bar "||" %175 finis
+	}
+}
+
+QuoniamBassoLyrics = \lyricmode {
+	Quo -- ni -- am tu %117
+	so -- lus, tu so -- lus
+	san -- ctus,
+	tu so -- _ _ %120
+	_ lus Do -- mi -- nus, tu
+	so -- lus al -- tis -- si -- mus, tu
+	so --
+	lus al -- tis -- si -- mus, Je --
+	_ _ %125
+	_ _ _
+	_ _ _ _
+	_ su Chri --
+	ste.
+
+	Quo -- ni -- am tu so -- lus, tu %137
+	so -- lus san -- ctus, tu
+	so -- lus Do -- mi -- nus, tu
+	so -- lus al -- tis -- si -- mus, %140
+	tu
+	so -- _ _ _
+	_ _ _ _
+	lus al -- tis -- si -- mus, tu
+	so -- %145
+	lus al -- tis -- si -- mus,
+	Je -- su, Je --
+	_ _ _ su Chri --
+	ste.
+
+	Quo -- ni -- am tu %154
+	so -- lus, tu so -- lus %155
+	san -- ctus, quo -- ni -- am tu
+	so -- lus, tu so -- lus
+	Do -- mi -- nus, tu so -- lus al --
+	tis -- si -- mus,
+	Je -- _ _ %160
+	_ _ _
+	_ _ _
+	_ su Chri -- ste.
+
+	Cum San -- cto Spi -- ri -- tu in %172
+	glo -- _ _
+	_ ri -- a De -- i
+	Pa -- tris. %175 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

@@ -80,3 +80,16 @@ GloriaClarinoII = {
 		g c16 c c8 g e4 r\fermata \bar "||"
 	}
 }
+
+QuoniamClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoQuoniam
+			\set Score.currentBarNumber = #109
+		R1*63 %171
+		r8 g'\fE g g g8. g16 g4
+		R1
+		r2 r4 c
+		g2 g4 r\fermata \bar "||" %175 finis
+	}
+}

@@ -293,6 +293,26 @@ QuiTollisTenoreLyrics = \lyricmode {
 	bis. %103 finis
 }
 
+QuoniamTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoQuoniam
+			\set Score.currentBarNumber = #109
+		R1*63 %171
+		r8 \mvTr c\fE^\tutti c c h8. h16 h4
+		r2 r4 r8 h
+		a8([ h16 c]) d8 d e4 e
+		e( d8[ c)] d4 r\fermata \bar "||" %175 finis
+	}
+}
+
+QuoniamTenoreLyrics = \lyricmode {
+	Cum San -- cto Spi -- ri -- tu %172
+	in
+	glo -- ri -- a De -- i
+	Pa -- tris. %175 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

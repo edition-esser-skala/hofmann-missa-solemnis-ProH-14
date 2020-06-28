@@ -379,7 +379,7 @@ QuoniamOrgano = {
 	\relative c {
 		\clef bass
 		\key c \major \time 4/4 \tempoQuoniam
-			\set Score.currentBarNumber = #108
+			\set Score.currentBarNumber = #109
 		\mvTr c4\fE-\solo r8 c f e r c
 		f e r e f e d h %110
 		c e16 d c8 c' h g a d,
@@ -388,16 +388,16 @@ QuoniamOrgano = {
 		f f, r fis' g g, d' fis
 		g g, r g' e c' h g %115
 		c c, h g c c' h g
-		c a f g c,4 r8 e
+		c a f g c,4 r8 e\pE
 		f e16 d e8 c d h16 a h8 g
-		c c16 d e8 c d c h g
-		c4 r8 c h g16 a h8 g %120
+		c c16 d e8 c\fE d c h g
+		c4 r8 c\pE h g16 a h8 g %120
 		a c d fis g g, h g
 		c4 cis d d8 c
 		h g fis d g g fis d
 		g4 h c r8 e
 		d fis g h, c e fis a, %125
-		h d e a, d4 r8 e16 e
+		h d e a, d4 r8 d16 e
 		fis8 d16 e fis e fis g a8 c,! d fis,
 		g4 r8 h16 c d8 c d d,
 		g4 r8 g'\f c h r g,
@@ -408,34 +408,34 @@ QuoniamOrgano = {
 		e e, fis fis' g g fis d
 		g e c d g, g' fis d %135
 		g, g' fis d g e c d
-		g,4 r8 h c h16 a h8 g
+		g,4 r8 h\pE c h16 a h8 g
 		a c d d, g h16 d g8 g,
 		r g h g c h c a
-		gis4 r8 e a h c a %140
-		e' h' gis e a a, r c
+		gis4 r8 e a h c a\fE %140
+		e' h' gis e a a, r c\pE
 		d16 d8 f16 g,8 h r16^\critnote c8 e16 f,8 a
 		r16 h8 d16 e,8 gis a4 r16 c h a
 		f'8 f, f f' e e, e' d
 		c a gis e a a gis e %145
-		a4 r8 a d f cis a
-		d4 r16 h8 g16 c a8 f16 h gis8 e16
+		a4 r8 a d f cis\fE a
+		d4 r16 h8\pE g16 c a8 f16 h gis8 e16
 		a4. h8 c d e e,
-		a4 r8 a d c r a
+		a4 r8 a\fE d c r a
 		d c r a' gis e a dis, %150
 		e e16 d c8 a d d' h g
 		c, c' a f h, h' gis e
 		a, a' f, f' e e, r gis
-		a c d e a,4 r8 c
+		a c d e a,4 r8 c\pE
 		d c16 h c8 a d c h g! %155
-		c e h g c4 r8 e
+		c e\fE h g c4 r8 e\pE
 		f e16 d e8 c g b c c,
 		f f a f e g a cis
-		d8.[ e16 f8 d] a' a, r cis
-		d d, r h' c c, r a' %160
+		d8.[ e16 f8 d]\fE a' a, r cis
+		d d, r h'\pE c c, r a' %160
 		h h' r g, a a' r fis,
 		g4 r8 g c4. d8
-		e f g g, c4 r8 c
-		f e r c f e r e
+		e f g g, c4 r8 c\fE
+		f^\critnote e r c f e r e
 		f e d h c e16 d c8 c' %165
 		h g a d, g g fis d
 		g e c d g, g'16 f e8 c
@@ -443,7 +443,7 @@ QuoniamOrgano = {
 		g g, d' fis g g, r g'
 		e c' h g c c, h g %170
 		c c, r h' c a' f g
-		c,-\tutti c c c g'8.[ g16 g8 g]-!
+		c, c-\tutti c c g'8.[ g16 g8 g]-!
 		e-! f16-! g-! a2-! g4
 		f2 e4. f8
 		g2 g,4 r\fermata \bar "||" %175 finis
@@ -452,7 +452,7 @@ QuoniamOrgano = {
 
 QuoniamBassFigures = \figuremode {
 	r2 \bo <[6]>8 \bc q4. %109
-	<6>8 q2.. %110
+	<6>4. \bo <[6 \l]>4 <6> \bc <[6 5]>8 %110
 	r2 <[6]>4 <7>8 <[7]>
 	r4 \bo <[6]>8 \bc <[_+]> r4 <6 5>8 <_+>
 	r4 <6>8 q r4. <6 5->8
@@ -460,36 +460,36 @@ QuoniamBassFigures = \figuremode {
 	r2 \bo <[6]>4 \bc q %115
 	r \bo <[6]>2 \bc q4
 	r4 <6 5> r4. <[6]>8
-	<6>1
-	r2 <5>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff
-	r1 %120
-	r4 <_+>2.
+	<6>8 \bo <[6]>2 <6>4 \bc <[7]>8
+	r4 <[6]> <5>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff
+	r2 <[6]> %120
+	r8 <[6]> <_+> <[6 5]> r4 <[6]>
 	<7>8 <6> <\t> <5> <_+>4. <\t>8
-	<6>2.. <_+>8
-	r4 <[6]>2.
-	<7 [_+]>2 <7> %125
-	<7>4. <_+>8 q2
-	r2 r8 <6> <_+> <6>
+	<6>4 \bo <[6]>8 <_+> r4 \bc <[6]>8 <_+>
+	r4 \bo <[6]>2 r8 \bc q
+	<7 [_+]>4. <[6]>8 <7>4. <[6\\]>8 %125
+	<7 [5+]>4. <_+>8 q2
+	<[6]>2 r8 <6> <_+> <6>
 	r4. \bo <[6]>8 \bc <[_+]>4 <4>8 <_+>
 	r2 <6>8 q4.
-	q8 q4 <[6]>8 r2 %130
+	q8 q4 \bo <[6 \l]>4 <6> \bc <[6 5]>8 %130
 	r4. <6>8 <_+> <6\\> <6> <_+>
 	r2 <_+>8 <6\\> <6> <_+>
 	r4. <[6]>4 <6 5> <[6 5 _+]>8
 	<[5]> <6> <[5]> <6>8 r4 <[6]>8 <_+>
 	r4 <6 5>8 <_+> r4 \bo <[6]>8 \bc <[_+]> %135
 	r4 \bo <[6]>8 \bc <[_+]> r4 <6 5>8 <_+>
-	r4. <[6]>8 <6>2
+	r4. <[6]>8 <6> <[6]>4.
 	r4 <_+>2.
 	r2 r8 <6\\> <6>4
 	q4. <_+>8 r4 <[6]> %140
 	<_+>8 <6\\> <6> <_+> r4. <6>8
-	r1
-	r4 <_+>8 <6> r2
+	r4 <[7]>2 q4
+	r4 <[7] _+>8 <6 [5]> r2
 	r4. <6\\>8 <_+>2
-	r1 %145
+	\bo <[6]>4 <6>8 <_+> r4 <6>8 \bc <[_+]> %145
 	r4. <_+>8 r <6> q <_+>
-	r1
+	r4 r16 \bo <[6 5]>8 <\t \t> <6 5> <\t \t> <6 5> \bc <[\t \t]>16
 	r4. <6\\>8 <6> <6 5> <4> <_+>
 	r2 <6->8 <6>4.
 	<6->8 <6>4. \bo <[6]>8 \bc <[_+]>4 <7 [_+]>8 %150
@@ -497,24 +497,24 @@ QuoniamBassFigures = \figuremode {
 	<9>4. <10>8 <9>4. <10>8
 	r4. <6\\>8 <_+>4. <6>8
 	r <[6]> <6 5> <_+> r4. <6>8
-	q q q4 <5>8 <6> q4 %155
-	r1
-	r2 <_->
-	r <6\\>8 <6 [_-]> <_+> <6>
-	r2 \bo <[_+]>4. \bc <[6]>8
+	q q4. <5>8 <6> q <[7]> %155
+	r8 \bo <[6]> <6>2 r8 \bc <[6]>
+	\bo q \bc q4. <_-> <[7-]>8
+	r4 <[6]> <6\\>8 <6 [_-]> <_+> <6 [5]>
+	r4 \bo <[6]> <_+>4. \bc <[6]>8
 	r4. <[6]>8 <9> <8>4. %160
-	r2 <9>8 <8>4.
-	<9>8 <8>4. r2
-	<[6]>8 <6 5> <4> <3> r2
+	\bo <[9]>8 \bc <[8]>4. <9>8 <8>4.
+	<9>8 <8>4 <[7!]>8 r4. <[6]>8
+	q <6 5> <4> <3> r2
+	<6>8 q4. q8 q4 q8
+	r q4 <6 5>8 r2 %165
+	<6>4 <7>8 <7 _+> r4 <6>8 <7 _+>
+	r4 <6 5>8 <_+> r4 <6>8 <7->
+	r4. <6 5->8 r4. <6 5>8
+	r4 <_+>8 <6 5> r2
+	<6>4 q8 <7> r4 <6>8 <7> %170
+	r4. <6 5>8 r4 q
 	r1
-	r %165
-	r
-	r
-	r
-	r
-	r %170
-	r
-	r
 	r2. <6>4
 	<7> <6> <7> <6>
 	<6 4> <5 3>8 <4 2> <5 3>2 %175 finis

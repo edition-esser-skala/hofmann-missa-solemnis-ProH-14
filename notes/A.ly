@@ -339,6 +339,26 @@ QuiTollisAltoLyrics = \lyricmode {
 	bis. %103 finis
 }
 
+QuoniamAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoQuoniam
+			\set Score.currentBarNumber = #109
+		R1*63 %171
+		r8 \mvTr g'\fE^\tutti g g g8. g16 g4
+		R1
+		r4 r8 a g a16 h c8 a
+		g2 g4 r\fermata \bar "||" %175 finis
+	}
+}
+
+QuoniamAltoLyrics = \lyricmode {
+	Cum San -- cto Spi -- ri -- tu %172
+
+	in glo -- ri -- a De -- i
+	Pa -- tris. %175 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

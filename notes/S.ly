@@ -351,6 +351,26 @@ QuiTollisSopranoLyrics = \lyricmode {
 	bis. %103 finis
 }
 
+QuoniamSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoQuoniam
+			\set Score.currentBarNumber = #109
+		R1*63 %171
+		r8 \mvTr e'\fE^\tutti e e d8. d16 d4
+		r r8 c h[ c16 d] e4~
+		e d8 d d4 c
+		c_( h8[ a)] h4 r\fermata \bar "||" %175 finis
+	}
+}
+
+QuoniamSopranoLyrics = \lyricmode {
+	Cum San -- cto Spi -- ri -- tu %172
+	in glo -- _
+	ri -- a De -- i
+	Pa -- tris. %175 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

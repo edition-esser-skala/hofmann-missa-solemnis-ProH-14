@@ -190,6 +190,78 @@ QuiTollisViolinoI = {
 	}
 }
 
+QuoniamViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoQuoniam
+			\set Score.currentBarNumber = #109
+		\mvTr c8\fE-\critnote e32( d e f) g16 e~ e c h g~ g c g c~ c e
+		d h~ h c c' g~ g c, a' c,~ c g' f a, g f' %110
+		\tuplet 3/2 8 { e d c } c8 e'16 g,8 e'16 d g8 d16 c a'8 c,16
+		c h8 g16 d a'8 c16 c h8 g16 a, g'8 fis16
+		g,4 g'16 a8 b16 b a~ a f f e~ e b
+		b \once \tieDashed a~ a c fis a~ a c c h~ h g g fis~ fis c
+		c h~ h d g h~ h d d c~ c e e d~ d f %115
+		f e~ e c g, d'~ d f f e~ e c' g, d'~ d f
+		f e~ e c' d, c'8 h16 c,4 r
+		R1
+		r4 r8 g' f16 a,~ a f' f \once \tieDashed g,~ g f'
+		e h c8 r4 r2 %120
+		R1
+		r2 d8\p fis32( e fis g) a16 fis8 d16
+		d g~ g h h a~ a h c h~ h h, h a~ a c
+		c h8 a16 g'4 r g16 a8 g16
+		g fis~ fis a a g~ g fis fis e~ e g g fis~ fis e %125
+		e d~ d fis fis e~ e cis16 d4 r
+		R1*2
+		g8\f h32( a h c) d16 h8 g16 a fis~ fis g d g~ g h
+		a fis~ fis g g' d~ d g, e' g,~ g d' c e, d c' %130
+		\tuplet 3/2 8 { h a g } g8 h16 d~ d a a gis~ gis f f e~ e d
+		d c~ c a a' c~ c g g fis~ fis es es d~ d c
+		c h~ h d g, d'~ d f f e~ e g g fis~ fis a
+		a g~ g h h a~ a c c h~ h g' d, \once \tieDashed a'~ a c
+		c h~ h g' a, g'~ g fis \kneeBeam g \once \tieDashed g,,~ g h h a~ a c %135
+		c h~ h d d a~ a c c \once \tieDashed h~ h g' a, g'~ g fis
+		g,4 r r2
+		R1*2
+		r2 r4 r16 \once \tieDashed e'~ e a %140
+		a gis~ gis f f e~ e d d c~ c a a'8 a,
+		r r16 d'\p d h~ h g g e~ e c' c a~ a f
+		f d~ d h' h gis~ gis e e c~ c e e a,~ a c
+		c f8 a dis, dis16 e8 gis32( fis gis a) h16 gis~ gis e
+		e a~ a c c h~ h d d c~ c c, c h~ h d %145
+		c4 r r8 r16 d\f a e'~ e g
+		f cis d8 r4 r2
+		R1
+		a8\f c32( h c d) e16 \once \tieDashed c~ c a b gis~ gis a e' c~ c a
+		b \once \tieDashed gis~ gis a e' a~ a c c h~ h d d c~ c a %150
+		\appoggiatura a gis8 e e'16 \once \tieDashed e,~ e e'~ e \once \tieDashed f,~ f e'~ e \once \tieDashed d~ d \once \tieDashed f,~
+		f \once \tieDashed e~ e d'~ d c~ c \once \tieDashed e,~ e d~ d c'~ c h~ h d,
+		d c~ c a' a dis,~ dis a' a gis~ gis h d, \once \tieDashed f~ f e32 d
+		c16 \once \tieDashed e~ e a h, \once \tieDashed a'~ a gis a,4 r
+		R1 %155
+		r8 r16 a g \once \tieDashed d'~ d f e h c8 r4
+		R1*2
+		r4 r16 \once \tieDashed d~ d f f \once \tieDashed e~ e cis a e'~ e g
+		g f~ f d d'\p d,~ d f f e~ e g g f~ f e %160
+		e d~ d f f e~ e d d c~ c e e d~ d c
+		h4 r r2
+		r c8\f e32( d e f) g16 e~ e c
+		d h~ h c g c~ c e d h~ h c c' g~ g c,
+		a' c,~ c g' f a, g f' \appoggiatura f e8 c e'16 g,~ g e' %165
+		d g~ g d c a'~ a c, c h~ h d d, a'~ a c
+		c h~ h g a, g'~ g fis g,4 g'16 a8 b16
+		b a~ a f f e~ e b b a~ a c fis a~ a c~
+		c h~ h g g fis~ fis c c h~ h d g h~ h d
+		d c8 e d f16~ f e~ e c g, \once \tieDashed d'~ d f %170
+		f e~ e c' g, d'~ d f f e~ e c' d, c'~ c h
+		c, e~ e g c e g c h g d h g4
+		r r8 c h c16 d \once \tieDashed e4~
+		e8 d16 c d8 a16 d d8 c16 h c g c8
+		c d16 c h d a d <h d, g,>4 r\fermata \bar "||" %175 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble
