@@ -572,6 +572,54 @@ CredoSopranoLyrics = \lyricmode {
 	lis. %46 finis
 }
 
+EtIncarnatusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+			\set Score.currentBarNumber = #48
+		R1
+		r8 \mvTr c'\pE^\solo c c d4. d8
+		c g c2 c8 c %50
+		c4 h h4. h8
+		c4 c r8 b b b
+		b8. as16 as4 c4. c8
+		c4 c c8. c16 c8 c
+		c4 c b4. b8 %55
+		b4 r r2
+		\mvTr b4.\fE^\tutti c8 des4 des
+		des8. des16 des8 c h2
+		c4 r8 e e8. e16 e8 e
+		f4 f es4. es8 %60
+		es4 d d2~
+		d8 d c c c4 h
+		c es8\pE d c([ es d c]
+		h4.) h8 c g c4~
+		c8[ h16 a] h8. h16 c4 r %65
+		R1
+		R1\fermataMarkup \bar "||" %67 finis
+	}
+}
+
+EtIncarnatusSopranoLyrics = \lyricmode {
+	Et in -- car -- na -- tus %49
+	est de Spi -- ri -- tu %50
+	San -- cto ex Ma --
+	ri -- a, Ma -- ri -- a
+	Vir -- gi -- ne, ex Ma --
+	ri -- a Vir -- gi -- ne, et
+	ho -- mo fa -- ctus %55
+	est.
+	Cru -- ci -- fi -- xus
+	e -- ti -- am pro no --
+	bis sub Pon -- ti -- o Pi --
+	la -- to, pas -- sus, %60
+	pas -- sus, pas --
+	sus et se -- pul -- tus
+	est, pas -- sus, pas --
+	sus et se -- pul --
+	_ tus est. %65 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

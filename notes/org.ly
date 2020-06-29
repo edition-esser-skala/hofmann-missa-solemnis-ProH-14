@@ -782,6 +782,57 @@ CredoBassFigures = \figuremode {
 	r4 <6 5>2. %47 finis
 }
 
+EtIncarnatusOrgano = {
+	\relative c {
+		\clef bass
+		\key c \dorian \time 4/4 \tempoEtIncarnatus
+			\set Score.currentBarNumber = #48
+		\mvTr c'8[\pE-\solo r as] r f r r g
+		c,[ r c] r h[ r h] r
+		c[ r c'] r as[ r as] r %50
+		g[ r g,] r f'[ r f] r
+		es[ r es] r e[ r e] r
+		f[ r f] r fis[ r fis] r
+		g[ r g] r as[ r as] r
+		a[ r a] r b[ r b,] r %55
+		es[ r c] r as r r b
+		\mvTr es[\fE-\tutti r es] r e[ r e] r
+		f[ r f] r des[ r des] r
+		c[ r c] r b![ r b] r
+		as[ r as] r a[ r a] r %60
+		b[ r b] r as[ r as] r
+		g[ r c] r g[ r g] r
+		c[ r c']\pE r as[ r as,] r
+		g[ r g] r g[ r g] r
+		g[ r g] r c[ r as'] r %65
+		f r r g\pE as r as r
+		g\fE r g, r c4 r\fermata \bar "||" %67 finis
+	}
+}
+
+EtIncarnatusBassFigures = \figuremode {
+	r2 <6 5 [_-]>4. <_!>8 %48
+	r2 <7- 5 3>4 <6>
+	r2 <6\\ 5 3>4 <\t \t \t> %50
+	<6 4>4 <[5] _!> <6 4! [_-]> <[\t \t \t]>
+	<6>2 <7- 5 3>
+	<6- 4>4 <[5] _-> <7 5 _!>2
+	<6 4> <6\\ 5 3>
+	<\t \t \t> <5 4>4 <\t 3> %55
+	<[_!]>2 <5>
+	r2 <7- 5 3>
+	<6- 4>4 \bo <[\t _-]>8 \bc <[5 \t]> <6! [5-]>2
+	<_!> <6 4! _->
+	<6> <7- [5-]> %60
+	<6- 4>4 <5 3> <6 4 2!>2
+	<7 _!> <4>4 <_!>
+	r2 <6\\>
+	<_!> <6 4>
+	<5 4>4 <\t _!>2. %65
+	<_->4. <_!>8 <6\\>2
+	<6 4>4 <[5] _!>2. %67 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

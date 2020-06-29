@@ -378,3 +378,31 @@ CredoViolinoII = {
 		e16 c c8\trill d, h' c,4 r\fermata \bar "||" %47 finis
 	}
 }
+
+EtIncarnatusViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 4/4 \tempoEtIncarnatus
+			\set Score.currentBarNumber = #48
+		\kneeBeam c8\f es'16(\p c) as,8\f c'16(\p es,) f8\f c'16(\p as) g( es) f( d)
+		\kneeBeam c8\f es'16(\p c) c,8\f g'16(\p es) \kbOn h8\f f''16(\p d) h,8\f d'16(\p h) \kbOff
+		c,8\f g'16(\p es) \kneeBeam c8 es'16( c) as,8 c'16( es,) as,8 c'16( es,) %50
+		g,8 c'16( es,) g,8 h'16( d,) f8 d'16( h) f8 as'16( h,)
+		es,8 c'16( g) es8 es'16( c) e,8 b'16( g) e8 b'16( g)
+		f8 c'16( as) f8 as'16( c,) fis,8 c'16( a') fis,8 a'16( c,)
+		\kneeBeam g,8 es''16( c) g,8 g'16( es) as,8 c'16( fis,) as,8 c'16( fis,)
+		\kbOn a,8 c'16( ges) a,8 c'16( ges) \kbOff b,8 es'16( f,) b,8 d'16( f,) %55
+		\kbOn es8 g'16( es) c,8 es'16( c) \kbOff as,8 as'16( c) b( g) as( f)
+		es8 es'16( g) es,8 c'16( as') e,8 des'16( b) e,8 des'16( b)
+		f8 des'16( b) f8 c'16( as) f8 as'16( h,) f8 as'16( h,)
+		c,8 g'16( e) c8 g'16( e) b!8 b'16( g) b,8 b'16( g)
+		\kbOn as,8 c'16( as) as,8 c'16( as) \kbOff a,8 ges'16( es) a,8 ges'16( es) %60
+		b8 ges'16( es) b8 f'16( d) \kbOn as8 d'16( h) as,8 d'16( h)
+		g,8 d''16( h) \kbOff g,8 c'16( es,) \kneeBeam g,8 d''16( c) g,8 h'16( d,)
+		c8 g'16( es) \kbOn c8 es'16( d) as,8 c'16( es) \kbOff as,,8 c'16( fis,)
+		\kbOn g,8 h'16( f) g,8 d''16( f,) g,8 es''16( c) \kbOff g,8 g'16( c)
+		\kbOn g,8 d''16( c) g,8 d''16( h) c,8 es'16( c) as,8 c'16( as) \kbOff %65
+		f8\fE c'16(\p as) g( es) f( d) r8 c16\crescE d es( e) f( fis)
+		g8\fE es16.-\critnote c'32 g,8 h' c,4 r\fermata \bar "||"
+	}
+}

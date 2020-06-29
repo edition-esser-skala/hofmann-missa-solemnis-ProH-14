@@ -376,6 +376,34 @@ CredoViolinoI = {
 	}
 }
 
+EtIncarnatusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 4/4 \tempoEtIncarnatus
+			\set Score.currentBarNumber = #48
+		\kbOn c8\f g''16(\p es) as,,8\f es''16( c) f,8\f as'16(\p f) es( c) d( h)
+		c,8\f g''16(\p es) c,8\f es'16(\p c) h,8\f as''16(\p f) h,,8\p f''16(\p d)
+		c,8\f es'16(\p c) c,8 g''16( es) as,,8 es''16( c) as,8 es''16( c) %50
+		g,8 es''16( c) g,8 d''16( h) \kbOff f8 d'16( h) f8 as'16( h,)
+		es,8 c'16( g) es8 es'16( c) e,8 des'16( b) e,8 g'16( b,)
+		f8 c'16( as) f8 as'16( c,) fis,8 c'16( a') fis,8 a'16( c,) \kbOn
+		g,8 g''16( es) g,,8 es''16( c) as,8 es''16( c) as,8 es''16( c)
+		a,8 es''16( c) a,8 es''16( c) \kbOff b,8 es'16( f,) b,8 d'16( f,) %55
+		\kbOn es8 b''16( g) c,,8 g''16( es) \bp #-1.8 #-1.4 as,,8 c'16( as') g( es) f( d)
+		\kbOff es,8 es'16( g) es,8 c'16( as') \kbOn e,8 b''16( des,) e,8 b''16( des,)
+		\kbOff f,8 b'16( des,) f,8 as'16( c,) f,8 as'16( h,) f8 as'16( h,)
+		e,8 e'16( c) c,8 e'16( c) \kbOn b,!8 g''16( e) b,8 g''16( e)
+		as,,8 as''16( f) as,,8 as''16( f) a,,8 es''16( c) a,8 es''16( c) %60
+		b,8 es'16( b) b,8 d'16( b) as,8 f''16( d) as,8 f''16( d)
+		g,,8 f''16( d) g,,8 es''16( c) g,8 d''16( c) g,8 d''16( h)
+		c,8 es'16( c) c,8 es'16( d) \bp #-1.5 #-2 as,8 c'16( es) \kbOff as,,8 c'16( fis,) \kbOn
+		g,8 h'16( f) g,8 d''16( f,) g,8 es''16( c) \kbOff g,8 g'16( c) \kbOn
+		g,8 d''16( c) g,8 d''16( h) c,8 g''16( es) as,,8 es''16( c) %65
+		f,8\f as'16(\p f) \kbOff es( c) d( h) c2~\cresc
+		c8\fE es,16. c'32 g,8 h' c,4 r\fermata \bar "||" %67 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

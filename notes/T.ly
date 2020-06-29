@@ -516,6 +516,54 @@ CredoTenoreLyrics = \lyricmode {
 	lis. %46 finis
 }
 
+EtIncarnatusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+			\set Score.currentBarNumber = #48
+		R1
+		r8 \mvTr g\pE^\solo g g as4. as8
+		g4 r8 es' es4 es8 es %50
+		es4 d d4. d8
+		es([ d)] c4 r8 des des des
+		des8. c16 c4 es4. es8
+		es4 es es8. es16 es8 es
+		es4 es es d %55
+		es r r2
+		\mvTr g,4.\fE^\tutti as8 b4 b
+		b8. b16 as8 as f2
+		g4 r8 c des8. des16 des8 des
+		c4 c c4. c8 %60
+		b4 b h h
+		h g g4. g8
+		g4 r c4.\p c8
+		d4. d8 g,4 g
+		g4. g8 g4 r %65
+		R1
+		R\fermataMarkup \bar "||" %67 finis
+	}
+}
+
+EtIncarnatusTenoreLyrics = \lyricmode {
+	Et in -- car -- na -- tus %49
+	est de Spi -- ri -- tu %50
+	San -- cto ex Ma --
+	ri -- a, Ma -- ri -- a
+	Vir -- gi -- ne, ex Ma --
+	ri -- a Vir -- gi -- ne, et
+	ho -- mo fa -- ctus %55
+	est.
+	Cru -- ci -- fi -- xus
+	e -- ti -- am pro no --
+	bis sub Pon -- ti -- o Pi --
+	la -- to, pas -- sus, %60
+	pas -- sus, pas --
+	sus et se -- pul -- tus
+	est, pas -- sus,
+	pas -- sus et se --
+	pul -- tus est. %65 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

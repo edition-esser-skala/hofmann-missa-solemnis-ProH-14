@@ -176,6 +176,8 @@ trillE = \tweak self-alignment-X #CENTER ^\markup { \hspace #1.5 [ \musicglyph #
 extraNat = \once \override Accidental.restore-first = ##t
 kneeBeam = \once \override Beam.auto-knee-gap = #0
 noKneeBeam = \once \override Beam.auto-knee-gap = #5.5
+kbOn = \override Beam.auto-knee-gap = #0
+kbOff = \override Beam.auto-knee-gap = #5.5
 rh = \change Staff = "RH"
 lh = \change Staff = "LH"
 xE = \override LyricText.font-shape = #'italic
@@ -635,6 +637,7 @@ tempoGloria = \tempoMarkup "Allegro"
 	tempoQuoniam = \tempoMarkup "Andante"
 	tempoInGloria = \tempoMarkup "Allegro"
 tempoCredo = \tempoMarkup "Allegro"
+	tempoEtIncarnatus = \tempoMarkup "Adagio"
 
 
 \include "notes/clno1.ly"

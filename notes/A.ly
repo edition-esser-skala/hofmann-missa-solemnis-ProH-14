@@ -554,6 +554,54 @@ CredoAltoLyrics = \lyricmode {
 	lis. %46 finis
 }
 
+EtIncarnatusAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+			\set Score.currentBarNumber = #48
+		R1
+		r8 \mvTr es\pE^\solo es es f4. f8
+		es4 r8 g fis4 fis8 fis %50
+		g4 g as4. as8
+		g4 g r8 g g g
+		f8. f16 f4 a!4. a8
+		g4 g fis8. fis16 fis8 fis
+		ges4 ges f4. f8 %55
+		g4 r r2
+		\mvTr g4.\fE^\tutti g8 g4 g
+		f8. f16 f8 f f16([ g] as4 g16[ f)]
+		e4 r8 g g8. g16 g8 g
+		as4 as ges4. ges8 %60
+		ges4 f f4. f8
+		f4 es d4. d8
+		c4 g'8\pE g fis4 fis
+		g8([ as)] g([ f)] es4. d16([ c)]
+		\appoggiatura es8 d4. d8 c4 r %65
+		R1
+		R\fermataMarkup \bar "||" %67 finis
+	}
+}
+
+EtIncarnatusAltoLyrics = \lyricmode {
+	Et in -- car -- na -- tus %49
+	est de Spi -- ri -- tu %50
+	San -- cto ex Ma --
+	ri -- a, Ma -- ri -- a
+	Vir -- gi -- ne, ex Ma --
+	ri -- a Vir -- gi -- ne, et
+	ho -- mo fa -- ctus %55
+	est.
+	Cru -- ci -- fi -- xus
+	e -- ti -- am pro no --
+	bis sub Pon -- ti -- o Pi --
+	la -- to, pas -- sus, %60
+	pas -- sus, pas -- sus
+	et se -- pul -- tus
+	est, pas -- sus, pas -- sus,
+	pas -- sus et se --
+	pul -- tus est. %65 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
