@@ -350,6 +350,133 @@ QuoniamBassoLyrics = \lyricmode {
 	Pa -- tris. %175 finis
 }
 
+InGloriaBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoInGloria
+			\set Score.currentBarNumber = #176
+			\mvTr c2\fE^\tutti d4. d8
+			e2 f4 e
+			d2\trill c
+			r4 g'4. fis16[ e] fis[ g a8]~
+			a[ g16 fis] g[ a g fis] e8[ fis] \once \tieDashed g4~ %180
+			g8[ fis16 e] fis4 g8 g4 f8
+			e[( f16 g] a[ g] a4 g16[ fis]) g8 h,(
+			c16[ h]) c8 r c( d4) c
+			f( g) c, r
+			R1*3 %187
+			c2 d4. d8
+			e2 f4 e
+			d2 c8 c([ e f] %190
+			g16[ f)] g8 r4 r8 d([ f g]
+			a16[ gis]) a8 r4 r8 e([ fis gis)]
+			a4 r r2
+			R1*2 %195
+			e2 fis4. fis8
+			g2 a4 g
+			fis2 e4 r
+			R1*2 %200
+			a,2 h4. h8
+			c2 d4 c
+			h2 a4 r8 \once \tieDashed e'~
+			e[ dis16 cis] dis[ e] fis4 e16[ dis] e[ fis g8]~
+			g[ fis16 e] fis[ g] a4 g16[ fis] g[ a h8]~ %205
+			h[ a16 g] a8[ g] fis4 r
+			g,2 a4. a8
+			h2 c4 h
+			a2 g4 r8 g'~
+			g[ f!16 e] f8 \once \tieDashed f~ f[ e16 d] e4 %210
+			R1
+			r2 g2~
+			g8[ fis16 e] fis[ g] a4 g16[ fis] g[ a g fis]
+			e8[ fis] g4. fis16[ e] fis4
+			g r r2 %215
+			r r8 g4 f!8
+			e[ f16 g] a[ g] a4 g16[ fis] g8[ h,]
+			c c([ d e)] f f4 e8
+			d16[ c] d4 e16[ f] g8 g4 f8
+			e16[ d] e4 f16[ g] a8 a16[ g] f[ e \once \tieDashed f8]~ %220
+			f[ g16 f] e[ d] e4 f16[ e] d8[ c]
+			g4 r c2
+			d4. d8 e4 e8 f
+			g4 g, r2
+			r4 r8 \once \tieDashed g'~ g[ fis16 e] fis[ g a8]~ %225
+			a[ g16 fis] g[ a g f] e4 r8 g~
+			g[ f16 e] f[ g f e] d4 r8 \once \tieDashed f~
+			f[ e16 d] e[ f e d] c4 r8 e~
+			e[ d16 c] d[ e d c] h8 g c4
+			g g~ g2~ %230
+			g1~
+			g~
+			g
+			c4 c4. h16[ a] h[ c d8]~
+			d[ c16 h] c[ d] e4 d16[ c] d[ c h a] %235
+			g8 c g4 c r
+			r2 c8 c g4
+			c g c r\fermata \bar "|." %238 FINIS
+	}
+}
+
+InGloriaBassoLyrics = \lyricmode {
+	In glo -- ri -- %176
+	a De -- i
+	Pa -- tris,
+	a -- _ _
+	_ _ _ %180
+	_ men, a -- men,
+	a -- men, a --
+	men, a -- men,
+	a -- men,
+
+	in glo -- ri -- %188
+	a De -- i
+	Pa -- tris, a -- %190
+	men, a --
+	men, a --
+	men,
+
+	in glo -- ri -- %196
+	a De -- i
+	Pa -- tris,
+
+	in glo -- ri -- %201
+	a De -- i
+	Pa -- tris, a --
+	_ _ _ _
+	_ _ _ _ %205
+	_ men,
+	in glo -- ri --
+	a De -- i
+	Pa -- tris, a --
+	men, a -- men, %210
+
+	a --
+	_ _ _ _
+	_ _ _ _
+	men, %215
+	a -- men,
+	a -- _ _ _ _
+	men, a -- men, a -- _
+	_ _ _ men, a -- _
+	_ _ _ men, a -- _ %220
+	_ _ _ _
+	men, in
+	glo -- ri -- a De -- i
+	Pa -- tris,
+	a -- _ %225
+	_ men, a --
+	_ men, a --
+	_ men, a --
+	_ _ men, a --
+	men, a -- %230
+
+	men, a -- _ _ %234
+	_ _ _ _ %235
+	_ men, a -- men,
+	a -- men, a --
+	men, a -- men. %238 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

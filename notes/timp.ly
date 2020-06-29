@@ -82,3 +82,29 @@ QuoniamTimpani = {
 		g4 g g r\fermata \bar "||" %175 finis
 	}
 }
+
+InGloriaTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoInGloria
+			\set Score.currentBarNumber = #176
+		R1*14 %189
+		r2 c4\fE r %190
+		g r r2
+		R1*29 %220
+		r2 r4 r8 c
+		g g16 g g8 g c4 r
+		R1
+		g4 r r2
+		R1*4 %228
+		r2 g4 c
+		g r r2 %230
+		R1*2
+		g4 g8. g16 g4 g
+		c r r2
+		R1 %235
+		g8 c g4 c r
+		r2 c4 g
+		c g c r\fermata \bar "|." %238 FINIS
+	}
+}

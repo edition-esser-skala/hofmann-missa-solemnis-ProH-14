@@ -313,6 +313,134 @@ QuoniamTenoreLyrics = \lyricmode {
 	Pa -- tris. %175 finis
 }
 
+InGloriaTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoInGloria
+			\set Score.currentBarNumber = #176
+		R1*3 %178
+		\mvTr g2\fE^\tuttiE a4. a8
+		h2 c4 h %180
+		a2\trill g
+		r4 c4. h16[ a] h[ c d8]~
+		d[ c16 h] c[ d c h] a8[ h] c4~
+		c8[ h16 a] h4 c8 c4 c8
+		h[ c16 d] e[ d] e4 d16[ c] d8 fis, %185
+		g16([ fis)] g8 r g a4 g
+		c d g,8 g([ a h]
+		c16[ h)] c8 r4 r8 d16[( c] h[ a)] h8
+		r e16([ d] c[ h a g] a4) g
+		f2 e4 r %190
+		r8 g([ h c] d16[ c)] d8 r4
+		r8 a[( c d] e16[ d)] e8 r4
+		r a, h4. h8
+		c2 d4 c
+		h2 a8 a([ c d)] %195
+		e4 r8 e~ e[ dis16 cis] dis[ e fis8]~
+		fis[ e16 dis] e[ fis e d] cis8[ dis] e4~
+		e dis e r
+		R1*3 %201
+		e,2 fis4. fis8
+		gis2 a4 g
+		fis2 g4 r8 h(
+		c) d r c( d) e r4 %205
+		r r8 e4( d16[ c] d8[ c)]
+		h4 h c4. c8
+		d2 e4 d
+		c2 h4 r8 h(
+		a) d r a( g) c r4 %210
+		R1
+		r2 g
+		a4. a8 h2
+		c4 h a2
+		g4 r8 g c[ d] e[ d16 e] %215
+		c4 d g, r
+		r c~ c8[ h16 a] h[ c d8]
+		c4 r r8 a4 g8
+		f16[ e] f4 g16[ a] h8 h4 a8
+		g16[ fis] g4 a16[ h] c8 c16[ h] a8[ d]~ %220
+		d16[ c h a] g8 c4 c8 d([ e)]
+		d4 r r c~
+		c8[ h16 a] h[ c] d4 c16[ h] c4
+		r g a a8 a
+		h4. h8 c([ h)] a4 %225
+		r r8 d( e) e r h(
+		e)^\critnote a, r c( d) d r a(
+		d) g, r h( c) c r g(
+		c) f, r a( h) h c4
+		h h c4. c8 %230
+		d2 c8([ a)] g4
+		d'2 g,
+		g1
+		g4 r8 c( a) a r d(
+		h) h r e( c) c r d~ %235
+		d c c([ h)] c4 r
+		r2 c8 c c([ h)]
+		c4 h c r\fermata \bar "|." %238 FINIS
+	}
+}
+
+InGloriaTenoreLyrics = \lyricmode {
+	In glo -- ri -- %179
+	a De -- i %180
+	Pa -- tris,
+	a -- _ _
+	_ _ _
+	_ men, a -- men,
+	a -- _ _ _ _ men, %185
+	a -- men, a -- _ _
+	_ _ men, a --
+	men, a -- men,
+	a -- men,
+	a -- men, %190
+	a -- men,
+	a -- men,
+	in glo -- ri --
+	a De -- i
+	Pa -- tris, a -- %195
+	men, a -- _
+	_ _ _
+	_ men,
+
+	in glo -- ri -- %202
+	a De -- i
+	Pa -- tris, a --
+	men, a -- men, %205
+	a --
+	men, in glo -- ri --
+	a De -- i
+	Pa -- tris, a --
+	men, a -- men, %210
+
+	in
+	glo -- ri -- a
+	De -- i Pa --
+	tris, a -- _ _ %215
+	_ _ men,
+	a -- _
+	men, a -- _
+	_ _ _ men, a -- _
+	_ _ _ men, a -- _ %220
+	men, a -- men, a --
+	men, a --
+	_ _ _ men,
+	in glo -- ri -- a
+	De -- i Pa -- tris, %225
+	a -- men, a --
+	men, a -- men, a --
+	men, a -- men, a --
+	men, a -- men, a --
+	men, in glo -- ri -- %230
+	a De -- i
+	Pa -- tris,
+	a --
+	men, a -- men, a --
+	men, a -- men, a -- %235
+	men, a -- men,
+	a -- men, a --
+	men, a -- men. %238 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

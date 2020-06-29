@@ -540,7 +540,7 @@ InGloriaOrgano = {
 		e f16 g a g a4 g16 fis g8 h,
 		c16 h c8 r c d4 c
 		f g c,8 \clef "treble_8" c'4 c8
-		h c16 d e d e4 d16 cis d8 fis, %185
+		h c16 d e d e4 d16 c? d8 fis, %185
 		g16 fis g8 r g a4 g
 		c d g,8 g a h
 		\clef bass c,2 d
@@ -554,7 +554,7 @@ InGloriaOrgano = {
 		\clef bass e,2 fis4. fis8
 		g2 a4 g
 		fis2 e4 \clef treble << {
-			r8 e''
+			r8 \once \tieDashed e''~
 			e8 dis16 cis dis e fis4 e16 dis e fis e d
 			cis8 dis e2 d4 %200
 		} \\ {
@@ -582,9 +582,9 @@ InGloriaOrgano = {
 		g8 fis16 e fis g a4 g16 fis g a g fis
 		e8 fis g4. fis16 e fis4
 		g \clef "treble_8" r8 g %215
-		c d e d16 e c4 d \clef bass g,8 g4-! f!8-!
+		c d e d16 e c4 d g,8 \clef bass g4-! f!8-!
 		e f16 g a g a4 g16 fis g8 h,
-		c4 r8 f f4 e
+		c4 r8 e f4 e
 		d16 c d4 e16 f g8 g4 f8
 		e16 d e4 f16 g a8 a16 g f e f8~ %220
 		f g16 f e d e4 f16 e d8 c
@@ -604,7 +604,7 @@ InGloriaOrgano = {
 		d c16 h c d e4 d16 c d c h a %235
 		g8 c g' g, c4 r
 		r2 c8 c g' g,
-		c4-! g-! c-! r\fermata \bar "|." %238 finis
+		c4-! g-! c-! r\fermata \bar "|." %238 FINIS
 	}
 }
 
@@ -616,62 +616,62 @@ InGloriaBassFigures = \figuremode {
 	r %180
 	r
 	<6>2 <4 2>4. <6>8
-	r2 <5>8 <6>4.
+	\bo <[9]>4 \bc <[8]> <5>8 <6>4.
 	<6 5>1
-	r2 <4 2+>4. <6>8 %185
-	r2 <5>8 <6\\>4.
+	<[6]>2 <4 2+>4 <[_+]>8 <6> %185
+	\bo <[9]>4 \bc <[8]> <5>8 <6\\>4.
 	<6 5>4 <_+> <8 _+> \bassFigureExtendersOn <8 3>8 <8 3\!> \bassFigureExtendersOff
-	r2 <7>4 <6>
-	<7> <6>2 q4
-	<7> <6>2. %190
-	r1
+	\bo <[5]>4 <6>8 \bc <[5]> <7>4 <6>
+	<7> <6> \bo <[6 3]>8 \bc <[\t 4]> <6>4
+	<7> <6>2 <[6]>4 %190
+	r2. <[6]>4
 	r2 r8 <_+> <3> q
 	r2 <7>4 <6\\>
 	<7> <6> <_+>8 <4+> <6>4
 	<7> <6\\> <10 8>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff %195
-	r2 <7>4 <6\\>
-	<7> <6> <_+>8 <4+> <6>4
+	<[_!]>2 <7>4 <6\\>
+	<7> <6> \bo <[5] _+>8 \bc <[6+] 4+> <6>4
 	<7> <6\\>2.
 	r1
 	r %200
 	<4>4 <_!> <7> <6\\>
-	<7> <6> <_+> <6>
-	<7> <6\\>2.
-	<4 2+>4 <6 [_+]>8 <\t \t> <4 2>2
-	q q %205
-	q <7>8 <6>4.
-	r2 <7>4 <6\\>
-	<7> <6>8 <5> <6 4+>4 <6>
-	<7> <6\\>2.
-	<4 2>8 <6>4. <4 2>8 <6>4. %210
+	<7> <6> <_+> <6 [4+]>
+	<[6\\]>1
+	<4 2+>4 <6 [_+]>8 <\t \t> <[5] 2>4. <[6]>8
+	<4 2> <[6]>4 <[6\\]>8 <[6\\] 4 2> <[6]>4 <[5+]>8 %205
+	<4 2>4. <[6]>8 <7>4 <6>8 <[5]>
+	\bo <[9]>4 \bc <[8]> <7> <6\\>
+	<7> <6>8 <5+> <[5 3]>8 <6 4+> <6>4
+	<7> <6\\> \bo <[9 4]> \bc <[8 3]>
+	<[5] 2>8 <6>4. <[5] 2>8 <6>4. %210
 	r1
 	r2 <4>4 <3>
 	<4 2> <6> <4 2>2
-	<6> <4 2>
-	r r8 <7 _+> <5>4 %215
+	<6> <4 2>4 <[6]>
+	r2 r8 <7 _+> <5>4 %215
 	<6 5> <_+>2.
-	<6>2 <4 3>8 \bassFigureExtendersOn <4 3\!>16 q \bassFigureExtendersOff r4
-	r1
+	<6>2 <4 3>8 \bassFigureExtendersOn <4 3\!>16 q \bassFigureExtendersOff r8 <[6]>
+	r4. \bo <[5-]> <2>8 \bc <[6]>
 	r2.. <6>8
 	<5>2.. <6>8 %220
 	<4 2>4 <6> <4 2> <6>
 	r1
 	<9 7>4 <8 6> <9 7> <8 6>
 	r2 <7>4 <6\\>
-	r4. <3>8 <4 2>4 <6> %225
+	\bo <[7]> \bc <[6]>8 <3> <4 2>4 <6> %225
 	<2>2 <7>8 <6>4.
 	<4 2>2 <7>8 <6>4.
 	<4 2>2 <7>8 <6>4.
-	<4 2>1
-	r %230
+	<4 2>2 <[6]>
+	r1 %230
 	r
 	r
 	r
 	r2 <4 2>
 	q q %235
-	r4 <4>8 <3> r2
+	<[7]>4 <4>8 <3> r2
 	r2. <4>8 <3>
-	r1 %238 finis
+	r1 %238 FINIS
 }
 
 % Organo = {

@@ -93,3 +93,44 @@ QuoniamClarinoII = {
 		g2 g4 r\fermata \bar "||" %175 finis
 	}
 }
+
+InGloriaClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoInGloria
+			\set Score.currentBarNumber = #176
+		R1*14 %189
+		r2 c'8\fE c16 c c8 c %190
+		g4 r r8 f'4 e8
+		e4 r r8 e,16 e e8 e
+		e4 r r2
+		R1*14 %207
+		r4 r8 g g4 d'
+		c2 d4 r8 e
+		e d r d c4 c %210
+		R1*3
+		r4 d e d
+		d r r2 %215
+		R1*2
+		r8 c4 c8 c4 r
+		r8 d4 d8 d4 r
+		e2 e4 r8 d %220
+		d4 r8 c c c d e
+		d g,16 g g8 g c4 r
+		R1
+		g4 r r2
+		R1 %225
+		r8 d'4 d8 d c r d
+		c4 r8 c f4 r8 c
+		d g, r g e'4 r8 c
+		c d r d4 d8 c g
+		g4 r r2 %230
+		R1*2
+		g4. g16 g g2
+		g4 c d2
+		e f4 r8 d %235
+		d c g8. g16 g4 r
+		r2 g8 g16 g g8 g
+		g4 g g r\fermata \bar "|." %238 FINIS
+	}
+}

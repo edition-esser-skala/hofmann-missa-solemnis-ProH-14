@@ -261,3 +261,69 @@ QuoniamViolinoII = {
 		c d16 c h d a d <h d, g,>4 r\fermata \bar "||" %175 finis
 	}
 }
+
+InGloriaViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoInGloria
+			\set Score.currentBarNumber = #176
+		R1*6 %181
+		c2\fE d4. d8
+		e2 f4 e
+		d2 c
+		r4 g'4. fis16 e fis g a8~ %185
+		a g16 fis g a g fis e8 fis g4~
+		g8 fis16 e fis4 g8 g4 f8
+		e f16 g a8 g f16 e f8 r f
+		g16 f g8 r c, d4 e16 f g8
+		a4 g g8 e g a %190
+		d, g4 g8 f16 e f8 a h
+		e, a4 a8 gis16 fis gis8 a h
+		e,4 r8 a4 gis16 fis gis a h8~
+		h a16 gis a h a g fis8 gis a4~
+		a8 gis16 fis gis4 a8 a4 a8 %195
+		g16 fis g8 r g a16 g a8 r a
+		h16 a h8 g16 a g fis e8 fis g4
+		a16 g a4 h16 a g4 e
+		fis4. fis8 g2
+		a4 g fis2 %200
+		e4 r8 a4 gis16 fis gis a h8~
+		h a16 gis a4 r a,
+		h4. h8 c4 c8 h
+		a4 h h r8 \once \tieDashed e~
+		e fis16 g a g fis4 g16 a h a g fis %205
+		e4 r r r8 a~
+		a g16 fis g8 g4 fis16 e fis g \once \tieDashed a8~
+		a g16 fis g a g fis e8 fis \once \tieDashed g4~
+		g8 fis16 e fis g a4 g16 fis g4
+		r2 c, %210
+		d4. d8 e2
+		f4 e d2
+		c4 r8 c d16 c d8 r d
+		e16 d e8 r e16 d c h c4 d16 c
+		h4 h'16 a g fis e8 fis \once \tieDashed g4~ %215
+		g8 fis16 e fis4 g r
+		r r8 e d16 c d8 g4
+		g8 e f g c,4 f8 g
+		a2 d,8 g4 a8
+		h2 e,8 e a16 g a8 %220
+		r d, g16 f g8 r f4 g8
+		g4 r e2
+		f4. f8 g g4 a8
+		d, d r g4 fis16 e fis g a8~
+		a g16 fis g4 e8 fis16 g a4~ %225
+		a d, e r
+		r r8 a16 g f e d4 e16 f
+		g8 \once \tieDashed g~ g16 a g f e d c4 d16 e
+		f8 \once \tieDashed f~ f16 g f e d8 g g4
+		g r8 g4 fis16 e fis g a8~ %230
+		a g16 fis g a g f e8 fis g4~
+		g8 f16 e f4~ f8 e16 d g8 f
+		e4. d16 c d2
+		e8 g4 f16 e f g a4 g16 f
+		g f g8 r g a16 g a8 r a %235
+		g g g4 g c\p
+		d4. d8 e\fE e16 c' d,8 h'
+		c,4 <g d' h'> <c, g' e' c'> r\fermata \bar "|." %238 FINIS
+	}
+}
