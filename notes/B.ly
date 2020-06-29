@@ -477,6 +477,81 @@ InGloriaBassoLyrics = \lyricmode {
 	men, a -- men. %238 FINIS
 }
 
+CredoBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoCredo
+		\mvTr c4\fE^\tutti c c8 e16 f g8 a16([ h)]
+		c4 c, c'8 h16 c a8 g16([ a)]
+		h8 h, r g' a g fis([ e16 fis)]
+		g4 r r8 g fis d
+		g g16 g d4 g, r %5
+		R1
+		r4 g'8 g fis4 f8 f
+		e4. fis8 g4. e8
+		d4. d8 c4 c8 c
+		d4 e8 e f8. f16 f4 %10
+		f4. f8 g c, g8. g16
+		c4 r r2
+		R1*7 %19
+		\mvTr g'4.\pE^\solo a8 h a16([ g)] a4 %20
+		g r r h8 a
+		gis([ a16 h)] c8 h a8. a16 gis4
+		r2 r8 f f f
+		f8. e16 e4 r8 d4 d8
+		d4 c8 f e[ gis a h]~ %25
+		h a a([ gis)] a4 r
+		R1*9 %35
+		r2 r4 c,
+		g' g8 e a4. a8
+		g4 g a2
+		g4 c2 h4
+		c^\critnote c,8 c g'4 g, %40
+		r r8 \mvTr g'\fE^\tutti c([ g)] e c
+		a' a r4 r r8 g
+		c16([ h a g] f[ e d c] g'8) g, r g'
+		c c,16 c g4 c r
+		r8 c' a g16 fis g2 %45
+		c,4 r r2
+		R1\fermataMarkup \bar "||" %47 finis
+	}
+}
+
+CredoBassoLyrics = \lyricmode {
+	Cre -- do, cre -- do in u -- num
+	De -- um, Pa -- trem o -- mni -- po --
+	ten -- tem, fa -- cto -- rem coe --
+	li, fa -- cto -- rem
+	coe -- li et ter -- rae, %5
+
+	vi -- si -- bi -- li -- um %7
+	o -- _ _ _
+	_ mni -- um, vi -- si --
+	bi -- li -- um o -- mni -- um %10
+	et in -- vi -- si -- bi -- li --
+	um.
+
+	Et ex Pa -- tre na -- %20
+	tum an -- te
+	o -- mni -- a sae -- cu -- la.
+	Lu -- men de
+	lu -- mi -- ne, De -- um
+	ve -- rum de De -- %25
+	o ve -- ro.
+
+	Qui %36
+	pro -- pter nos ho -- mi --
+	nes et pro --
+	pter, pro -- pter
+	no -- stram sa -- lu -- tem %40
+	de -- scen -- dit de
+	coe -- lis, de --
+	scen -- dit, de --
+	scen -- dit de coe -- lis,
+	de -- scen -- dit de coe -- %45
+	lis. %46 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

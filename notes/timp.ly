@@ -108,3 +108,29 @@ InGloriaTimpani = {
 		c g c r\fermata \bar "|." %238 FINIS
 	}
 }
+
+CredoTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoCredo
+		c4\fE c c8 c16 c g8 g
+		c4 c r2
+		R1
+		g4 r r2
+		g4 r g r %5
+		r2 r4 g
+		g r r2
+		R1*3 %10
+		r2 g8 c g8. g16
+		c4 r r2
+		r4 r8 g c4 r
+		R1*27 %40
+		r4 r8 g\fE c4 r
+		r2 r4 r8 g
+		c4 r8 c g4 r8 g
+		c c16 c g8 g c4 r
+		c r g8 g16 g g8 g %45
+		c4 r r2
+		R1\fermataMarkup \bar "||" %47 finis
+	}
+}

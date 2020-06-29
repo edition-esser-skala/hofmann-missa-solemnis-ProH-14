@@ -491,6 +491,87 @@ InGloriaSopranoLyrics = \lyricmode {
 	men, a -- men. %238 FINIS
 }
 
+CredoSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoCredo
+		\mvTr e'4\fE^\tutti e e8 e16 e d8 d
+		e4 e c8 c16 c c8 c
+		h h r h a a a([ g16 a)]
+		h8 g16([ fis)] g([ a)] h([ c)] d4~ d16[ e d c]
+		h8 h a4 g r %5
+		R1*3
+		r2 r4 c8 c
+		h4 b8 b a8. a16 a4 %10
+		f'8 e d c h( c4) h8
+		c4 r r2
+		r r4 \mvTr c8\pE^\solo d
+		e d16([ c)] d8. d16 c4 c~
+		c8 d16 e d8 c c h r4 %15
+		r8 c4 h16 c a8 a r d~
+		d c16 d h8( e4) d8 c4~
+		c8 h a8. a16 g4 r
+		R1*8 %26
+		r2 r4 r8 e'~
+		e d16([ c)] d8 e c16([ h)] a8 c h
+		a h16([ c)] h8 a gis16([ fis)] e8 r4
+		r8 e'4 f16([ g)] \appoggiatura d8 cis4. cis8 %30
+		d4 r r8 d4 e16([ f)]
+		\appoggiatura c8 h4. h8 c4 r
+		r g'4. f16([ e)] f4~
+		f8[ e16 d] e4. d16[ c] d4~
+		d8[ c16 h] c[ d] e4 d16[ c] d[ e f d] %35
+		e8 d16 c d8. d16 c4 r
+		R1*3
+		r2 r4 r8 \mvTr d\fE^\tuttiE %40
+		g([ d)] h g e' e r e
+		f f r4 r2
+		r4 r8 g g16([ f e d] c[ h a g]
+		e'8) e16 e d4\trill c r
+		r8 c c c16 c c4( h) %45
+		c r r2
+		R1\fermataMarkup \bar "||" %47 finis
+	}
+}
+
+CredoSopranoLyrics = \lyricmode {
+	Cre -- do, cre -- do in u -- num
+	De -- um, Pa -- trem o -- mni -- po --
+	ten -- tem, fa -- cto -- rem coe --
+	li, fa -- cto -- rem coe --
+	li et ter -- rae, %5
+
+	vi -- si -- %9
+	bi -- li -- um o -- mni -- um %10
+	et in -- vi -- si -- bi -- li --
+	um.
+	Et in
+	u -- num Do -- mi -- num, Do --
+	mi -- num Je -- sum Chri -- stum, %15
+	Fi -- li -- um De -- i, Fi --
+	li -- um De -- i u --
+	ni -- ge -- ni -- tum.
+
+	Ge -- %27
+	ni -- tum non fa -- ctum, con -- sub --
+	stan -- ti -- a -- lem Pa -- tri,
+	per quem o -- mni -- %30
+	a, per quem
+	o -- mni -- a,
+	per quem o --
+	_ _ _
+	_ _ _ _ %35
+	_ mni -- a fa -- cta sunt.
+
+	De -- %40
+	scen -- dit de coe -- lis, de
+	coe -- lis,
+	de -- scen --
+	dit de coe -- lis,
+	de -- scen -- dit de coe -- %45
+	lis. %46 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

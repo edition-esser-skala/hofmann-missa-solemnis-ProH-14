@@ -134,3 +134,29 @@ InGloriaClarinoI = {
 		e4 d\trill c r\fermata \bar "|." %238 FINIS
 	}
 }
+
+CredoClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoCredo
+		e'4\fE e e8 e16 e d8 d
+		e4 e8. e16 e4 r
+		R1
+		g4 r g a
+		g8 g16 g g8 fis g4 r %5
+		r2 r8 g4 fis8
+		g4 r r2
+		R1*3 %10
+		r4 f8 e d e d8. d16
+		c4 r r2
+		r4 r8 d c4 r
+		R1*27 %40
+		r4 r8 d\fE e e r e
+		f f r4 r r8 d
+		e4 r8 e d4 r8 d
+		e e16 e d4\trill c r
+		e8 e16 e e8 e d2\trill %45
+		c4 r r2
+		R1\fermataMarkup \bar "||" %47 finis
+	}
+}

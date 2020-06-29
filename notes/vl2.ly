@@ -327,3 +327,54 @@ InGloriaViolinoII = {
 		c,4 <g d' h'> <c, g' e' c'> r\fermata \bar "|." %238 FINIS
 	}
 }
+
+CredoViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoCredo
+		e'4\fE e,16( f32 g a h c d) e16 c c8\trill g16 g' g8\trill
+		e8 e,16 f g32( e f g a h c d) e16-! e( d e) r c' c8\trill
+		r16 d,( c d) r h' h8\trillE r16 c,( h c) r a' a8\trill
+		h, g16 fis g a h c d g d d d a' d, c
+		h g' g8\trill a, fis' g,16 d' d8\trill e16-! gis,8 a16 %5
+		d fis,8 g16 c8.(\trill h32 a) h16 g' g8\trill a,8 fis'
+		g,4 r r2
+		r2 r4 g8 g
+		fis4 f8 f e2
+		f4 g4. f8 f4 %10
+		a16 f' g, e' f, d' e, c' d, h' c e, d8 h'
+		c,16 g'' g8\trill a16 cis,8 d16 g h,8 c16 f8.(\trill e32 d)
+		e16 c c8\trill d, h' c,4 r
+		R1
+		r2 r16 d' d8\trill g16 h,8 c16 %15
+		c4 r r2
+		R1
+		r2 r16 d d8\trill e16 gis,8 a16
+		d fis,8 g16 c8.(\trill h32 a) h16 g' g8\trill a, fis'
+		g,4 r r2 %20
+		R1
+		r2 r4 r16 h h8\trill
+		c a, r4 r2
+		R1*2 %25
+		r2 r16 e'' e8\trill f16 a,8 h16
+		e gis,8 a16 d8.(\trill c32 h) c16 a' a8\trill h, gis'
+		a,4 r r2
+		r r16 h h8\trill e16 gis,8 a16
+		a4 r r2 %30
+		r16 a' a8\trill b16 cis,8 d16 d4 r
+		r2 r16 g g8\trill a16 h,8 c16
+		c8 c, r16 g''\p g8\trill a16 cis,8 d16 d f f8\trill
+		g16 h,8 c16 c e e8\trill f16 a,8 h16 h d d8\trill
+		e4 r16 e e8\trill f4 r16 h h8\trill %35
+		c4 r r2
+		R1*3
+		r2 r4 r8 d,\fE %40
+		g d h g g g r e'
+		f f r f16-! e-! d-! c-! h-! a-! g-! f-! e-! d-!
+		c4 r8 g'' g16-! f-! e-! d-! c-! h-! a-! g-!
+		e'8 c'16 e, d8 h' c,16-\parenthesize-! \once \slurDashed e,( f g) a-! h-! c-! d-!
+		e c c c' c e, e c' c d, d c' h d, d h' %45
+		c, g' g8\trill a16 cis,8 d16 g h,8 c16 f8.(\trill e32 d)
+		e16 c c8\trill d, h' c,4 r\fermata \bar "||" %47 finis
+	}
+}

@@ -441,6 +441,81 @@ InGloriaTenoreLyrics = \lyricmode {
 	men, a -- men. %238 FINIS
 }
 
+CredoTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoCredo
+		\mvTr c4\fE^\tutti c c8 c16 c h8 c16([ d)]
+		c4 c e8 e16 e e8 e
+		d d r d c c c4
+		h r r8 d d d
+		d d16 d d4 d r %5
+		R1
+		r2 r4 d8 d
+		cis4 c8 c h4. cis8
+		d a4 h8 c4 c8 c
+		h4 c c2 %10
+		c4 d d8 c d8. d16
+		c4 r r2
+		R1*7 %19
+		\mvTr h4.\pE^\solo c8 d c16([ h)] c4 %20
+		h h8 c d2~
+		d8[ c16 d] e8 d c8. c16 h4
+		r8 e e e e4 d
+		r8 c4 c8 c4 h
+		r8 a4 a8 gis([ f')] e d %25
+		c h16([ a)] \appoggiatura c8 h4\trill a r
+		R1*9 %35
+		r2 r4 c
+		h h8 h c4. c8
+		h4 r r c
+		e2( d4) d
+		d c8 c c4 h %40
+		r r8 \mvTr h\fE^\tuttiE c c r c
+		c c r4 r2
+		r4 r8 c c^\critnote h r h
+		c c16 c c8([ h)] c4 r
+		r8 e e e16 e d2 %45
+		c4 r r2
+		R1\fermataMarkup \bar "||" %47 finis
+	}
+}
+
+CredoTenoreLyrics = \lyricmode {
+	Cre -- do, cre -- do in u -- num
+	De -- um, Pa -- trem o -- mni -- po --
+	ten -- tem, fa -- cto -- rem coe --
+	li, fa -- cto -- rem
+	coe -- li et ter -- rae, %5
+
+	vi -- si -- %7
+	bi -- li -- um o -- mni --
+	um, vi -- si -- bi -- li -- um
+	o -- mni -- um %10
+	et in -- vi -- si -- bi -- li --
+	um.
+
+	Et ex Pa -- tre na -- %20
+	tum an -- te o --
+	mni -- a sae -- cu -- la.
+	De -- um de De -- o,
+	De -- um ve -- rum,
+	De -- um ve -- rum de %25
+	De -- o ve -- ro.
+
+	Qui %36
+	pro -- pter nos ho -- mi --
+	nes et
+	pro -- pter
+	no -- stram sa -- lu -- tem %40
+	de -- scen -- dit de
+	coe -- lis,
+	de -- scen -- dit, de --
+	scen -- dit de coe -- lis,
+	de -- scen -- dit de coe -- %45
+	lis. %46 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"
