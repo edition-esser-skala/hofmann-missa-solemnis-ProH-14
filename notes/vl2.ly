@@ -406,3 +406,85 @@ EtIncarnatusViolinoII = {
 		g8\fE es16.-\critnote c'32 g,8 h' c,4 r\fermata \bar "||"
 	}
 }
+
+EtResurrexitViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoEtResurrexit
+			\set Score.currentBarNumber = #68
+		e'4\fE e d
+		e e16 e, f g a h c d
+		e c c c e c c c e c c c %70
+		e c c c d h h h g' h, h h
+		g' h, h h g' h, h h g' h, h h
+		g' h, h h g' c, c c e c c c
+		a' d, d d g h, h h g' h, h h
+		a' c, c c c^\critnote g' g g d,8 fis' %75
+		g,4 h, c
+		d e f!
+		g2.
+		f
+		e4 r r %80
+		R2.
+		r4 c d
+		e f g
+		a2.
+		g %85
+		f'16 f f f f f f f d' f, f f
+		e e e e e e e e c' e, e e
+		d d d d g d d d e g, g g
+		c g g g h g g g h h d d
+		g h, h h g' h, h h g' h, h h %90
+		e c c c e c c c e c c c
+		c' d, d d c' d, d d h' d, d d
+		c'4 c,, r
+		R2.*3 %96
+		r4 r8 g'16 g h h d d
+		g h, h h g' h, h h g' h, h h
+		g' h, h h g' h, h h g' h, h h
+		gis' h, h h gis' h, h h gis' h, h h %100
+		<c a'>4 <e, h' gis'> r
+		R2.*4 %105
+		r4 h'16 gis gis gis h gis gis gis
+		a c c c gis h h h gis' h, h h
+		<c a'>4 r r
+		<h gis'> r a'16 c, c c
+		a' h, h h a' h, h h gis' h, h h %110
+		a8 e'16 d c h a g! f e d c
+		h8 f''16 e d c h a gis f e d
+		c8 e a c, h gis'
+		a,4 r r
+		R2.*5 %119
+		r4 r8 a''16 g f e d c %120
+		b a g f e d cis b? a8 g'
+		f d d'4 r
+		R2.*5 %127
+		r16 c-!\p c( h) r a-! a( g) r f-! f( e)
+		d4 r16 d'-! d( c) r h-! h( a)
+		g4 r16 g'-! g( f) r e-! e( d) %130
+		c4 r16 c-! c( b) r a-! a( g)
+		f4 r r
+		R2.*2
+		r4 g'16\fE c, c c a' c, c c %135
+		c4\trill h r
+		g,8.[ g16 h8. h16 d8. d16]
+		g4 g,16 a32 h c16 d e fis g a
+		h d, d d h' d, d d h' d, d d
+		e c c c c' e, f g a h c d %140
+		e c c c g c c c d h h h
+		e c c c e c c c c' c, c c
+		c' d, d d c' d, d d h' d, d d
+		c'8 g e c c,4
+		R2.*2 %146
+		r4 r8 e4 d8
+		c4 r r
+		R2.*4 %152
+		r4 r16 a' h c d e fis gis
+		a a, a a cis a a a cis a a a
+		d a h cis d e f g a f e d %155
+		h g g g h g g g h g g g
+		c g a h c d e f g e d c
+		e c c c e c c c e c c c
+		<g c e>4 <g h> r\fermata \bar "||" %159 finis
+	}
+}

@@ -404,6 +404,87 @@ EtIncarnatusViolinoI = {
 	}
 }
 
+EtResurrexitViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoEtResurrexit
+			\set Score.currentBarNumber = #68
+		c''4\fE c h
+		c c16 c, d e f g a h
+		c e, e e c' e, e e c' e, e e %70
+		c' e, e e h' d, d d h' d, d d
+		h' d, d d h' d, d d h' d, d d
+		h' d, d d c' e, e e c' e, e e
+		c' d, d d h' d, d d h' d, d d
+		a' c, c c c g' g g d,8 fis' %75
+		g,4 r r
+		R2.
+		r4 g a
+		h c d
+		e2 d4 %80
+		c r r
+		R2.*2
+		r4 a h
+		c d e %85
+		f16 f f f f f f f d' f, f f
+		e e e e e e e e c' e, e e
+		d d d d g d d d e c c c
+		e c c c d h h h d d g g
+		h d, d d h' d, d d h' d, d d %90
+		c' e, e e c' e, e e c' e, e e
+		c' d, d d c' d, d d h' d, d d
+		c'4 c,, r
+		R2.*3 %96
+		r4 r8 h'16 h d d g g
+		h d, d d h' d, d d h' d, d d
+		h' d, d d h' d, d d h' d, d d
+		h' d, d d h' d, d d h' d, d d %100
+		<c a'>4 <e, h' gis'> r
+		R2.*4 %105
+		r4 e'16 h h h e h h h
+		c e e e h e e e h' d, d d
+		<c a'>4 r r
+		<h gis'> r a'16 c, c c
+		a' h, h h a' h, h h gis' h, h h %110
+		a8 e'16 d c h a g! f e d c
+		h8 f''16 e d c h a gis f e d
+		c8 e a c, h gis'
+		a,4 r r
+		R2.*5 %119
+		r4 r8 a''16 g f e d c %120
+		b a g f e d cis b? a8 g'
+		f d d'4 r
+		R2.*5 %127
+		r16 c-!\p c( h) r a-! a( g) r f-! f( e)
+		d4 r16 d'-! d( c) r h-! h( a)
+		g4 r16 g'-! g( f) r e-! e( d) %130
+		c4 r16 c-! c( b) r a-! a( g)
+		f4 r r
+		R2.*2
+		r4 g'16\f c, c c a' c, c c %135
+		c4\trill h r
+		g,8.[ g16 h8. h16 d8. d16]
+		g4 g,16 g' a h c d e fis
+		g h, h h g' h, h h g' h, h h
+		c e, e e e' c d e f g a h %140
+		c e, e e c' e, e e h' d, d d
+		c' e, e e c' e, e e c' e, e e
+		c' d, d d c' d, d d h' d, d d
+		c'8 g e c c,4
+		R2.*2 %146
+		r4 r8 e'16 fis gis a h gis
+		a4 r r
+		R2.*4 %152
+		r4 r16 a, h c d e fis gis
+		a cis, cis cis a' cis, cis cis a' cis, cis cis
+		d a h cis d e f g a f e d %155
+		g h, h h g' h, h h g' h, h h
+		c g a h c d e f g e d c
+		c' e, e e c' e, e e c' e, e e
+		<g, e' c'>4 <g d' h'> r\fermata \bar "||" %159 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

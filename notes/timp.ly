@@ -134,3 +134,47 @@ CredoTimpani = {
 		R1\fermataMarkup \bar "||" %47 finis
 	}
 }
+
+EtResurrexitTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/4 \tempoEtResurrexit
+			\set Score.currentBarNumber = #68
+		c4\fE c g
+		c c r
+		c4. c8 c4 %70
+		g g g
+		g r r
+		R2.
+		r4 g g
+		c r r %75
+		g r r
+		R2.*3
+		c4 r r %80
+		R2.*7 %87
+		g4 g c
+		g g g8. g16
+		g4 r r %90
+		R2.
+		r4 g g
+		c r r
+		c\pE r r
+		r r g %95
+		c r r
+		g g g8. g16
+		g4\fE r r
+		R2.*39 %137
+		g4\fE r r
+		g g g
+		c c r %140
+		c c g
+		c r r
+		r g g
+		c r r
+		R2.*11 %155
+		g2\fE g4
+		c c r
+		c2 c4
+		g g r\fermata \bar "||" %159 finis
+	}
+}

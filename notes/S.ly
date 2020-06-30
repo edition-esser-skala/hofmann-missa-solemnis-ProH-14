@@ -620,6 +620,173 @@ EtIncarnatusSopranoLyrics = \lyricmode {
 	_ tus est. %65 finis
 }
 
+EtResurrexitSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #68
+		\mvTr e'4\fE^\tutti e d
+		e e r
+		e4. e8 e4 %70
+		e d r
+		d2.
+		h4 c r8 c
+		c4 h r
+		a a2 %75
+		g4 r r
+		R2.
+		r4 g a
+		h c d
+		e2( d4) %80
+		c r r
+		R2.*2
+		r4 a h
+		c d e %85
+		f2.(
+		e)
+		d2 c4
+		c h r
+		d d d %90
+		e2 e4
+		d d2
+		c4 r \mvTr c8([\pE^\solo d)]
+		e4. d8 c4
+		d c h %95
+		c8([ h16 c] d4) c
+		c8. h16 h4 r
+		\mvTr h2.\fE^\tutti
+		h
+		h4 h r %100
+		a gis r
+		c2.\p
+		b4 a gis
+		a h c~
+		c h a %105
+		gis gis\f gis
+		a gis r
+		a r r
+		gis r a
+		a a( gis) %110
+		a r r
+		R2.*13 %124
+		r4 \mvTr h\pE^\solo c %125
+		d c h
+		c8. h16 a4 \once \tieDashed e'~
+		e8 d c([ h)] a([ g)]
+		f([ e)] d4 d'
+		d8 c h([ a)] g([ f)] %130
+		e([ d)] c4 r
+		r \mvTr a'\fE^\tutti c
+		h!4.( c8) d4
+		c e d
+		c2.~ %135
+		c4 h r
+		R2.*2
+		h4 h h
+		c8. c16 c4 r %140
+		c c h
+		c4. c8 c4
+		c c h
+		c r \mvTr c\pE^\soloE
+		c4. h8 h4^\critnote %145
+		h c h
+		a gis r
+		c4. d8 e c
+		a2 d8([ c)]
+		h2. %150
+		a4 a( gis)
+		a r r
+		R2.
+		\mvTr cis4.\fE^\tuttiE cis8 cis cis
+		d([ e)] f4 r %155
+		h,4. h8 h h
+		c([ d)] e4 r
+		e2 e4
+		e d r\fermata \bar "||" %159 finis
+	}
+}
+
+EtResurrexitSopranoLyrics = \lyricmode {
+	Et re -- sur -- %68
+	re -- xit
+	ter -- ti -- a %70
+	di -- e
+	se --
+	cun -- dum Scri --
+	ptu -- ras,
+	Scri -- ptu -- %75
+	ras,
+
+	et a --
+	scen -- dit in
+	coe -- %80
+	lum,
+
+	et a -- %84
+	scen -- dit in %85
+	coe --
+
+	lum, in
+	coe -- lum,
+	se -- det ad %90
+	dex -- te --
+	ram Pa --
+	tris. Et
+	i -- te -- rum
+	ven -- tu -- rus %95
+	est __ cum
+	glo -- ri -- a
+	iu --
+	di --
+	ca -- re %100
+	vi -- vos
+	et
+	mor -- _ _
+	_ _ _
+	_ tu -- %105
+	os, cu -- ius
+	re -- gni
+	non,
+	non e --
+	rit fi -- %110
+	nis.
+
+	Qui cum %125
+	Pa -- tre et
+	Fi -- li -- o si --
+	mul ad -- o --
+	ra -- tur et
+	con -- glo -- ri -- fi -- %130
+	ca -- tur:
+	qui lo --
+	cu -- tus
+	est per Pro --
+	phe -- %135
+	tas.
+
+	San -- ctam ca -- %139
+	tho -- li -- cam %140
+	et a -- po --
+	sto -- li -- cam
+	Ec -- cle -- si --
+	am. Con --
+	fi -- te -- or %145
+	u -- num ba --
+	ptis -- ma
+	in re -- mis -- si --
+	o -- nem
+	pec -- %150
+	ca -- to --
+	rum.
+
+	Re -- sur -- re -- cti --
+	o -- nem, %155
+	re -- sur -- re -- cti --
+	o -- nem
+	mor -- tu --
+	o -- rum. %159 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

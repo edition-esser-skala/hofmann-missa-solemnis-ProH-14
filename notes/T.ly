@@ -564,6 +564,173 @@ EtIncarnatusTenoreLyrics = \lyricmode {
 	pul -- tus est. %65 finis
 }
 
+EtResurrexitTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 3/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #68
+		\mvTr c4\fE^\tutti c h
+		c c r
+		c4. c8 c4 %70
+		c h r
+		h2.
+		d4 e r
+		d8 d d4 r
+		e d2 %75
+		d4 g, a
+		h c d
+		e2.
+		d
+		c2 h8[ a] %80
+		g4 a h
+		c2.
+		h2 r4
+		R2.*2 %85
+		r4 a h
+		c d e
+		f f e
+		e d r
+		h h h %90
+		c2 c4
+		c c( h)
+		c r r
+		R2.*4 %97
+		d2.
+		d
+		d4 d r %100
+		c h r
+		c(\p d e)
+		d c h
+		a gis a~
+		a d c %105
+		h h\f h
+		c h r
+		c r r
+		h r c
+		h h2 %110
+		a4 r r
+		R2.*2
+		r4 \mvTr e'\pE^\solo c^\critnote
+		a4. h8 c4 %115
+		c( h) a
+		a8. gis16 gis4 r
+		r e' d
+		cis2 cis4
+		d8([ cis)] d4 r %120
+		R2.
+		r4 d d
+		d4. d8 c h
+		a([ h)] c4 c
+		c h r %125
+		R2.*9 %134
+		r4 \mvTr e\fE^\tutti d %135
+		d d r
+		R2.*2
+		d4 d d
+		e8. e16 e4 r %140
+		e e d
+		e4. e8 e4
+		d d4. d8
+		c4 r \mvTr c,\pE^\solo
+		g'4. g8 g4 %145
+		gis gis gis
+		a e r
+		a4. h8 c a
+		d4.( c8) h([ a)]
+		gis2. %150
+		a4 e2
+		a4 r r
+		R2.
+		\mvTr e'4.\fE^\tutti e8 e e
+		d4 d r %155
+		d4. d8 d d
+		c4 c r
+		c2 c4^\critnote
+		c h r\fermata \bar "||" %159 finis
+	}
+}
+
+EtResurrexitTenoreLyrics = \lyricmode {
+	Et re -- sur -- %68
+	re -- xit
+	ter -- ti -- a %70
+	di -- e
+	se --
+	cun -- dum,
+	se -- cun -- dum
+	Scri -- ptu -- %75
+	ras, et a --
+	scen -- dit in
+	coe --
+	lum,
+	coe -- _ %80
+	_ _ _
+	_
+	lum,
+
+	et a -- %86
+	scen -- dit in
+	coe -- lum, in
+	coe -- lum,
+	se -- det ad %90
+	dex -- te --
+	ram Pa --
+	tris.
+
+	Iu -- %98
+	di --
+	ca -- re %100
+	vi -- vos
+	et __
+	mor -- _ _
+	_ _ _
+	_ tu -- %105
+	os, cu -- ius
+	re -- gni
+	non,
+	non e --
+	rit fi -- %110
+	nis.
+
+	Et in %114
+	Spi -- ri -- tum %115
+	San -- ctum,
+	Do -- mi -- num
+	et vi --
+	vi -- fi --
+	can -- tem, %120
+
+	qui ex
+	Pa -- tre Fi -- li --
+	o -- que pro --
+	ce -- dit. %125
+
+	Per Pro -- %135
+	phe -- tas.
+
+	San -- ctam ca -- %139
+	tho -- li -- cam %140
+	et a -- po --
+	sto -- li -- cam
+	Ec -- cle -- si --
+	am. Con --
+	fi -- te -- or %145
+	u -- num ba --
+	ptis -- ma
+	in re -- mis -- si --
+	o -- nem
+	pec -- %150
+	ca -- to --
+	rum.
+
+	Re -- sur -- re -- cti --
+	o -- nem, %155
+	re -- sur -- re -- cti --
+	o -- nem
+	mor -- tu --
+	o -- rum. %159 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

@@ -602,6 +602,175 @@ EtIncarnatusAltoLyrics = \lyricmode {
 	pul -- tus est. %65 finis
 }
 
+EtResurrexitAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #68
+		\mvTr g'4\fE^\tutti g g
+		g g r
+		g4. g8 g4 %70
+		g g r
+		g2.
+		g4 g r8 g
+		a4 g r
+		g g( fis) %75
+		g h, c
+		d e f!
+		g2.(
+		f)
+		e4 r r %80
+		R2.
+		r4 c d
+		e f g
+		a2.
+		g %85
+		r4 f g
+		a h c
+		g2.~
+		g4 g r
+		g g g %90
+		g2 e4
+		a g2
+		g4 r \mvTr e8([\pE^\solo f)]
+		g4. f8 e4
+		f e d %95
+		e8([ d16 e] f4) e
+		e8. d16 d4 r
+		\mvTr g2.\fE^\tutti
+		g
+		gis4 gis r %100
+		e e r
+		a2.\p
+		f
+		e4 d e
+		f2 fis4 %105
+		e e\f e
+		e e r
+		fis r r
+		f r e
+		f e2 %110
+		e4 r r
+		R2.*13 %124
+		r4 \mvTr gis\pE^\solo a %125
+		h a gis
+		a8. gis16 a4 r
+		r r a~
+		a8 g f([ e)] d([ c)]
+		h([ a)] g4 g' %130
+		g8 f e([ d)] c([ h)]
+		a8([ c)] f4 \mvTr a\fE^\tuttiE
+		d, g4. f8
+		e4 g f
+		e g a~ %135
+		a g r
+		R2.*2
+		g4 g g
+		g8. g16 g4 r %140
+		g g g
+		g4.^\critnote g8 a4
+		a g4. g8
+		g4 r \mvTr e\pE^\solo
+		e4. d8 d4^\critnote %145
+		d e d
+		c h r
+		a'4. a8 a a
+		a([ g f e]) f4
+		f( e8[ d c h)] %150
+		c4 \appoggiatura c h2
+		a4 r r
+		R2.
+		\mvTr a'4.\fE^\tutti a8 a a
+		a([ g)] f4 r %155
+		g4. g8 g g
+		g([ f)] e4 r
+		g2 g4
+		g g r\fermata \bar "||" %159 finis
+	}
+}
+
+EtResurrexitAltoLyrics = \lyricmode {
+	Et re -- sur -- %68
+	re -- xit
+	ter -- ti -- a %70
+	di -- e
+	se --
+	cun -- dum Scri --
+	ptu -- ras,
+	Scri -- ptu -- %75
+	ras, et a --
+	scen -- dit in
+	coe --
+
+	lum, %80
+
+	et a --
+	scen -- dit in
+	coe --
+	lum, %85
+	et a --
+	scen -- dit in
+	coe --
+	lum,
+	se -- det ad %90
+	dex -- te --
+	ram Pa --
+	tris. Et
+	i -- te -- rum
+	ven -- tu -- rus %95
+	est __ cum
+	glo -- ri -- a
+	iu --
+	di --
+	ca -- re %100
+	vi -- vos
+	et
+	mor --
+	_ _ _
+	_ tu -- %105
+	os, cu -- ius
+	re -- gni
+	non,
+	non e --
+	rit fi -- %110
+	nis.
+
+	Qui cum %125
+	Pa -- tre et
+	Fi -- li -- o
+	si --
+	mul ad -- o --
+	ra -- tur et %130
+	con -- glo -- ri -- fi --
+	ca -- tur: qui
+	lo -- cu -- tus
+	est per Pro --
+	phe -- _ _ %135
+	tas.
+
+	San -- ctam ca -- %139
+	tho -- li -- cam %140
+	et a -- po --
+	sto -- li -- cam
+	Ec -- cle -- si --
+	am. Con --
+	fi -- te -- or %145
+	u -- num ba --
+	ptis -- ma
+	in re -- mis -- si --
+	o -- nem
+	pec -- %150
+	ca -- to --
+	rum.
+
+	Re -- sur -- re -- cti --
+	o -- nem, %155
+	re -- sur -- re -- cti --
+	o -- nem
+	mor -- tu --
+	o -- rum. %159 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

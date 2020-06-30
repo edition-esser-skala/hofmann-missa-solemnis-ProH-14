@@ -600,6 +600,159 @@ EtIncarnatusBassoLyrics = \lyricmode {
 	pul -- tus est. %65 finis
 }
 
+EtResurrexitBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #68
+		\mvTr c4\fE^\tutti e g
+		c c, r
+		c4. e8 c4 %70
+		g' g, r
+		g'2.
+		f4 e r8 e
+		fis4 g r
+		c, d2 %75
+		g,4 r r
+		R2.*3
+		r4 c d %80
+		e f g
+		a2.
+		g
+		f
+		e %85
+		d
+		c
+		h2 c4
+		g' g, r
+		g g' f %90
+		e2 a4
+		f g2
+		c,4 r r
+		R2.*4 %97
+		g'2.
+		f
+		e4 e r %100
+		a e r
+		a,(\p h c)
+		d2.
+		c4 h a
+		d2 dis4 %105
+		e e\f e
+		a e r
+		dis r r
+		d r c
+		d e2 %110
+		a,4 r r
+		R2.*3
+		r4 \mvTr a'\pE^\solo f %115
+		d4. e8 f4
+		f( e) d
+		c8. h16 a4 r
+		a'8 b a([ g)] f([ e)]
+		f([ e)] d4 r %120
+		R2.
+		r4 f f
+		f4. f8 e d
+		c([ e)] a4 a
+		a gis r %125
+		R2.*9 %134
+		r4 \mvTr e\fE^\tutti fis %135
+		g g, r
+		g h d
+		g g, r
+		g' h g
+		c8. c16 c,4 r %140
+		c e g
+		c4. c8 a4
+		f g4. g8
+		c,4 r r
+		R2.*7 %151
+		r4 \mvTr a'\pE^\solo e
+		c8([ h)] a4 r
+		\mvTr a'4.\fE^\tutti a,8 a' g
+		f([ e)] d4 r %155
+		g4. g,8 g' f
+		e([ d)] c4 r
+		c2 c4
+		g' g, r\fermata \bar "||" %159 finis
+	}
+}
+
+EtResurrexitBassoLyrics = \lyricmode {
+	Et re -- sur -- %68
+	re -- xit
+	ter -- ti -- a %70
+	di -- e
+	se --
+	cun -- dum, se --
+	cun -- dum
+	Scri -- ptu -- %75
+	ras,
+
+	et a -- %80
+	scen -- dit in
+	coe --
+	_
+	_
+	_ %85
+	_
+	_
+	lum, in
+	coe -- lum,
+	se -- det ad %90
+	dex -- te --
+	ram Pa --
+	tris.
+
+	Iu -- %98
+	di --
+	ca -- re %100
+	vi -- vos
+	et __
+	mor --
+	_ _ _
+	_ tu -- %105
+	os, cu -- ius
+	re -- gni
+	non,
+	non e --
+	rit fi -- %110
+	nis.
+
+	Et in %115
+	Spi -- ri -- tum
+	San -- ctum,
+	Do -- mi -- num
+	et vi -- vi -- fi --
+	can -- tem, %120
+
+	qui ex
+	Pa -- tre Fi -- li --
+	o -- que pro --
+	ce -- dit. %125
+
+	Per Pro -- %135
+	phe -- tas.
+	Et u -- nam
+	san -- ctam,
+	san -- ctam ca --
+	tho -- li -- cam %140
+	et a -- po --
+	sto -- li -- cam
+	Ec -- cle -- si --
+	am.
+
+	Et ex -- %152
+	pe -- cto
+	re -- sur -- re -- cti --
+	o -- nem, %155
+	re -- sur -- re -- cti --
+	o -- nem
+	mor -- tu --
+	o -- rum. %159 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass
