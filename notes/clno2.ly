@@ -215,3 +215,58 @@ EtResurrexitClarinoII = {
 		g g r\fermata \bar "||" %159 finis
 	}
 }
+
+EtVitamClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 2/2 \tempoEtVitam
+			\set Score.currentBarNumber = #160
+		R1*28 %187
+		r2 e'4\fE d
+		c2 r
+		r d4 c %190
+		g2 r
+		r e'4 d
+		c2. c4
+		d1
+		e2 r %195
+		R1*3
+		d1~
+		d2 d %200
+		d r
+		R1*14 %215
+		r2 e
+		d1
+		c2 c
+		d2. c4
+		g2 r %220
+		g r
+		R1
+		r2 g
+		g r
+		R1*2 %226
+		r2 d'
+		c r
+		r d4 c
+		g2 r %230
+		r e'4 d
+		c2. c4
+		d1
+		e2 r
+		R1*2 %236
+		r2 d
+		d r
+		R1*6 %244
+		r2 g, %245
+		g1
+		g2 r
+		e'4 d c d8 e
+		f4 e d e8 f
+		g4 r g,2 %250
+		g r
+		R1*2
+		g2 g4. g8
+		g2 g %255
+		g r\fermata \bar "|." %256 FINIS
+	}
+}

@@ -488,3 +488,93 @@ EtResurrexitViolinoII = {
 		<g c e>4 <g h> r\fermata \bar "||" %159 finis
 	}
 }
+
+EtVitamViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 2/2 \tempoEtVitam
+			\set Score.currentBarNumber = #160
+		R1*14 %173
+		r2 g'\fE
+		a e %175
+		r f
+		g d
+		r e
+		f e
+		d2. d4 %180
+		c1
+		r2 g'4 fis
+		e fis8 g a4 g
+		fis2 fis4 e
+		d e8 fis g4 fis %185
+		e fis g2~
+		g fis
+		g g4 f
+		e a2 g4
+		f2 f4 e %190
+		d g2 f4
+		e2 e4 d
+		c d e2
+		f1
+		g2 r %195
+		e4 d c d8 e
+		f4 e d e8 f
+		g4 f e f8 g
+		a2 g~
+		g fis %200
+		g r
+		g4 fis e fis8 g
+		a2 a4 g
+		fis e d e8 fis
+		g2 r %205
+		R1*3
+		a1
+		h2 fis %210
+		r gis
+		a2. g4
+		fis4 g8 a h4 a
+		g2. fis4
+		e fis8 g a4 g %215
+		fis4 gis \once \tieDashed a2~
+		a gis
+		a4 e2 f!8 g
+		a4 g f e
+		d2 r4 d %220
+		g f e d
+		c2 f4-\critnote e
+		f2 g
+		g r
+		r g %225
+		a e4 e
+		g2. g4
+		e2 g
+		a r
+		r f %230
+		g r
+		r g
+		f1
+		e2 e4 d
+		c d8 e f4 e %235
+		d e8 f g4 f
+		e2 d
+		d r
+		r g4 f
+		e f8 g a4 g %240
+		f2 f4 e
+		d e8 f g4 f
+		e fis g2~
+		g \once \tieDashed f~
+		f e %245
+		d1
+		e2 r
+		e4 d c d8 e
+		f4 e d e8 f
+		g4 g g2 %250
+		g g'4\p f
+		e f8 g a4 g
+		f1
+		f4\f e d h'
+		c e, d h' %255
+		c,2 r\fermata \bar "|." %256 FINIS
+	}
+}

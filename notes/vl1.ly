@@ -485,6 +485,91 @@ EtResurrexitViolinoI = {
 	}
 }
 
+EtVitamViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 2/2 \tempoEtVitam
+			\set Score.currentBarNumber = #160
+		R1*21 %180
+		r2 c'\fE
+		e h
+		r c
+		d a
+		r h %185
+		c h
+		a2. a4
+		g1
+		r2 c4 h
+		a h8 c d4 c %190
+		h2 h4 a
+		g a8 h c4 h
+		a4 h c2~
+		c h
+		c r %195
+		c4 h a h8 c
+		d4 c h c8 d
+		e4 d c d8 e
+		d1
+		r2 d %200
+		e h
+		r c
+		d a
+		r h
+		c h %205
+		a a4 a
+		gis1
+		a2 e'4 d
+		c d8 e f4 e
+		d2 d4 c %210
+		h c8 d e4 d
+		c2 c4 h
+		a h8 c d4 c
+		h2 h4 c8 d
+		e4 d c h %215
+		a h c2
+		d1
+		c2 r
+		r d4 c
+		h a g a8 h %220
+		c2 c4 h
+		a h8 c d4 c
+		h2 c
+		h d
+		e h %225
+		r4 c c c
+		h4. c8 d2
+		c2 e4 d
+		c d8 e f4 e
+		d2 d4 c %230
+		h c8 d e4 d
+		c1
+		d
+		e2 c4 h
+		a h8 c d4 c %235
+		h c8 d e4 d
+		c2 d4 c
+		h2 d
+		e h
+		r c %240
+		d a
+		r h
+		c h
+		a2. a4
+		g2 \once \tieDashed c~ %245
+		c h
+		c r
+		c4 h a h8 c
+		d4 c h c8 d
+		e4 e d2 %250
+		c r
+		r c'4\p h
+		a h8 c d4 c
+		h\f c d, h'
+		c e, d h' %255
+		c,2 r\fermata \bar "|." %256 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

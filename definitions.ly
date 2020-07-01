@@ -639,6 +639,7 @@ tempoGloria = \tempoMarkup "Allegro"
 tempoCredo = \tempoMarkup "Allegro"
 	tempoEtIncarnatus = \tempoMarkup "Adagio"
 	tempoEtResurrexit = \tempoMarkup "Allegro"
+	tempoEtVitam = \tempoMarkup "Alla breve"
 
 
 \include "notes/clno1.ly"

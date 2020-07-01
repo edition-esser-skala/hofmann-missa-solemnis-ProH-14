@@ -753,6 +753,188 @@ EtResurrexitBassoLyrics = \lyricmode {
 	o -- rum. %159 finis
 }
 
+EtVitamBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 2/2 \autoBeamOff \tempoEtVitam
+			\set Score.currentBarNumber = #160
+		r2 \mvTr g'\fE^\tuttiE
+		a e
+		r f
+		g d
+		r e
+		f e %165
+		d2. d4
+		c1
+		r2 g'4 fis
+		e fis8[ g] a4 g
+		fis2 fis4 e %170
+		d e8[ fis] g4 fis
+		e fis \once \tieDashed g2~
+		g fis
+		g4 f e d
+		c2 a'4 g %175
+		f e d2
+		e g4 f
+		e d c2
+		d c4 a'
+		f e8[ f] g4 f %180
+		e d c2
+		R1*6 %187
+		g'1
+		a2 e
+		r f %190
+		g d
+		r e
+		f e
+		d2. d4
+		c2 e4 d %195
+		c d8[ e] f4 e
+		d e8[ f] g4 f
+		e f8[ g] a4 g
+		fis2 g
+		d1 %200
+		g,2 g'4 fis
+		e fis8[ g] a4 g
+		fis2 fis4 e
+		d e8[ fis] g4 fis
+		e fis g2~ %205
+		g f~
+		f e4 d
+		c h a2
+		R1*2 %210
+		r2 e'
+		f c
+		r d
+		e h
+		r c %215
+		d c
+		h2. h4
+		a2 a'4 g!
+		f e d e8[ f]
+		g2. f4 %220
+		e d c d8[ e]
+		f2. e4
+		d2 c
+		g r
+		R1*2 %226
+		r2 g'
+		a e
+		r f
+		g d %230
+		r e
+		f e
+		d2. d4
+		c2 c4 d8[ e]
+		f4 e d e8[ f] %235
+		g4 f e f8[ g]
+		a4 g fis2
+		g g,~
+		g1~
+		g~ %240
+		g~
+		g~
+		g~
+		g~
+		g~ %245
+		g
+		c2 e4 d
+		c d8[ e] f4 e
+		d e8[ f] g4 f
+		e c g2 %250
+		c r
+		R1*2
+		g'4 c, g2
+		c g %255
+		c r\fermata \bar "|." %256 FINIS
+	}
+}
+
+EtVitamBassoLyrics = \lyricmode {
+	Et %160
+	vi -- tam
+	ven --
+	tu -- ri,
+	ven --
+	tu -- ri %165
+	sae -- cu --
+	li,
+	a -- _
+	_ _ _ _
+	men, a -- _ %170
+	_ _ _ _
+	_ _ _
+	men,
+	a -- _ _ _
+	men, a -- _ %175
+	_ _ men,
+	a -- _ _
+	_ _ men,
+	a -- _ _
+	_ _ _ _ %1809
+	_ _ men,
+
+	et %188
+	vi -- tam
+	ven -- %190
+	tu -- ri,
+	ven --
+	tu -- ri
+	sae -- cu --
+	li, a -- _ %195
+	_ _ _ _
+	_ _ _ _
+	_ _ _ _
+	_ men,
+	a -- %200
+	men, a -- _
+	_ _ _ _
+	men, a -- _
+	_ _ _ _
+	_ _ _ %205
+	_
+	_ _
+	_ _ men,
+
+	et %211
+	vi -- tam
+	ven --
+	tu -- ri,
+	ven -- %215
+	tu -- ri
+	sae -- cu --
+	li, a -- _
+	_ _ _ _
+	_ _ %220
+	_ _ _ _
+	_ _
+	_ _
+	men,
+
+	et %227
+	vi -- tam
+	ven --
+	tu -- ri, %230
+	ven --
+	tu -- ri
+	sae -- cu --
+	li, a -- _
+	_ _ _ _ %235
+	_ _ _ _
+	_ _ _
+	men, a --
+
+	men, a -- _ %247
+	_ _ _ _
+	_ _ _ _
+	_ men, a -- %250
+	men,
+
+	a -- men, a -- %254
+	men, a -- %255
+	men. %256 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

@@ -731,6 +731,192 @@ EtResurrexitTenoreLyrics = \lyricmode {
 	o -- rum. %159 finis
 }
 
+EtVitamTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 2/2 \autoBeamOff \tempoEtVitam
+			\set Score.currentBarNumber = #160
+		R1*7 %166
+		r2 \mvTr c\fE^\tuttiE
+		e h
+		r c
+		d a %170
+		r h
+		c h
+		a2. a4
+		g1
+		r2 c4 h %175
+		a h8[ c] d4 c
+		h2 h4 a
+		g a8[ h] c4 h
+		a h c2~
+		c h4 a %180
+		g f e2
+		r e'4 d
+		c h a2
+		h d4 c
+		h2 g %185
+		a g
+		a4 h8[ c] d4 c
+		h2 r
+		r c
+		d a %190
+		r h
+		c g
+		a g4 c
+		d1
+		e2 g,4 f %195
+		e f8[ g] a2
+		r h4 a
+		g a8[ h] c2~
+		c h
+		a1 %200
+		h2 h4 c8[ d]
+		e4 d c h
+		a2 a4 h8[ c]
+		d4 c h a
+		g a h2 %205
+		c d4 c
+		h1
+		a
+		R1*3 %211
+		r2 c
+		d h
+		r h
+		c4( h) a2 %215
+		r e'
+		d h
+		e4.( d8) c4 h
+		a h8[ c] d2~
+		d4 c h a %220
+		g2 c~
+		c4 h a c
+		d2 e
+		d r
+		R1 %225
+		r2 c
+		e h
+		r c4 h
+		a h8[ c] d4 c
+		h2 h4 a %230
+		g a8[ h] c4 h
+		a h \once \tieDashed c2~
+		c h
+		c r4 g
+		a2 r4 a %235
+		h a g a8[ h]
+		c4 h a2
+		g( h)
+		c g4 g
+		c( h) a2 %240
+		h d4 c
+		h( a) g2
+		a g
+		c4 h8[ c] d4 c
+		h2 g %245
+		g1
+		g2 g4 f
+		e f8[ g] a2
+		r h4 a
+		g c c( h) %250
+		c2 r
+		R1*2
+		h4 c c( h)
+		c2 h %255
+		c r\fermata \bar "|." %256 FINIS
+	}
+}
+
+EtVitamTenoreLyrics = \lyricmode {
+	Et %167
+	vi -- tam
+	ven --
+	tu -- ri, %170
+	ven --
+	tu -- ri
+	sae -- cu --
+	li,
+	a -- _ %175
+	_ _ _ _
+	men, a -- _
+	_ _ _ _
+	_ _ _
+	_ _ %180
+	_ _ men,
+	a -- _
+	_ _ _
+	men, a -- _
+	_ _ %185
+	_ men,
+	a -- _ _ _
+	men,
+	et
+	vi -- tam %190
+	ven --
+	tu -- ri
+	sae -- cu -- li,
+	a --
+	men, a -- _ %195
+	_ _ men,
+	a -- _
+	_ _ _
+	men,
+	a -- %200
+	men, a -- _
+	_ _ _ _
+	men, a -- _
+	_ _ _ _
+	_ _ men, %205
+	a -- _ _
+	_
+	men,
+
+	et %212
+	vi -- tam
+	ven --
+	tu -- ri, %215
+	ven --
+	tu -- ri
+	sae -- cu -- li,
+	a -- _ _
+	_ _ _ %220
+	men, a --
+	_ _ _
+	_ _
+	men,
+	%225
+	et
+	vi -- tam,
+	a -- _
+	_ _ _ _
+	men, a -- _ %230
+	_ _ _ _
+	_ _ _
+	_
+	men, a --
+	men, a -- %235
+	_ _ _ _
+	_ _ men,
+	et __
+	vi -- tam ven --
+	tu -- ri %240
+	sae -- cu -- li,
+	a -- men,
+	a -- men,
+	a -- _ _ _
+	_ men, %245
+	a --
+	men, a -- _
+	_ _ men,
+	a -- _
+	_ men, a -- %250
+	men,
+
+	a -- men, a -- %254
+	men, a -- %255
+	men. %256 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"
