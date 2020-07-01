@@ -270,3 +270,27 @@ EtVitamClarinoI = {
 		c r\fermata \bar "|." %256 FINIS
 	}
 }
+
+SanctusClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoSanctus
+		e'2\fE e4 r
+		r2 r8 e4 e8
+		a2 g4 r
+		r2 g4 g8 g
+		a4 g g4. g8 \noBreak %5
+		g4. g8 g2\fermata \bar "||"
+		\tempoPleni g8 g16 g g8 g g4 r \noBreak
+		e8 e16 e e8 e e^\critnote d r4
+		r2 d8. d16 d4
+		R1 %10
+		e8. e16 e4 r2
+		R1
+		e8 e16 e e8 e e4 r
+		R1*5 %18
+		r4 r8 e d e d4
+		c c8 c c2 %20
+		c1\fermata \bar "|." %21 FINIS
+	}
+}

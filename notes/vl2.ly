@@ -578,3 +578,31 @@ EtVitamViolinoII = {
 		c,2 r\fermata \bar "|." %256 FINIS
 	}
 }
+
+SanctusViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoSanctus
+		e'2\fE e4 e16(\p c) r e,
+		g( e) r e r f r d e(\f g) r e' e( c) r e
+		a( fis) r a r fis r d d( h) r g'\p h( g) r h,
+		d( h) r h r c r a h(\f d) r h d( h) r h
+		c( a) r a g( h) r g c( e) r g e( c) r c \noBreak %5
+		e( c) r c h d a c h g d h g4\fermata \bar "||"
+		\tempoPleni <d' h' g'>8 d'32( c h a) g16 g' g, f' e8 c, e16( f32 g a h c d) \noBreak
+		e8 g32( f e d) c16 c' c e, e8\trill d g,16( a32 h c d e fis)
+		g8 g,,\p r d' <d h' g'>\f d'32( c h a) g8-\parenthesize-! d32( c h a)
+		g4 r8 g'16\p fis e4 r8 e %10
+		<e c' a'>\f e'32( d c h) a8 e32( d c h) a4 r8 a\pE
+		h4 r8 h e4 r8 e
+		a16\f c e a h,8 gis' a,4 r
+		R1
+		r8 a a a a g16 f g8 f! %15
+		e4 c8 d16 e f4. e8
+		d4 d8 e16 f g8 g r4
+		r c,8 d16 e f4. a8
+		g4 c16 e g c \sbOn \tuplet 3/2 8 { h a h } c e, \sbOff d8 h'
+		c,4 f,8 e f2 %20
+		e1\fermata \bar "|." %21 FINIS
+	}
+}

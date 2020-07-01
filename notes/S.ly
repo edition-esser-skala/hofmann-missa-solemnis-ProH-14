@@ -949,6 +949,56 @@ EtVitamSopranoLyrics = \lyricmode {
 	men. %256 FINIS
 }
 
+SanctusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr c'2\fE^\tutti c4 r
+		r2 r8 c4 c8
+		c2 h4 r
+		r2 h4 h8 h
+		c4 h c8[ d] e4~ \noBreak %5
+		e d8[( c]) d2\fermata \bar "||"
+		\tempoPleni d4 d8 d e e r4 \noBreak
+		e e8 e e d r4
+		r8 \mvTr h16([\pE^\solo c] d[ h c a] \mvTr h8.)\fE^\tutti h16 h4
+		r8 \mvTr h16[\pE^\solo c] d4~ d8[ c16 d] e[ c d h] %10
+		\mvTr c8.\fE^\tutti c16 c4 \mvTr e8[\pE^\solo d16 e] f[ d e c]
+		\once \tieDashed d2~\trill d8[ c16 d] e[ c d h]
+		\mvTr c8\fE^\tutti c16 c h4\trill a r
+		R1*2 %15
+		r8 e' e e e d16([ c)] d8([ c)]
+		h4 r8 d4 c16([ h]) c8([ h)]
+		a4 r8 c c h16([ a)] h8 c
+		d4 c h8 c c([ h)]
+		c4 a8 g a2 %20
+		g1\fermata \bar "|." %21 FINIS
+	}
+}
+
+SanctusSopranoLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus
+	Do -- mi -- nus
+	De -- us Sa -- _ %5
+	ba -- oth.
+	Ple -- ni sunt coe -- li,
+	coe -- li et ter -- ra
+	glo -- ri -- a,
+	glo -- _ _ %10
+	_ ri -- a, glo -- _
+	_ _
+	_ ri -- a tu -- a.
+
+	O -- san -- na in ex -- cel -- %16
+	sis, in ex -- cel --
+	sis, o -- san -- na in ex --
+	cel -- sis, in ex -- cel --
+	sis, in ex -- cel -- %20
+	sis. %21 FINIS
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

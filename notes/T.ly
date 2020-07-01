@@ -917,6 +917,58 @@ EtVitamTenoreLyrics = \lyricmode {
 	men. %256 FINIS
 }
 
+SanctusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr e2\fE^\tuttiE e4 r
+		r2 r8 e4 e8
+		d2 d4 r
+		r2 d4 d8 d
+		d4 d c2~ \noBreak %5
+		c4 h8([ a)] h2\fermata \bar "||"
+		\tempoPleni h4 d8 h c c r4 \noBreak
+		c c8 c c h r4
+		r2 d8. d16 d4
+		R1 %10
+		e8. e16 e4 r2
+		R1
+		e8 e16 e e4 e r
+		r2 r8 e e e
+		e d16([ c)] d8([ c)] h4 g8 a16([ h)] %15
+		c4.( h8) a4 r
+		r h8 c16([ d)] e4.( d8)
+		c4 a8 h16([ c)] d4.( c8
+		h4) c d8 e d4
+		c c8 c c2 %20
+		c1\fermata \bar "|." %21 FINIS
+	}
+}
+
+SanctusTenoreLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus
+	Do -- mi -- nus
+	De -- us Sa -- %5
+	ba -- oth.
+	Ple -- ni sunt coe -- li,
+	coe -- li et ter -- ra
+	glo -- ri -- a,
+	%10
+	glo -- ri -- a,
+
+	glo -- ri -- a tu -- a.
+	O -- san -- na
+	in ex -- cel -- sis, in ex -- %15
+	cel -- sis,
+	in ex -- cel --
+	sis, in ex -- cel --
+	sis, in ex -- cel --
+	sis, in ex -- cel -- %20
+	sis. %21 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

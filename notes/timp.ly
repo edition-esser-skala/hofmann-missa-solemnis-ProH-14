@@ -204,3 +204,23 @@ EtVitamTimpani = {
 		c r\fermata \bar "|." %256 FINIS
 	}
 }
+
+SanctusTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoSanctus
+		c2\fE c4 r
+		r2 r8 c c4
+		r2 g4 r
+		r2 g4 r
+		r2 r4 c \noBreak %5
+		g4. g8 g2\fermata \bar "||"
+		\tempoPleni g8 g16 g g8 g c4 r \noBreak
+		c8 c16 c c8 c g4 r
+		r2 g8. g16 g4
+		R1*9 %18
+		r4 r8 c g c g4
+		c2 c %20
+		c1\fermata \bar "|." %21 FINIS
+	}
+}

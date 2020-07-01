@@ -943,6 +943,58 @@ EtVitamAltoLyrics = \lyricmode {
 	men. %256 FINIS
 }
 
+SanctusAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr g'2\fE^\tutti g4 r
+		r2 r8 g4 a8
+		a2 g4 r
+		r2 g4 g8 g
+		a4 g g4. g8 \noBreak %5
+		g4. g8 g2\fermata \bar "||"
+		\tempoPleni g4 g8 g g g r4 \noBreak
+		g4 g8 g g g r4
+		r8 \mvTr g16([\pE^\solo a] h[ g a fis] \mvTr g8.)\fE^\tutti g16 g4
+		r8 \mvTr g16[\pE^\solo a] h4~ h8[ a16 h] c[ a h gis] %10
+		\mvTr a8.\fE^\tutti a16 a4 \once \tieDashed \mvTr a2~\pE^\solo
+		a8[ gis16 a] h[ gis a fis] gis2
+		\mvTr a8\fE^\tutti a16 a a8([ gis)] a4 r
+		R1
+		r8 a a a a g16([ f)] g8([ f!)] %15
+		e4 c8 d16([ e)] f4.( e8)
+		d4 d8 e16([ f)] g8 g r4
+		r c,8 d16([ e)] f4.( a8)
+		g4 g8 g g2
+		g4 f8 e f2 %20
+		e1\fermata \bar "|." %21 FINIS
+	}
+}
+
+SanctusAltoLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus
+	Do -- mi -- nus
+	De -- us, De -- us %5
+	Sa -- ba -- oth.
+	Ple -- ni sunt coe -- li,
+	coe -- li et ter -- ra
+	glo -- ri -- a,
+	glo -- _ _ %10
+	_ ri -- a, glo --
+	_ _
+	_ ri -- a tu -- a.
+
+	O -- san -- na in ex -- cel -- %15
+	sis, in ex -- cel --
+	sis, in ex -- cel -- sis,
+	in ex -- cel --
+	sis, in ex -- cel --
+	sis, in ex -- cel -- %20
+	sis. %21 FINIS
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

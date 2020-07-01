@@ -570,6 +570,33 @@ EtVitamViolinoI = {
 	}
 }
 
+SanctusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoSanctus
+		c''2\f c4 g16(\p e) r c
+		e( c) r c r d r h c(\f e) r g c( e,) r c'
+		c( d,) r c' r a r d, h'( g) r h\p d( h) r g
+		h( g) r g r a r fis g(\f d) r g h( g) r d
+		a'( c,) r c h( d) r g, c( e) r g c( g) r e \noBreak %5
+		c'( e,) r e d h' c, a' h, g d h g4\fermata \bar "||"
+		\tempoPleni <d' h' g'>8 d'32( c h a) g16 g' g, f' e8 c, c'16( d32 e f g a h) \noBreak
+		c8 g32( f e d) c16 c' c e, e8\trill d h16( c32 d e fis g a)
+		h8 g,,\p r d' <d h' g'>\f d'32( c h a) g8-! d32( c h a)
+		g4 r8 h'16\p a gis4 r8 e %10
+		<e c' a'>\f e'32( d c h) a8 e32( d c h) a4 r8 a\p
+		h4 r8 h e4 r8 e
+		a16\f c e a h,8 gis' a,4 r
+		R1*2 %15
+		r8 e' e e e d16 c d8 c
+		h4 r8 \once \tieDashed d~ d c16 h c8 h
+		a4 r8 c c h16 a h8 c
+		d4 c16 e g c \sbOn \tuplet 3/2 8 { h a h } c e, \sbOff d8 h'
+		c,4 a8 g a2 %20
+		g1\fermata \bar "|." %21 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

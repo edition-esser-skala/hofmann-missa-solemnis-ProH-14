@@ -935,6 +935,58 @@ EtVitamBassoLyrics = \lyricmode {
 	men. %256 FINIS
 }
 
+SanctusBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr c2\fE^\tutti c4 r
+		r2 r8 c'4 a8
+		fis2 g4 r
+		r2 g4 g8 g
+		fis4 f e8[( d)] c4 \noBreak %5
+		g'4. g8 g,2\fermata \bar "||"
+		\tempoPleni g'4 h8 g c c, r4 \noBreak
+		c e8 c g' g, r4
+		r2 g'8. g16 g4
+		R1 %10
+		a8. a16 a4 r2
+		R1
+		a8 a16 a e4 a,8 a' a a
+		a g16([ f)] g8([ f)] e4 c8 d16([ e)]
+		f4.( fis8) g4 r8 g %15
+		a4. g8 f4. a8
+		a([ g16 f] g8[ f]) e4 r8 g~
+		g f16([ e)] f8([ e)] d4 r8 f~
+		f e16([ d)] e8 c g' c, g4
+		c c8 c c2 %20
+		c1\fermata \bar "|." %21 FINIS
+	}
+}
+
+SanctusBassoLyrics = \lyricmode {
+	San -- ctus,
+	san -- ctus,
+	san -- ctus
+	Do -- mi -- nus
+	De -- us, De -- us %5
+	Sa -- ba -- oth.
+	Ple -- ni sunt coe -- li,
+	coe -- li et ter -- ra
+	glo -- ri -- a,
+	%10
+	glo -- ri -- a,
+
+	glo -- ri -- a tu -- a. O -- san -- na
+	in ex -- cel -- sis, in ex --
+	cel -- sis, o -- %15
+	san -- na in ex --
+	cel -- sis, in __
+	ex -- cel -- sis, in __
+	ex -- cel -- sis, in ex -- cel --
+	sis, in ex -- cel -- %20
+	sis. %21 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

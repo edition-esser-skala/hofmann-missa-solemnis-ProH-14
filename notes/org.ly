@@ -1239,6 +1239,62 @@ EtVitamBassFigures = \figuremode {
 	r %256 FINIS
 }
 
+SanctusOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoSanctus
+		\mvTr c2\fE-\tutti c4 r8 \mvTr c'-!\p-\solo
+		r a-! f g \mvTr c,\f-\tutti c c' a
+		fis fis fis fis g g, r \mvTr g'\p-\solo-\parenthesize-!
+		r e-\parenthesize-! c d \mvTr g,\f-\tutti g' g g
+		fis4 f e8 d c4 \noBreak %5
+		g'4. g8 g,2\fermata \bar "||"
+		\tempoPleni g'4 h8 g c c, r4 \noBreak
+		c e8 c g' g, r4
+		r2 g'4 g,
+		R1 %10
+		a'4 a, r2
+		R1
+		a'8 a, e' e, a a'-! a-! a-!
+		a-! g16-! f-! g8-! f-! << {
+			r8 e' e e
+		} \\ {
+			e,4 c8 d16 e
+		} >>
+		f4. fis8 g4 r8 g %15
+		a4. g8 f4. a8~
+		a g16 f g8 f e4 r8 g~
+		g f16 e f8 e d4 r8 f~
+		f e16 d e8 c g' c, g4
+		c c c2 %20
+		c1\fermata \bar "|." %21 FINIS
+	}
+}
+
+SanctusBassFigures = \figuremode {
+	r1
+	r4 <6>2.
+	<6 5>1
+	r4 <6>8 <_+> r2
+	<6 5>4 <4 2> <6>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff %5
+	<6 4>4 <5 3>8 <4 2> r2
+	r4 <[6]>2.
+	r4 \bo <[6 \l]> <6 4>8 \bc <[5 3]>4.
+	r1
+	r %10
+	r
+	r
+	r4 <4>8 <_+> r2
+	r1
+	<7>8 <6>4 <[5]>8 <9> <8>4 <7>8 %15
+	<[5]>4. <6>8 <7> <6>4.
+	<4 2>4. <[6]>8 <7> <6>4.
+	<4 2>4. <[6]>8 <7> <6>4.
+	<4 2>4 <6>2 <4>8 <3>
+	r4 <6 4>8 <5 3> <6 4>2 %20
+	<5 3>1 %21 FINIS
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
