@@ -692,3 +692,76 @@ AgnusDeiViolinoII = {
 		es c~ c es h( d) a( c) h g d h g4\fermata \bar "||" %23 finis
 	}
 }
+
+DonaViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoDona
+			\set Score.currentBarNumber = #24
+		<e c'>2\fE \tuplet 3/2 4 { c'8 d e }
+		\tuplet 3/2 4 { d e f } e4 \once \tieDashed c16( d e f32 g) %25
+		a4 f8^\critnote c h4
+		a g \once \tieDashed c,16( d e f32 g)
+		a4 a g
+		f e r
+		r \tuplet 3/2 4 { gis8\p a h } a4 %30
+		r \tuplet 3/2 4 { fis8 g a } g4
+		r \tuplet 3/2 4 { e8 fis g } fis4
+		g\f fis r
+		g\p a fis
+		g\f fis r %35
+		g\pE a fis
+		g16\f h h h h h h h g' h, h h
+		fis' a, a a a a a a fis' a, a a
+		g' h, h h h h h h g' h, h h
+		fis' a, a a a a a a fis' a, a a %40
+		g'8 h, a g' a, fis'
+		g,4 g,\p a
+		h c d
+		e c d
+		<g, d' h' g'>2\f \tuplet 3/2 4 { g'8 a h } %45
+		\tuplet 3/2 4 { a h c } h4 g16( a h c32 d)
+		e4 g, fis
+		e d g16( a h c)
+		\tuplet 3/2 4 { h8 a g h a h g fis g }
+		\tuplet 3/2 4 { h a g h a h g fis g } %50
+		\tuplet 3/2 4 { h a gis h' a h h, a h }
+		c4 \tuplet 3/2 4 { a8 h c c d e }
+		f4 f e
+		dis e r
+		r \tuplet 3/2 4 { a,8\p h c } h4 %55
+		r \tuplet 3/2 4 { gis8 a h } a4
+		r \tuplet 3/2 4 { fis8 gis a } gis4
+		a\f gis r
+		a\p h gis
+		a\f gis r %60
+		\tuplet 3/2 4 { a8 gis a h a h cis h cis }
+		\tuplet 3/2 4 { d cis d e d e f e f }
+		\tuplet 3/2 4 { g, fis g a g a h a h }
+		\tuplet 3/2 4 { c h c d c d e d e }
+		\tuplet 3/2 4 { f e d } e4 \tuplet 3/2 4 { c8 d e } %65
+		\tuplet 3/2 4 { d c h } c4 r
+		a2.\p
+		g
+		f
+		\tuplet 3/2 4 { e8\f d c } d4 r %70
+		c\p d h
+		c\fE h r
+		c\pE d h
+		c'16\f e, e e e e e e c' e, e e
+		d' f, f f f f f f d' f, f f
+		c' e, e e e e e e c' e, e e
+		d' f, f f f f f f d' f, f f
+		c'8 e d c' d, h'
+		c,4 g'(\pE gis)
+		a \tuplet 3/2 4 { h,8\fE c d } c4 %80
+		\tuplet 3/2 4 { d8 e f } e4 r
+		c'8 \tuplet 3/2 8 { g16 a h } c8 e, d h'
+		c,4 g'(\p gis)
+		a \tuplet 3/2 4 { h,8 c d } c4
+		\tuplet 3/2 4 { d8 e f } e4 r8 \tuplet 3/2 8 { g16\f a h } %85
+		c8 \tuplet 3/2 8 { g16 a h } c8 e, d h'
+		c \tuplet 3/2 8 { g16 a h } c8 e, d h'
+		c,4 r r\fermata \bar "|." %88 FINIS
+	}
+}

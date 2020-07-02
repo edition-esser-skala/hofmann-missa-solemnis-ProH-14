@@ -1073,13 +1073,129 @@ AgnusDeiTenoreLyrics = \lyricmode {
 	mun -- di: %23 finis
 }
 
-% TenoreNotes = {
-% 	\relative c' {
-% 		\clef "treble_8"
-%
-% 	}
-% }
-%
-% TenoreLyrics = \lyricmode {
-%
-% }
+DonaTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \major \time 3/4 \autoBeamOff \tempoDona
+			\set Score.currentBarNumber = #24
+		\mvTr e2\fE^\tutti ^\tweak TextScript.X-offset #-2 ^\critnote c4
+		h c r %25
+		r a h8([ c)]
+		d4 e r
+		r a, h8([ c)]
+		d4 e r
+		R2.*3 %32
+		d4 d r
+		R2.
+		d4 d r %35
+		R2.
+		d2.
+		d
+		d
+		d %40
+		d
+		d4 r r
+		R2.*2
+		d2 d4 %45
+		d d r
+		r g,8([ a)] h4
+		c d r
+		r d d
+		d2 d4 %50
+		d2.
+		c4 r r
+		r c h
+		a gis r
+		R2.*3 %57
+		e'4 e r
+		R2.
+		e4 e r %60
+		cis( d) e
+		d( cis) d
+		h( c) d
+		c( h) c
+		c c r %65
+		h c r
+		R2.*3
+		g4 g r %70
+		R2.
+		c4 h r
+		R2.
+		c2.
+		d %75
+		c
+		d
+		c2( h4)
+		c r r
+		r d e %80
+		d c r
+		c2( h4)
+		c r r
+		r d\p e
+		d c r %85
+		c2(\f h4)
+		c r h
+		c r r\fermata \bar "|." %88 FINIS
+	}
+}
+
+DonaTenoreLyrics = \lyricmode {
+	Do -- na %24
+	no -- bis %25
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+
+	pa -- cem, %33
+
+	pa -- cem, %35
+
+	do --
+	na
+	no --
+	bis %40
+	pa --
+	cem.
+
+	Do -- na %45
+	no -- bis
+	pa -- cem,
+	pa -- cem,
+	do -- na
+	no -- bis %50
+	pa --
+	cem,
+	pa -- cem,
+	pa -- cem,
+
+	pa -- cem, %58
+
+	pa -- cem, %60
+	do -- na
+	no -- bis,
+	do -- na
+	no -- bis
+	pa -- cem, %65
+	pa -- cem,
+
+	pa -- cem, %70
+
+	pa -- cem,
+
+	do --
+	na %75
+	no --
+	bis
+	pa --
+	cem,
+	do -- na %80
+	no -- bis
+	pa --
+	cem,
+	do -- na
+	no -- bis %85
+	pa --
+	cem, pa --
+	cem. %88 FINIS
+}

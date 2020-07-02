@@ -682,9 +682,75 @@ AgnusDeiViolinoI = {
 	}
 }
 
-% ViolinoI = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
+DonaViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoDona
+			\set Score.currentBarNumber = #24
+		<e c'>2\fE \tuplet 3/2 4 { c'8 d e }
+		\tuplet 3/2 4 { d e f } e4 c16( d e f32 g) %25
+		a4 f e
+		\tuplet 3/2 4 { d8 c h } c4 c,16( d e f32 g)
+		a4 d c
+		h c r
+		e2.\p %30
+		d
+		c2 a'8 c,
+		\tuplet 3/2 4 { h\f a g } a4 r
+		\tuplet 3/2 4 { h8\p c d } c4 \tuplet 3/2 4 { a8 h c }
+		\tuplet 3/2 4 { h\f a g } a4 r %35
+		\tuplet 3/2 4 { h'8\p c d } c4 \tuplet 3/2 4 { a8 h c }
+		h16\f d, d d d d d d h' d, d d
+		c' d, d d d^\critnote d d d c' d, d d
+		h' d, d d d d d d h' d, d d
+		c' d, d d d d d d c' d, d d %40
+		h'8 g a, g' a, fis'
+		g,4 \tuplet 3/2 4 { h8\p a h c h c }
+		\tuplet 3/2 4 { d c d e d e fis e fis }
+		\tuplet 3/2 4 { g fis g } a,4 fis'
+		<g h, d,>2\f \tuplet 3/2 4 { g,8 a h } %45
+		\tuplet 3/2 4 { a h c } h4 g16( a h c32 d)
+		e4 c h
+		\tuplet 3/2 4 { a8 g fis } g4 g16( a h c)
+		\tuplet 3/2 4 { d8 c h g' fis g h, a h }
+		\tuplet 3/2 4 { d c h g' fis g h, a h } %50
+		\tuplet 3/2 4 { d c h h' a h h, a h }
+		c4 \tuplet 3/2 4 { a8 h c c d e }
+		f4 f e
+		dis e r
+		f2.\p %55
+		e
+		d2 h'8 d,
+		\tuplet 3/2 4 { c\f h a } h4 r
+		\tuplet 3/2 4 { c8\p d e } d4 \tuplet 3/2 4 { h8 c d }
+		\tuplet 3/2 4 { c\f h a } h4 r %60
+		\tuplet 3/2 4 { cis8 h cis d cis d e d e }
+		\tuplet 3/2 4 { f e f g f g a g a }
+		\tuplet 3/2 4 { h, a h c h c d c d }
+		\tuplet 3/2 4 { e d e f e f g f g }
+		\tuplet 3/2 4 { a g f } g4 \tuplet 3/2 4 { e8 f g } %65
+		\tuplet 3/2 4 { f e d } e4 r
+		r \tuplet 3/2 4 { cis8\pE d e } d4
+		r \tuplet 3/2 4 { h8 c d } c4
+		r \tuplet 3/2 4 { a8 h c } h4
+		c\f h r %70
+		\tuplet 3/2 4 { e8\p f g } f4 \tuplet 3/2 4 { d8 e f }
+		\tuplet 3/2 4 { e\f d c } c4 r
+		\tuplet 3/2 4 { e8\p f g } f4 \tuplet 3/2 4 { d8 e f }
+		e16\f c' c c c c c c e, c' c c
+		f, d' d d d d d d f, d' d d %75
+		e, c' c c c c c c e, c' c c
+		f, d' d d d d d d f, d' d d
+		e,8 c' d, c' d, h'
+		c,4 g'(\pE gis)
+		a \tuplet 3/2 4 { h,8\f c d } c4 %80
+		\tuplet 3/2 4 { d8 e f } e4 r
+		c'8 \tuplet 3/2 8 { g16 a h } c8 e, d h'
+		c,4 g'(\p gis)
+		a \tuplet 3/2 4 { h,8 c d } c4
+		\tuplet 3/2 4 { d8 e f } e4 r8 \tuplet 3/2 8 { g16\f a h } %85
+		c8 \tuplet 3/2 8 { g16 a h } c8 e, d h'
+		c \tuplet 3/2 8 { g16 a h } c8 e, d h'
+		c,4 r r\fermata \bar "|." %88 FINIS
+	}
+}

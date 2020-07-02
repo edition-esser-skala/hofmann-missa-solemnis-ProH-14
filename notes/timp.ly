@@ -265,3 +265,47 @@ AgnusDeiTimpani = {
 		r8 g16 g g8 g g4 r\fermata \bar "||" %23 finis
 	}
 }
+
+DonaTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/4 \tempoDona
+			\set Score.currentBarNumber = #24
+		c2\fE c4
+		g c r %25
+		R2.*11 %36
+		g4 r r
+		R2.
+		g4 r r
+		R2.*2 %41
+		g4 r r
+		R2.*2
+		g4 r r %45
+		R2.*3
+		g4 r r
+		R2.*13 %62
+		g4 r r
+		c r r
+		r r c %65
+		g c r
+		R2.*3
+		c4 g r %70
+		R2.
+		c4 g r
+		R2.
+		c4 r r
+		g r r %75
+		c r r
+		g r r
+		c g g
+		c r r
+		R2. %80
+		g4 c r
+		c g g
+		c r r
+		R2.*2 %85
+		c4 g g
+		c r g
+		c r r\fermata \bar "|." %88 FINIS
+	}
+}

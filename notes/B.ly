@@ -1095,13 +1095,129 @@ AgnusDeiBassoLyrics = \lyricmode {
 	mun -- di: %23 finis
 }
 
-% BassoNotes = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassoLyrics = \lyricmode {
-%
-% }
+DonaBassoNotes = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/4 \autoBeamOff \tempoDona
+			\set Score.currentBarNumber = #24
+		\mvTr c2\fE^\tutti c4
+		g c r %25
+		r a' g
+		f e r
+		r f e
+		d c r
+		R2.*3 %32
+		g'4 d r
+		R2.
+		g4 d r %35
+		R2.
+		g2.
+		fis
+		g
+		fis %40
+		g4( d2)
+		g,4 r r
+		R2.*2
+		g'2 g4 %45
+		d g r
+		r e d
+		c h r
+		r g' g
+		f!2 f4 %50
+		e( fis gis)
+		a r r
+		r a g!
+		f e r
+		R2.*3 %57
+		a4 e r
+		R2.
+		a4 e r %60
+		a2 g!4
+		f( e) d
+		g2 f4
+		e( d) c
+		f c r %65
+		g c r
+		R2.*3
+		c4 g r %70
+		R2.
+		c4 g r
+		R2.
+		c
+		h %75
+		c
+		h
+		c4( g' g,)
+		c r r
+		r f e %80
+		h c r
+		c'( g2)
+		c,4 r r
+		r f\p e
+		h c r %85
+		c'(\f g2)
+		c,4 r g
+		c r r\fermata \bar "|." %88 FINIS
+	}
+}
+
+DonaBassoLyrics = \lyricmode {
+	Do -- na %24
+	no -- bis %25
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+
+	pa -- cem, %33
+
+	pa -- cem, %35
+
+	do --
+	na
+	no --
+	bis %40
+	pa --
+	cem.
+
+	Do -- na %45
+	no -- bis
+	pa -- cem,
+	pa -- cem,
+	do -- na
+	no -- bis %50
+	pa --
+	cem,
+	pa -- cem,
+	pa -- cem,
+
+	pa -- cem, %58
+
+	pa -- cem, %60
+	do -- na
+	no -- bis,
+	do -- na
+	no -- bis
+	pa -- cem, %65
+	pa -- cem,
+
+	pa -- cem, %70
+
+	pa -- cem,
+
+	do --
+	na %75
+	no --
+	bis
+	pa --
+	cem,
+	do -- na %80
+	no -- bis
+	pa --
+	cem,
+	do -- na
+	no -- bis %85
+	pa --
+	cem, pa --
+	cem. %88 FINIS
+}

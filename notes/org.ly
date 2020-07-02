@@ -1576,13 +1576,141 @@ AgnusDeiBassFigures = \figuremode {
 	<6 4>4 <5 _!>8 <4 2!> <[5] _!>2 %23 finis
 }
 
-% Organo = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassFigures = \figuremode {
-%
-% }
+DonaOrgano = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/4 \tempoDona
+			\set Score.currentBarNumber = #24
+		\mvTr c2\fE-\tutti c4
+		g c r %25
+		r a' g
+		f e r
+		r f e
+		d c r
+		\mvTr c'2.\p-\solo %30
+		h
+		a2 d,4
+		\mvTr g \f-\tutti d r
+		R2.
+		g4 d r %35
+		R2.
+		g4 h g
+		fis d fis
+		g h g
+		fis d fis %40
+		g d' d,
+		g r r
+		R2.*2
+		g2 g4 %45
+		d g r
+		r e d
+		c h r
+		r g' g
+		f!2 f4 %50
+		e fis gis
+		a r r
+		r a g!
+		f e r
+		\mvTr d'2.\p-\solo %55
+		c
+		h2 e,4
+		\mvTr a\f-\tutti e r
+		R2.
+		a4 e r %60
+		a2 g!4
+		f e d
+		g2 f4
+		e d c
+		f c r %65
+		g c r
+		\mvTr f2.\p-\solo
+		e
+		d2 g,4
+		\mvTr c\f-\tutti g r %70
+		R2.
+		c4 g r
+		R2.
+		c4 e c
+		h g h %75
+		c e c
+		h g h
+		c g' g,
+		c r r
+		r f e %80
+		h c r
+		c' g g,
+		c r r
+		r f\p e
+		h c r %85
+		c'\f g g,
+		c r g
+		c r r\fermata \bar "|." %88 FINIS
+	}
+}
+
+DonaBassFigures = \figuremode {
+	r2. %24
+	r %25
+	r4 <6> q
+	q q r
+	r q q
+	q2.
+	<5>4 <[5+]> <6> %30
+	<7> <5+> <6>
+	<7> <[5]> <_+>
+	r <_+>2
+	r2.
+	r4 <_+>2 %35
+	r2.
+	r
+	<6 5>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff
+	r2.
+	<6 5>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff %40
+	r <4> <_+>
+	r2.
+	r2.*2
+	r2. %45
+	<_+>
+	r4 <6> <6 _+>
+	<6> q2
+	r2.
+	<4 2> %50
+	<7 _+>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff
+	r2.
+	r4 <6> q
+	<6\\> <_+>2
+	<5>2 <6>4 %55
+	<7> <5+> <6>
+	<7> <5+> <_+>
+	r <[_+]>2
+	r2.
+	r4 <_+>2 %60
+	<_+>4 <4 2> <6 4+ 2>
+	<6> <6\\>2
+	<3>4 <2> <4 2>
+	<6> q2
+	r2. %65
+	r
+	<5>4 <[5+]> <6>
+	<7> <5> <6>
+	<7> <5>2
+	r2. %70
+	r
+	r
+	r
+	r
+	<6 5>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff %75
+	r2.
+	<6 5>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff
+	r <4> <3>
+	r2.
+	r4 <4 2> <6> %80
+	<6 5>2.
+	r4 <4> <3>
+	r2.
+	r4 <4 2> <6>
+	<6 5>2. %85
+	r4 <4> <3>
+	r2.
+	r %88 FINIS
+}

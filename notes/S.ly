@@ -1101,13 +1101,141 @@ AgnusDeiSopranoLyrics = \lyricmode {
 	mun -- di: %23 finis
 }
 
-% SopranoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% SopranoLyrics = \lyricmode {
-%
-% }
+DonaSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \autoBeamOff \tempoDona
+			\set Score.currentBarNumber = #24
+		\mvTr c'2\fE^\tutti e4
+		d e r %25
+		r f e
+		d c r
+		r d c
+		h c r
+		\mvTr e2.\pE^\solo %30
+		d
+		c2 c4
+		\mvTr h\fE^\tutti a r
+		R2.
+		h4 a r %35
+		R2.
+		h
+		c
+		h
+		c %40
+		h4( a2)
+		g4 r r
+		R2.*2
+		h2 h4 %45
+		a h r
+		r c h
+		a g r
+		r h h
+		h2 h4 %50
+		h2.
+		a4 r r
+		r f' e
+		dis e r
+		\mvTr f2.\pE^\solo %55
+		e
+		d2 d4
+		\mvTr c\fE^\tutti h r
+		R2.
+		c4 h r %60
+		a( h) cis
+		d( e) f
+		g,( a) h
+		c( d) e
+		f e r %65
+		d e r
+		r \mvTr cis\pE^\soloE \once \tieDashed d~
+		d h \once \tieDashed c~
+		c a h
+		\mvTr c\fE^\tuttiE h r %70
+		R2.
+		e4 d r
+		R2.
+		e
+		f %75
+		e
+		f
+		e4( d2)
+		c4 r r
+		r h c %80
+		f e r
+		e( d2)
+		c4 r r
+		r h\p c
+		f e r %85
+		\mvTr e(\f^\critnote d2)
+		e4 r d
+		c r r\fermata \bar "|." %88 FINIS
+	}
+}
+
+DonaSopranoLyrics = \lyricmode {
+	Do -- na %24
+	no -- bis %25
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+	do -- %30
+	na
+	no -- bis
+	pa -- cem,
+
+	pa -- cem, %35
+
+	do --
+	na
+	no --
+	bis %40
+	pa --
+	cem.
+
+	Do -- na %45
+	no -- bis
+	pa -- cem,
+	pa -- cem,
+	do -- na
+	no -- bis %50
+	pa --
+	cem,
+	pa -- cem,
+	pa -- cem,
+	do -- %55
+	na
+	no -- bis
+	pa -- cem,
+
+	pa -- cem, %60
+	do -- na
+	no -- bis,
+	do -- na
+	no -- bis
+	pa -- cem, %65
+	pa -- cem,
+	pa -- _
+	_ _
+	_ _
+	_ cem, %70
+
+	pa -- cem,
+
+	do --
+	na %75
+	no --
+	bis
+	pa --
+	cem,
+	do -- na %80
+	no -- bis
+	pa --
+	cem,
+	do -- na
+	no -- bis %85
+	pa --
+	cem, pa --
+	cem. %88 FINIS
+}

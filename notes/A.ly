@@ -1111,13 +1111,141 @@ AgnusDeiAltoLyrics = \lyricmode {
 	mun -- di: %23 finis
 }
 
-% AltoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% AltoLyrics = \lyricmode {
-%
-% }
+DonaAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \autoBeamOff \tempoDona
+			\set Score.currentBarNumber = #24
+		\mvTr g'2\fE^\tutti g4
+		g g r %25
+		r c h
+		a g r
+		r a g
+		f g r
+		r \mvTr gis\pE^\solo a~ %30
+		a fis g~
+		g e fis
+		\mvTr g\fE^\tutti fis r
+		R2.
+		g4 fis r %35
+		R2.
+		g
+		a
+		g
+		a %40
+		g2( fis4)
+		g r r
+		R2.*2
+		g2 g4 %45
+		fis g r
+		r g fis
+		e d r
+		r g g
+		g2 g4 %50
+		gis( fis e)
+		e r r
+		r f g
+		a h r
+		r \mvTr a\pE^\solo \once \tieDashed h~ %55
+		h gis \once \tieDashed a~
+		a fis gis
+		\mvTr a\fE^\tuttiE gis r
+		R2.
+		a4 gis r %60
+		a2 a4
+		a( g) f
+		g2 g4
+		g( f) e
+		a g r %65
+		g g r
+		\mvTr a2.\pE^\solo
+		g
+		f2 f4
+		\mvTr e\fE^\tutti d r %70
+		R2.
+		g4 g r
+		R2.
+		g2.
+		g %75
+		g
+		g
+		g
+		g4 r r
+		r g g %80
+		g g r
+		g2.
+		g4 r r
+		r g\p g
+		g g r %85
+		g2.\f
+		g4 r g
+		g r r\fermata \bar "|." %88 FINIS
+	}
+}
+
+DonaAltoLyrics = \lyricmode {
+	Do -- na %24
+	no -- bis %25
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+	pa -- cem,
+	pa -- _ %30
+	_ _
+	_ _
+	_ cem,
+
+	pa -- cem, %35
+
+	do --
+	na
+	no --
+	bis %40
+	pa --
+	cem.
+
+	Do -- na %45
+	no -- bis
+	pa -- cem,
+	pa -- cem,
+	do -- na
+	no -- bis %50
+	pa --
+	cem,
+	pa -- cem,
+	pa -- cem,
+	pa -- _ %55
+	_ _
+	_ _
+	_ cem,
+
+	pa -- cem, %60
+	do -- na
+	no -- bis,
+	do -- na
+	no -- bis
+	pa -- cem, %65
+	pa -- cem,
+	do --
+	na
+	no -- bis
+	pa -- cem, %70
+
+	pa -- cem,
+
+	do --
+	na %75
+	no --
+	bis
+	pa --
+	cem,
+	do -- na %80
+	no -- bis
+	pa --
+	cem,
+	do -- na
+	no -- bis %85
+	pa --
+	cem, pa --
+	cem. %88 FINIS
+}

@@ -339,3 +339,64 @@ AgnusDeiClarinoI = {
 		r8 g,16 g g8 g g4 r\fermata \bar "||" %23 finis
 	}
 }
+
+DonaClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/4 \tempoDona
+			\set Score.currentBarNumber = #24
+		c'2\fE e4
+		d e r %25
+		r r g
+		a8 h c4 r
+		r \pao a g
+		f g r
+		R2.*3 %32
+		g4 fis r
+		R2.
+		g4 fis r %35
+		R2.
+		g2.
+		a
+		g
+		a %40
+		g4 g fis
+		g r r
+		R2.*2
+		g2 g4 %45
+		fis g r
+		R2.*2
+		d4 r r
+		d r r %50
+		e2.
+		e4 r r
+		R2.*5 %57
+		e4 e r
+		R2.
+		e4 e r %60
+		R2.*2
+		d4 r r
+		e r r
+		r r e %65
+		f e r
+		R2.*3
+		e4 d r %70
+		R2.
+		e4 d r
+		R2.
+		e2.
+		f %75
+		e
+		f
+		e4 \pa d4. d8 \pd
+		c4 r r
+		r g' g %80
+		g2 r4
+		e d2\trill
+		c4 r r
+		R2.*2 %85
+		e4^\critnote e d
+		e r d
+		c r r\fermata \bar "|." %88 FINIS
+	}
+}
