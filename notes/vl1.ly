@@ -654,6 +654,34 @@ BenedictusViolinoI = {
 	}
 }
 
+AgnusDeiViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 4/4 \tempoAgnusDei
+		g'4.\fE as16 g as g g8~ g8. g16
+		f8 as g f f\trill es r g
+		g f16 es d es f d \once \tieDashed es2~
+		es4 d\trill c r
+		R1*3 %7
+		r2 g'4. as16 g
+		as g g4 g8 f es d f
+		f\trill es r b'4 as16 g f g as f %10
+		g2. f4\trill
+		es r r2
+		r r8 g16\pE f es4\trill
+		r8 f16 g f4 r8 es16 f es4
+		r2 r4 f16 f g f %15
+		f8\trill es r4 r2
+		r d4.\fE es16 d
+		es d d8 r d c es d c
+		c\trill b d4 e fis16 g a fis
+		g2. fis4\trill %20
+		g b16( d) g( b) as( f) d( h) as( f) d'( h)
+		\once \slurDashed c( d es c) g' es~ es c c \tieDashed es~ es c' c es,~ es c'
+		c es,~ es c' \slurDashed d,( h') c,( a') h, g d h g4\fermata \bar "||" %23 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

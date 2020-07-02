@@ -329,3 +329,13 @@ BenedictusClarinoI = {
 		c1\fermata \bar "|." %51 FINIS
 	}
 }
+
+AgnusDeiClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoAgnusDei
+		R1*21 %21
+		r8 g''16\fE g g4 r2
+		r8 g,16 g g8 g g4 r\fermata \bar "||" %23 finis
+	}
+}

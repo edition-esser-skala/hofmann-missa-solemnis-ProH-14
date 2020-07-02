@@ -664,3 +664,31 @@ BenedictusViolinoII = {
 		e1\fermata \bar "|." %51 FINIS
 	}
 }
+
+AgnusDeiViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \dorian \time 4/4 \tempoAgnusDei
+		es4.\fE f16 es f es es8~ es8. es16
+		d8 c h d d\trill c g4
+		as? h16 c d h \once \tieDashed c2~
+		c4 h\trill c r
+		R1*3 %7
+		r2 b4. c16 b
+		c b b4 b8 as c b as
+		as\trill g b4 c d16 es f d %10
+		\once \tieDashed es2~ es4 d\trill
+		es r r2
+		r r8 b16\pE as g4
+		r8 d'16 es d4 r8 c16 d c4
+		r2 r4 d16 d es d %15
+		d8 c r4 r2
+		r b4.\fE c16 b
+		c b b8 r b a g fis' a,
+		a\trill g r d'4 c16 b a b c a
+		b2. a4\trill %20
+		g b'16( d) g( b) as( f) d( h) as( f) d'( h)
+		c( d es c) es c~ c es, es c'~ c es es c~ c es
+		es c~ c es h( d) a( c) h g d h g4\fermata \bar "||" %23 finis
+	}
+}

@@ -1044,6 +1044,35 @@ BenedictusTenoreLyrics = \lyricmode {
 	sis. %51 FINIS
 }
 
+AgnusDeiTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key c \dorian \time 4/4 \autoBeamOff \tempoAgnusDei
+		R1*3 %3
+		r2 \mvTr es4.\pE^\solo es8
+		f16([ es)] es8 r es d([ c)] h d %5
+		d c r g g f16 g as8 as
+		as g b b b16([ g)] as8 as as
+		as g \appoggiatura g f4 es r
+		R1*12 %20
+		r4 \mvTr d'8\fE^\tutti d d4 d8 d
+		c c r c c4. c8
+		c4( h8[ a]) h4 r\fermata \bar "||" %23 finis
+	}
+}
+
+AgnusDeiTenoreLyrics = \lyricmode {
+	A -- gnus %4
+	De -- i, qui tol -- lis pec -- %5
+	ca -- ta, qui tol -- lis pec -- ca -- ta
+	mun -- di: Mi -- se -- re -- re, mi -- se --
+	re -- re no -- bis.
+
+	A -- gnus De -- i, qui %21
+	tol -- lis pec -- ca -- ta
+	mun -- di: %23 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

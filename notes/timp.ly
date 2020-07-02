@@ -255,3 +255,13 @@ BenedictusTimpani = {
 		c1\fermata \bar "|." %51 FINIS
 	}
 }
+
+AgnusDeiTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoAgnusDei
+		R1*21 %21
+		r8 c16\fE c c4 r2
+		r8 g16 g g8 g g4 r\fermata \bar "||" %23 finis
+	}
+}
