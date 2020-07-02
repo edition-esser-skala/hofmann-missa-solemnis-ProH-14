@@ -7,9 +7,58 @@
 \include "../definitions.ly"
 
 \paper {
-	#(set-paper-size "a4" 'landscape)
 	indent = 1\cm
-	#(define (page-post-process layout pages) (ly:create-toc-file layout pages))
+	top-margin = 1\cm
+	system-separator-markup = ##f
+	system-system-spacing =
+    #'((basic-distance . 17)
+       (minimum-distance . 17)
+       (padding . -100)
+       (stretchability . 0))
+
+	top-system-spacing =
+    #'((basic-distance . 10)
+       (minimum-distance . 10)
+       (padding . -100)
+       (stretchability . 0))
+
+	top-markup-spacing =
+    #'((basic-distance . 0)
+       (minimum-distance . 0)
+       (padding . -100)
+       (stretchability . 0))
+
+	markup-system-spacing =
+    #'((basic-distance . 10)
+       (minimum-distance . 10)
+       (padding . -100)
+       (stretchability . 0))
+
+	systems-per-page = #3
+}
+
+\layout {
+	\context {
+		\Lyrics
+		\override LyricText.font-size = #-.5
+	}
+	\context {
+		\ChoirStaff
+		\override StaffGrouper.staff-staff-spacing =
+		  #'((basic-distance . 12)
+         (minimum-distance . 12)
+         (padding . -100)
+         (stretchability . 0))
+		\override StaffGrouper.staffgroup-staff-spacing =
+		  #'((basic-distance . 13)
+         (minimum-distance . 13)
+         (padding . -100)
+         (stretchability . 0))
+	}
+	\context {
+		\Staff
+		instrumentName = "org"
+	}
 }
 
 #(set-global-staff-size 15.87)
@@ -20,55 +69,24 @@
 			number = "1"
 			title = "K Y R I E"
 		}
-		\paper { indent = 3\cm }
-		\tocSection "1" "Kyrie"
+		\paper { indent = 2\cm }
 		\score {
 			<<
-				\new StaffGroup <<
-					\set GrandStaff.instrumentName = "in C"
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
-						\partcombine \KyrieClarinoI \KyrieClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
-					\KyrieTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "Violino"
-						\new Staff {
-							\set Staff.instrumentName = "I"
-							\KyrieViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "II"
-							\KyrieViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = \SopranoIncipit
-						\override Staff.InstrumentName.self-alignment-Y = ##f
-						\override Staff.InstrumentName.self-alignment-X = #RIGHT
+						\set Staff.instrumentName = "Soprano"
 						\new Voice = "Soprano" { \dynamicUp \KyrieSopranoNotes }
 					}
 					\new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
 
 					\new Staff {
-						\set Staff.instrumentName = \AltoIncipit
-						\override Staff.InstrumentName.self-alignment-Y = ##f
-						\override Staff.InstrumentName.self-alignment-X = #RIGHT
+						\set Staff.instrumentName = "Alto"
 						\new Voice = "Alto" { \dynamicUp \KyrieAltoNotes }
 					}
 					\new Lyrics \lyricsto Alto \KyrieAltoLyrics
 
 					\new Staff {
-						\set Staff.instrumentName = \TenoreIncipit
-						\override Staff.InstrumentName.self-alignment-Y = ##f
-						\override Staff.InstrumentName.self-alignment-X = #RIGHT
+						\set Staff.instrumentName = "Tenore"
 						\new Voice = "Tenore" { \dynamicUp \KyrieTenoreNotes }
 					}
 					\new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
@@ -79,17 +97,12 @@
 					}
 					\new Lyrics \lyricsto Basso \KyrieBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "Organo" "e Bassi" } }
-						% \transpose c c,
-						\KyrieOrgano
-					}
-				>>
+				\new Staff {
+					\set Staff.instrumentName = "Organo"
+					\KyrieOrgano
+				}
 				\new FiguredBass { \KyrieBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 80 }
 		}
 	}
 	\bookpart {
@@ -97,32 +110,8 @@
 			number = "2"
 			title = "G L O R I A"
 		}
-		\tocSection "2" "Gloria"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \GloriaClarinoI \GloriaClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\GloriaTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\GloriaViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\GloriaViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -148,39 +137,17 @@
 					}
 					\new Lyrics \lyricsto Basso \GloriaBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\GloriaOrgano
-					}
-				>>
+				\new Staff { \GloriaOrgano }
 				\new FiguredBass { \GloriaBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 90 }
 		}
 	}
 	\bookpart {
 		\header {
 			subtitle = "Q U I   T O L L I S"
 		}
-		\tocSubsection "2.2" "Qui tollis"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\QuiTollisViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\QuiTollisViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -206,49 +173,17 @@
 					}
 					\new Lyrics \lyricsto Basso \QuiTollisBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\QuiTollisOrgano
-					}
-				>>
+				\new Staff { \QuiTollisOrgano }
 				\new FiguredBass { \QuiTollisBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 70 }
 		}
 	}
 	\bookpart {
 		\header {
 			subtitle = "Q U O N I A M"
 		}
-		\tocSubsection "2.3" "Quoniam"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \QuoniamClarinoI \QuoniamClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\QuoniamTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\QuoniamViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\QuoniamViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -274,49 +209,17 @@
 					}
 					\new Lyrics \lyricsto Basso \QuoniamBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\QuoniamOrgano
-					}
-				>>
+				\new Staff { \QuoniamOrgano }
 				\new FiguredBass { \QuoniamBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 90 }
 		}
 	}
 	\bookpart {
 		\header {
 			subtitle = "I N   G L O R I A   D E I   P A T R I S"
 		}
-		\tocSubsection "2.4" "In gloria Dei Patris"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \InGloriaClarinoI \InGloriaClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\InGloriaTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\InGloriaViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\InGloriaViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -342,17 +245,9 @@
 					}
 					\new Lyrics \lyricsto Basso \InGloriaBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\InGloriaOrgano
-					}
-				>>
+				\new Staff { \InGloriaOrgano }
 				\new FiguredBass { \InGloriaBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 100 }
 		}
 	}
 	\bookpart {
@@ -360,32 +255,8 @@
 			number = "3"
 			title = "C R E D O"
 		}
-		\tocSection "3" "Credo"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \CredoClarinoI \CredoClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\CredoTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\CredoViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\CredoViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -411,39 +282,17 @@
 					}
 					\new Lyrics \lyricsto Basso \CredoBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\CredoOrgano
-					}
-				>>
+				\new Staff { \CredoOrgano }
 				\new FiguredBass { \CredoBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 90 }
 		}
 	}
 	\bookpart {
 		\header {
 			subtitle = "E T   I N C A R N A T U S   E S T"
 		}
-		\tocSubsection "3.2" "Et incarnatus est"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\EtIncarnatusViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\EtIncarnatusViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -469,49 +318,17 @@
 					}
 					\new Lyrics \lyricsto Basso \EtIncarnatusBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\EtIncarnatusOrgano
-					}
-				>>
+				\new Staff { \EtIncarnatusOrgano }
 				\new FiguredBass { \EtIncarnatusBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 45 }
 		}
 	}
 	\bookpart {
 		\header {
 			subtitle = "E T   R E S U R R E X I T"
 		}
-		\tocSubsection "3.3" "Et resurrexit"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \EtResurrexitClarinoI \EtResurrexitClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\EtResurrexitTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\EtResurrexitViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\EtResurrexitViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -537,49 +354,17 @@
 					}
 					\new Lyrics \lyricsto Basso \EtResurrexitBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\EtResurrexitOrgano
-					}
-				>>
+				\new Staff { \EtResurrexitOrgano }
 				\new FiguredBass { \EtResurrexitBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 120 }
 		}
 	}
 	\bookpart {
 		\header {
 			subtitle = "E T   V I T A M"
 		}
-		\tocSubsection "3.4" "Et vitam"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \EtVitamClarinoI \EtVitamClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\EtVitamTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\EtVitamViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\EtVitamViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -605,17 +390,9 @@
 					}
 					\new Lyrics \lyricsto Basso \EtVitamBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\EtVitamOrgano
-					}
-				>>
+				\new Staff { \EtVitamOrgano }
 				\new FiguredBass { \EtVitamBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 2 = 120 }
 		}
 	}
 	\bookpart {
@@ -623,32 +400,8 @@
 			number = "4"
 			title = "S A N C T U S"
 		}
-		\tocSection "4" "Sanctus"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \SanctusClarinoI \SanctusClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\SanctusTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\SanctusViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\SanctusViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -674,17 +427,9 @@
 					}
 					\new Lyrics \lyricsto Basso \SanctusBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\SanctusOrgano
-					}
-				>>
+				\new Staff { \SanctusOrgano }
 				\new FiguredBass { \SanctusBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 60 }
 		}
 	}
 	\bookpart {
@@ -692,40 +437,8 @@
 			number = "5"
 			title = "B E N E D I C T U S"
 		}
-		\paper {
-			top-system-spacing.basic-distance = #7
-			top-system-spacing.minimum-distance = #7
-			top-markup-spacing.basic-distance = #0
-			top-markup-spacing.minimum-distance = #0
-			markup-system-spacing.basic-distance = #7
-			markup-system-spacing.minimum-distance = #7
-		}
-		\tocSection "5" "Benedictus"
 		\score {
 			<<
-				\new StaffGroup \with { \smallGroupDistance } <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \BenedictusClarinoI \BenedictusClarinoII
-					}
-				>>
-				\new Staff \with { \smallStaffDistance } {
-					\set Staff.instrumentName = "timp"
-					\BenedictusTimpani
-				}
-				\new StaffGroup \with { \smallGroupDistance } <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\BenedictusViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\BenedictusViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -751,22 +464,9 @@
 					}
 					\new Lyrics \lyricsto Basso \BenedictusBassoLyrics
 				>>
-				\new PianoStaff \with { \smallGroupDistance } <<
-					\set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
-					\new Staff { \BenedictusOrganoR }
-					\new Staff { \BenedictusOrganoL }
-				>>
+				\new Staff { \BenedictusBassi }
 				\new FiguredBass { \BenedictusBassFigures }
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = "b"
-						% \transpose c c,
-						\BenedictusBassi
-					}
-				>>
 			>>
-			\layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
-			\midi { \tempo 4 = 60 }
 		}
 	}
 	\bookpart {
@@ -774,32 +474,8 @@
 			number = "6"
 			title = "A G N U S   D E I"
 		}
-		\tocSection "6" "Agnus Dei"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \AgnusDeiClarinoI \AgnusDeiClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\AgnusDeiTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\AgnusDeiViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\AgnusDeiViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -825,49 +501,17 @@
 					}
 					\new Lyrics \lyricsto Basso \AgnusDeiBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\AgnusDeiOrgano
-					}
-				>>
+				\new Staff { \AgnusDeiOrgano }
 				\new FiguredBass { \AgnusDeiBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 60 }
 		}
 	}
 	\bookpart {
 		\header {
 			subtitle = "D O N A   N O B I S   P A C E M"
 		}
-		\tocSubsection "6.2" "Dona nobis pacem"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-						\partcombine \DonaClarinoI \DonaClarinoII
-					}
-				>>
-				\new Staff {
-					\set Staff.instrumentName = "timp"
-					\DonaTimpani
-				}
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "vl"
-						\new Staff {
-							\set Staff.instrumentName = "1"
-							\DonaViolinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "2"
-							\DonaViolinoII
-						}
-					>>
-				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
@@ -893,17 +537,9 @@
 					}
 					\new Lyrics \lyricsto Basso \DonaBassoLyrics
 				>>
-				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
-						% \transpose c c,
-						\DonaOrgano
-					}
-				>>
+				\new Staff { \DonaOrgano }
 				\new FiguredBass { \DonaBassFigures }
 			>>
-			\layout { }
-			\midi { \tempo 4 = 150 }
 		}
 	}
 }
