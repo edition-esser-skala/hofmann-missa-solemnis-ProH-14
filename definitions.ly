@@ -33,8 +33,8 @@
        (stretchability . 0))
 
 	top-system-spacing =
-    #'((basic-distance . 20)
-       (minimum-distance . 20)
+    #'((basic-distance . 15)
+       (minimum-distance . 15)
        (padding . -100)
        (stretchability . 0))
 
@@ -45,8 +45,8 @@
        (stretchability . 0))
 
 	markup-system-spacing =
-    #'((basic-distance . 15)
-       (minimum-distance . 15)
+    #'((basic-distance . 10)
+       (minimum-distance . 10)
        (padding . -100)
        (stretchability . 0))
 
@@ -82,6 +82,7 @@
 	 			 	\hspace #3
 	 			 	\fromproperty #'header:title
 				}
+				\fromproperty #'header:subtitle
 			}
  		}
 	}
@@ -449,7 +450,7 @@ bc =
 	\context {
 		\Score
 		\compressFullBarRests
-		\override BarNumber.break-visibility = #'#(#f #t #t)
+		% \override BarNumber.break-visibility = #'#(#f #t #t)
 	}
 	\context {
 		\StaffGroup
@@ -588,6 +589,20 @@ tocSection = #(define-music-function
 		(format
 			#f
 			"\\contentsline {section}{\\numberline {~a}~a}"
+			number
+			text
+		)
+	)
+)
+
+tocSubsection = #(define-music-function
+	(parser location number text)
+	(markup? markup?)
+  (add-toc-item!
+		'tocItemMarkup
+		(format
+			#f
+			"\\contentsline {subsection}{\\numberline {~a}~a}"
 			number
 			text
 		)
