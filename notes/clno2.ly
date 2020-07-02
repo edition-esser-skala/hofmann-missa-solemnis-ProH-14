@@ -294,3 +294,38 @@ SanctusClarinoII = {
 		c1\fermata \bar "|." %21 FINIS
 	}
 }
+
+BenedictusClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoBenedictus
+		R1*9 %9
+		g'4.\fE g8 g g r c %10
+		c4 r r r8 g
+		g4 r r2
+		r4 r8 d' d4 r8 d
+		d4 r8 d d d16 d d8 d
+		d4 r r2 %15
+		R1*3
+		r2 d4. d8
+		d d r g, g g r d' %20
+		e[ d] c d d g,16 g g4
+		r8 e16 e e8 e e4 r8 e16 e
+		e4 r8 e16 e e4 r8 e16 e
+		e4 r r2
+		R1 %25
+		e'8 e16 e e8 e d4 r8 d
+		d d r d e4 d8 c
+		g4 r r2
+		R1
+		r2 r4 r8 g %30
+		c16 d e8 r g, c16 d e8 r g,
+		g g16 g g8. g16 g8 e r c16 c
+		c4 r8 g' g g r g
+		g g g8. g16 g4 r
+		R1*14 %48
+		r4 r8 g g g g4
+		e c8 c c2 %50
+		c1\fermata \bar "|." %51 FINIS
+	}
+}

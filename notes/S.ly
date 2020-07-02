@@ -999,6 +999,77 @@ SanctusSopranoLyrics = \lyricmode {
 	sis. %21 FINIS
 }
 
+BenedictusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \autoBeamOff \tempoBenedictus
+		R1*9 %9
+		\mvTr c'4.\fE^\tutti c8 h c r e %10
+		f e r c c c16 c c8 h
+		c4 c8 c c4 h8 h
+		h4 a8 a h16([ c)] d8 r a
+		h16([ c)] d8 r c h h16 h a8. a16
+		g4 r r2 %15
+		R1*3
+		r2 d'4. d8
+		d d r d e d r %20
+		d c d16 d e8 d d4 d8 d
+		d4 d8 d c h r h
+		c16([ d)] e8 r h c c16 c \appoggiatura c h8. h16
+		a4 r r2
+		R1 %25
+		e'4. e8 f f r a,
+		h h r h c d16 e f8 e
+		d4 r r2
+		r4 e8 c a4 a8 a
+		g4 g8 e' e4 d8 d %30
+		c16([ d)] e8 r h c16([ d)] e8 r h
+		c c16 c c8 h c4 r8 e
+		f e r c h c r e
+		d e16 e d8. d16 c4 r
+		R1*11 %45
+		r8 g c e e d16([ c)] d8([ c)]
+		h4 r8 d4 c16([ h)] c8([ h)]
+		a4 r8 c c h16([ a)] h8 c
+		d4 c h8 c c([ h)]
+		c4 a8 g a2 %50
+		g1\fermata \bar "|." %51 FINIS
+	}
+}
+
+BenedictusSopranoLyrics = \lyricmode {
+	Be -- ne -- di -- ctus, qui %10
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni, be -- ne -- di -- ctus, qui
+	ve -- nit, qui ve -- nit, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni. %15
+
+	Be -- ne -- %19
+	di -- ctus, qui ve -- nit in %20
+	no -- mi -- ne Do -- mi -- ni, be -- ne --
+	di -- ctus, qui ve -- nit, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni.
+	%25
+	Be -- ne -- di -- ctus, qui
+	ve -- nit in no -- mi -- ne Do -- mi --
+	ni.
+	Be -- ne -- di -- ctus, qui
+	ve -- nit, qui ve -- nit, qui %30
+	ve -- nit, qui ve -- nit in
+	no -- mi -- ne Do -- mi -- ni, qui
+	ve -- nit, qui ve -- nit in
+	no -- mi -- ne Do -- mi -- ni.
+
+	O -- san -- na in ex -- cel -- %46
+	sis, in ex -- cel --
+	sis, o -- san -- na in ex --
+	cel -- sis, in ex -- cel --
+	sis, in ex -- cel -- %50
+	sis. %51 FINIS
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

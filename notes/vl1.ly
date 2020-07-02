@@ -597,6 +597,63 @@ SanctusViolinoI = {
 	}
 }
 
+BenedictusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoBenedictus
+		r8 c'\p c r r c c r
+		r2 r8 c'4 h8
+		c r e, r d r c r
+		c h r g' r a g fis
+		g r g, r a r h r %5
+		c r d r e c'4 h8
+		c e, f4 e8 c4 h8
+		r c r c r c c h
+		r c r c' r c c h
+		c,,16\f( d32 e f g a h) c16 c c, c' h8 c r e %10
+		f e r c c c c h
+		c,16( d32 e f g a h) c16 c c, c' a8 a,16 a' h h h, h'
+		g8 g,16 g' a8 a h16 c d8 r a
+		h16 c d8 r c h g'16.^\critnote h,32 a8 fis'
+		g,4 r8 g\p a g r d' %15
+		e d r4 r8 g4 fis8
+		g r d, r e r fis r
+		g r a r h g'4 fis8
+		g r r4 g,,16(\f a32 h c d e fis) g16 g g, g'
+		<d a' fis'>8 g' r d e d r d %20
+		c d16 d e8 d \once \slurDashed g,,16( a32 h c d e fis) g8 f
+		e16( fis32 gis a h c d) e8 d c h r h
+		c16 d e8 r h \sbOn \tuplet 3/2 8 { c16 h c a' gis a } \sbOff h,8 gis'
+		a,4 r8 e'\p f e r e
+		d c a' r r2 %25
+		a,,16(\f h32 c d e fis gis) a8 e' f? f r a,
+		h h r h c d16 e f8 e
+		d4 r8 d\pE e d r d
+		f e c,16\fE c' e, c' \sbOn f, f' \tuplet 3/2 8 { f e f } d, d' \tuplet 3/2 8 { d c d }
+		h, h'  \tuplet 3/2 8 { h a h } c, c' \tuplet 3/2 8 { c h c } a, a' \tuplet 3/2 8 { a g a } \sbOff h, h' g, g' %30
+		c,8 c' r h c16 d e8 r h
+		c c16 c c8 h c4 r8 e
+		f e r c h c r e
+		d e16 c' d,8 h' c, c\pE c r
+		r c c r r2 %35
+		r8 c'4 h8 c r e, r
+		d r c r c h r g'
+		r a g fis g r g, r
+		a r h r c r d r
+		e c'4 h8 c c,4 h8 %40
+		r c r c r c c h
+		r c r c' r c c h
+		c r r4 r2
+		R1*2 %45
+		r8 g,\fE c e e d16 c d8 c
+		h4 r8 d4 c16 h c8 h
+		a4 r8 c c h16 a h8 c
+		d4 c16 e g c \sbOn \tuplet 3/2 8 { h16 a h } c e, d8 h'
+		c,4 a8 g a2 %50
+		g1\fermata \bar "|." %51 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

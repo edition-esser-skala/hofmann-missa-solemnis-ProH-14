@@ -1295,6 +1295,231 @@ SanctusBassFigures = \figuremode {
 	<5 3>1 %21 FINIS
 }
 
+BenedictusOrganoR = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoBenedictus
+		\once \tieDashed c'4~ \sbOn c32 e d c g' e d c d8\trill c c32 e d c g' e d c \sbOff
+		a'8\trill g c,32 d e f g a h c \sbOn \tuplet 3/2 8 { gis16 a c fis, g? c } \sbOff \appoggiatura g8 f4\trillE
+		e \tuplet 6/4 4 { e16 fis gis a h c d, e fis g? a h a g fis e d c }
+		c8\trillE h \sbOn d32( fis g a) h( fis g dis) e( dis e fis) g( e d c) \sbOff h8 a\trill
+		g4 \sbOn \tuplet 6/4 4 { g'16 e c g a b a g a f' d c h a h g' e d } %5
+		\tuplet 6/4 4 { c h c a' f e d c d g d f } e8 c32( e g c) \appoggiatura g8 f4\trill \sbOff
+		e32 c g' e c' g a e f4\trill e32 c' h a gis a g f e8 d\trillE
+		\appoggiatura c8 c'8. \tuplet 3/2 16 { \once \slurDashed h32( a gis) } a8. g?64( f e d) c8. d16 d4\trill
+		\appoggiatura c8 c'8. \tuplet 3/2 16 { h32( a gis) } a8. \once \slurDashed g64( f e d) c8. d16 d4\trill
+		c4 r8 \tiny <e, g c>-\critnote <d g h> <e g c> \normalsize g'32 f e d c h a g %10
+		a8\trill g g'32 f e d c h a g a8 \noBeam \tiny <g c> << { \tiny <a c> <g h> } \\ { \tiny f4 } >>
+		<e g c>4 q <e fis c'> <d fis h>
+		<d e h'> <c e a>8 <d fis a> <h d g>4 \normalsize a''32 g fis e d c h a
+		<< { h16 c d8 } \\ { g,16 a h8 } >> a'32 g fis e d c h a \tiny <g h>8 <d g h> << { \tiny <d a'> } \\ { \tiny g8 fis } >> \normalsize
+		g4~ \sbOn g32 h a g d' h a g a8\trill g g32( h a g) d'( h a g) \sbOff %15
+		e'8\trill d g,32 a h c d e fis g \sbOn \tuplet 3/2 8 { dis16 e g cis, d? g } \appoggiatura d8 c4\trill
+		h \tuplet 6/4 4 { d16 h g d e f! e d e c' a g fis e fis d' h a }
+		\tuplet 6/4 4 { g fis g e' c h a g a a' fis c } h8 g32 h d g c,4\trill \sbOff
+		h32 g' fis e dis e d c h8 a\trill g4 r8 \tiny <d g h>
+		<d fis a> <d g h> \normalsize g'32 fis e d c h a g \tiny <c e>8 <h d> \normalsize g'32 fis e d c h a g %20
+		\tiny <e g c>8 <d g d'> << { \tiny c'4 } \\ { \tiny <e, g>8 <d fis> } >> <d g h>2
+		<d gis h>4. <e h' d>8 <e a c> <e gis h> \normalsize h''32 a gis f e d c h
+		c16 d e8 h'32 a gis f e d c h \tiny <a c>8 <f a c> << { \tiny h4 } \\ { \tiny <f a>8 <e gis> } >>
+		<a e c>4 \normalsize a32( h c d e fis? gis? a) f8\trill e a,32( h c d e fis? gis? a)
+		d,8\trill c a'32 g f e d c h a f' d c h e c h a h4\trill %25
+		a r8 \tiny <e a c> << { \tiny <a d>4 } \\ { \tiny d,8[ f] } >> \normalsize a'32 g f e d c h a
+		h16\trill a h8 g32 a h c d e f g \tiny c,8 << { \tiny <h d>16 <c e> <d f>8 <c e> } \\ { \tiny g8 g4 } >>
+		<g h d> \normalsize g32 a h c d e fis g e8\trill d g,32 a h c d e fis g
+		f8\trillE e << {
+			\tiny <g, c>4 a2
+			g f
+		} \\ {
+			\tiny e8 c <c g'>4 <d f>~
+			q <c e>2 <g d'>4
+		} >> %30
+		\tiny <g c e> \normalsize d''32 c h a g f e d <e g c>4 d'32 c h a g f e d
+		\tiny <e g c>4 << { \tiny c'8 h } \\ { \tiny <d, g>4 } >> \tiny <e g c> \normalsize g'32 f e d c h a g
+		a8\trill g g'32 f e d c h a g f8\trill e c''32 h a g f e d c
+		\tiny h8 << { \tiny c c[ h] } \\ { \tiny <e, g> <d g>4 } >> \normalsize c'4~ \sbOn c32 e d c g' e d c
+		d8\trill c c32 e d c g' e d c \sbOff a'8\trill g c,32 d e f g a h c %35
+		\sbOn \tuplet 3/2 8 { gis16 a c fis, g? c } \sbOff \appoggiatura g8 f4\trillE e \tuplet 6/4 4 { e16 fis gis a h c }
+		\tuplet 6/4 4 { d, e fis g? a h a g fis e d c } c8\trill h d32 g h a g fis e dis
+		e( dis e fis g e d c) h8 a\trill g4 \sbOn \tuplet 6/4 4 { g'16 e c g a b }
+		\tuplet 6/4 4 { a g a f' d c h a h g' e d c h c a' f e d c d g d f } \sbOff
+		e8 \once \slurDashed c32( e g c) \appoggiatura g8 f4\trill \tuplet 6/4 4 { e16 c' h a g f } e8 d\trill %40
+		\appoggiatura c8 c'8. \tuplet 3/2 16 { \once \slurDashed h32( a gis) } a8. \once \slurDashed g64( f e d) c8. d16 d4\trill
+		\appoggiatura c8 c'8. \tuplet 3/2 16 { \once \slurDashed h32( a gis) } a8. \once \slurDashed g64( f e d) c8. d16 d4\trill
+		c r r2
+		R1
+		<< {
+			\tiny h,8 c e a a g16 f g8 f %45
+			e g <g c>4 e'8 d4 <a c>8
+			<g h>4 r8 <a d> d c r <g h>
+			<f a>4 r8 <g c> c h r <a c>
+			<g h>4 <g c> <g h>8 <g c> c[ h]
+			c4 <f, a>8 <e g> <f a>2 %50
+			<e g>1\fermata
+		} \\ {
+			\tiny s4. e8 d2 %45
+			c4 e a4. e8
+			d4 r8 f g4 r8 d
+			c4 r8 e f4 r8 f
+			d4 c8 e d e <d g>4
+			<e g> c c2 %50
+			c1\fermata
+	  } >> \bar "|." %51 FINIS
+	}
+}
+
+BenedictusOrganoL = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoBenedictus
+		r8 c16-\solo d e8 c f e16. d32 e8 c
+		f e r c f e d g,
+		c c'16 h c8 c, h h' fis d'
+		g, g, r h' c c, d d,
+		g g'16 f! e8 r f r g r %5
+		a r h r c c d h
+		c, c' d h c f, g g,
+		r << { c' } \\ { e, } >> r << { c' } \\ { f, } >> g g g, g
+		r << { c' } \\ { e, } >> r << { c' } \\ { f, } >> g g g, g
+		c'4.-\tutti c8 g c r c, %10
+		f c r e f e d g,
+		c4 c8 c' a4 h
+		g a8 d, g g, r d'
+		g g, r d' g g d' d,
+		g-\solo g16. a32 h8 g c h16. a32 h8 g %15
+		c h r g c h a d,
+		g g,16. a32 h8 r c r d r
+		e r fis r g g a d,
+		g c d d, g4.-\tutti g8
+		d g r g, c g r g' %20
+		c h a d, g4 g8 f!
+		e4. gis8 a e r e
+		a a, r e' a f d e
+		a a, r a'-\soloE d c r a
+		<< { h s } \\ { e,[ a] } >> r a << { a a4 gis8 } \\ { d c d e } >> %25
+		a4.-\tutti a8 f16 e d8 r d
+		g g, r g' e d16 c h8 c
+		g4 r8 g-\soloE c h r g
+		d'[ c] c-\tutti e f4 d8 d
+		h4 c a h8 g %30
+		c4 r8 g c4 r8 g
+		e' d16 c g4 c r8 c
+		f c r c g c r c
+		g' c, g' g, c-\solo c16 d e8 c
+		f e16. d32 e8 c f e r c %35
+		f e d g, c c'16 h c8 c,
+		h h' fis d' g, g, r h'
+		c c, d d, g g'16 f e8 r
+		f r g r a r h r
+		c c d h c f, g g, %40
+		r << { c' } \\ { e, } >> r << { c' } \\ { f, } >> g g g, g
+		r << { c' } \\ { e, } >> r << { c' } \\ { f, } >> g g g, g
+		c c[-\tutti-! e-! a-!] a-! g16-! f-! g8-! f-!
+		<< { r g c e e d16 c d8 c } \\ { e,4 e8 c f2 } >>
+		f8 e r c' h4. g8 %45
+		c4 c, f4. a8
+		a g16 f g8 f e4 r8 g~
+		g f16 e f8 e d4 r8 f~
+		f e16 d e8 c g' c, g' g,
+		c4 c c2 %50
+		c1\fermata \bar "|." %51 FINIS
+	}
+}
+
+BenedictusBassi = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoBenedictus
+		r8 c16\pE d e8 c f e16. d32 e8 c
+		f e r c f e d g,
+		c c'16 h c8 c, h h' fis d'
+		g, g, r h' c c, d d,
+		g g'16 f! e8 r f r g r %5
+		a r h r c c d h
+		c, c' d h c f, g g,
+		r e' r f g g g, g
+		r e' r f g g g, g
+		c'4.\fE c8 g c r c, %10
+		f c r e f e d g,
+		c4 c8 c' a4 h
+		g a8 d, g g, r d'
+		g g, r d' g g d' d,
+		g\pE g16. a32 h8 g c h16. a32 h8 g %15
+		c h r g c h a d,
+		g g,16. a32 h8 r c r d r
+		e r fis r g g a d,
+		g c d d, g4.\fE g8
+		d g r g, c g r g' %20
+		c h a d, g4 g8 f!
+		e4. gis8 a e r e
+		a a, r e' a f d e
+		a a, r a'\pE d c r a
+		e a r a d, c d e %25
+		a4.\fE a8 f16 e d8 r d
+		g g, r g' e d16 c h8 c
+		g4 r8 g\pE c h r g
+		d'[ c] c\fE e f4 d8 d
+		h4 c a h8 g %30
+		c4 r8 g c4 r8 g
+		e' d16 c g4 c r8 c
+		f c r c g c r c
+		g' c, g' g, c\pE c16 d e8 c
+		f e16. d32 e8 c f e r c %35
+		f e d g, c c'16 h c8 c,
+		h h' fis d' g, g, r h'
+		c c, d d, g g'16 f e8 r
+		f r g r a r h r
+		c c d h c f, g g, %40
+		r e' r f g g g, g
+		r e' r f g g g, g
+		c c[\fE e a] a g16 f g8 f
+		e4 e8 c f2
+		f8 e r c' h4. g8 %45
+		c4 c, f4. a8
+		a g16 f g8 f e4 r8 g~
+		g f16 e f8 e d4 r8 f~
+		f e16 d e8 c g' c, g' g,
+		c4 c c2 %50
+		c1\fermata \bar "|." %51 FINIS
+	}
+}
+
+BenedictusBassFigures = \figuremode {
+	r1*10 %10
+	r2 r8 <6> <7> q
+	r2 <6\\ 5>4 <[5+]>
+	<[6 5]>4. <[_+]>8 r2
+	r2. <4>8 <_+>
+	r1 %15
+	r
+	r
+	r
+	r
+	<_+> %20
+	r8 <[6]> <7> <7 [_+]> r4. <[2]>8
+	<7 [_+]>4. <6 5>8 r <_+>4.
+	r2. <6 5>8 <_+>
+	r1
+	r %25
+	r2 <[6]>
+	r \bo <[6 \l]>8 <6> \bc <[6 5]>4
+	r1
+	r4. <[6]>8 <9>4 <10>
+	<6 5>2 q4 \bo <[6 5]>8 \bc <[7 \l]> %30
+	r1
+	r4 <4>8 <3> r2
+	r1
+	r4 <4>8 <3> r2
+	r1*10 %44
+	<4>8 <6>4 <[6]>8 <7> <6>4 <7>8 %45
+	r2 <7>8 <6>4.
+	<[4] 2>4. <[6]>8 <7> <6>4.
+	<[4 2]>4. <[6]>8 <7> <6>4.
+	<4 2>4 <6>2 <4>8 <3>
+	r4 <6 4>8 <5 3> <6 4>2 %50
+	r1 %51 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

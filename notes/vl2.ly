@@ -606,3 +606,61 @@ SanctusViolinoII = {
 		e1\fermata \bar "|." %21 FINIS
 	}
 }
+
+BenedictusViolinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoBenedictus
+		r8 e16\p f g8 r r e16 f g8 r
+		r2 a'8 g f f
+		e r g, r g r a r
+		a g r d' r c h a
+		h r g r a r h r %5
+		c r d r g, e' f4
+		e8 c4 h8 c a g g
+		r g r a r e d d
+		r g' r a r e d d
+		c,16(\f d32 e f g a h) c16 c c, c' g8 g r g %10
+		a g r a g a \appoggiatura g f4
+		e32( c d e f g a h) c16 c c, c' a8 a,16 a' h h h, h'
+		g8 g,16 g' a8 fis g16 a h8 r fis
+		g16 a h8 r a g g'16. h,32 a8 fis'
+		g,4 r8 d\p e d r g %15
+		g g r4 e'8 d c c
+		h r d, r e r fis r
+		g r a r d, h' c4
+		h8 r r4 g,16(\f a32 h c d e fis) g16 g g, g'
+		<d a'>8 h' r g g g r g %20
+		g g16 g g8 fis g,16( a32 h c d e fis) g8 f
+		e16( fis32 gis a h c d) e8 h a gis r e
+		e4 r8 h' \sbOn \tuplet 3/2 8 { c16 h c a' gis a } \sbOff h,8 gis'
+		a,4 r8 a\pE a a r a
+		gis a c r r2 %25
+		a,16(\f h32 c d e fis gis) a8 a a a r f?
+		g g r g g g g g
+		g4 r8 g\p g g r h
+		h c c,16\f c' e, c' \sbOn f, f' \tuplet 3/2 8 { f e f } d, d' \tuplet 3/2 8 { d c d }
+		h, h'  \tuplet 3/2 8 { h a h } c, c' \tuplet 3/2 8 { c h c } a, a' \tuplet 3/2 8 { a g a } \sbOff h, g' g, g' %30
+		e f g8 r d e16 f g8 r d
+		e e16 e d8. d16 e4 r8 g
+		a g r g g g r g
+		h c16 c' d,8 h' c, e,16\pE f g8 r
+		r e16 f g8 r r2 %35
+		a'8 g f f e r g, r
+		g r a r a g r d'
+		r c h a h r g r
+		a r h r c r d r
+		g, e' f4 e8 a, g g %40
+		r g r a r e d d
+		r g r a r e' d d
+		e r r4 r2
+		R1
+		r8 c,\fE e a a g16 f g8 f %45
+		e4 g8 g a2
+		d,4 d8 e16 f g8 g r4
+		r c,8 d16 e f4. a8
+		d4 c16 e g c \sbOn \tuplet 3/2 8 { h a h } c e, d8 h'
+		c,4 f,8 e f2 %50
+		e1\fermata \bar "|." %51 FINIS
+	}
+}
