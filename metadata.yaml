@@ -1,0 +1,17 @@
+composer: Hofmann, Leopold
+title: Missa solemnis in C
+id: ProH 14
+genre: mass
+scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (C), timp (C–G), 2 vl, b, org solo
+sources:
+  1:
+    siglum: A-Ed
+    shelfmark: A 105
+    type: manuscript copy
+    date: unknown
+    rism: 600037903
+    url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/559.html
+github: hofmann-missa-solemnis-ProH-14
+imslp: Missa_solemnis_ProH_14_(Hofmann,_Leopold)
+notes:
+
